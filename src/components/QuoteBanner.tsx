@@ -11,7 +11,7 @@ export default function QuoteBanner() {
       <div className="absolute inset-0 z-0">
         <Image
           src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/27b4f80c-ca73-4d1f-824e-ec29a2211142/Jennifer+A+-+Images+%282%29.png"
-          alt="Beach landscape with tranquil waters"
+          alt="Two children running on a sandy beach"
           fill
           priority
           sizes="100vw"
@@ -21,11 +21,11 @@ export default function QuoteBanner() {
         <div className="absolute inset-0 bg-black/50" />
       </div>
 
-      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 pt-28 pb-16 sm:pt-36 sm:pb-24 lg:pt-[180px] lg:pb-36 flex flex-col items-start w-full">
+      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 pt-[120px] pb-16 sm:pt-[160px] sm:pb-24 lg:pt-[220px] lg:pb-40 flex flex-col items-start justify-center">
         
         {/* Quote Content Container */}
-        <div className="w-full max-w-[760px] lg:max-w-[840px] xl:max-w-[880px] text-left lg:pl-4 xl:pl-6 mb-28 lg:mb-40">
-          <h2 className="font-serif text-[28px] sm:text-[34px] md:text-[40px] lg:text-[44px] xl:text-[48px] leading-[1.3] text-[#f7f6f2] font-light tracking-normal">
+        <div className="w-full max-w-[700px] lg:max-w-[750px] xl:max-w-[820px] text-left mb-28 lg:mb-40 pl-0 lg:pl-10 xl:pl-16">
+          <h2 className="font-serif text-[30px] sm:text-[36px] md:text-[42px] lg:text-[46px] xl:text-[50px] leading-[1.25] text-[#f7f6f2] font-light tracking-normal">
             You deserve a place where your story is heard, valued, and understood.{" "}
             <em className="italic font-normal">
               Nothing will be too heavy for us to carry together.
