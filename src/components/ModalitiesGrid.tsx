@@ -13,9 +13,6 @@ export default function ModalitiesGrid() {
 
   return (
     <>
-      {/* Inject Typekit font stylesheet */}
-      <link rel="stylesheet" href="https://use.typekit.net/fsc1wsd.css" />
-
       {/* SECTION A: Specialties Introduction (Pure white background per reference) */}
       <section className="w-full bg-white overflow-hidden pt-12 sm:pt-16 md:pt-20 pb-16 sm:pb-24 md:pb-32 lg:pb-44">
         <div className="flex flex-col lg:flex-row w-full max-w-[1800px] mx-auto items-stretch">
