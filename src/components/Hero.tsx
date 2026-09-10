@@ -4,47 +4,50 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative w-full bg-[#f7f6f2] overflow-hidden min-h-[auto] lg:min-h-[820px] xl:min-h-[860px] pt-14 pb-16 lg:pt-0 lg:pb-0">
+    <section className="relative w-full bg-[#f7f6f2] overflow-hidden min-h-[auto] lg:min-h-[850px] xl:min-h-[880px] pt-14 pb-16 lg:pt-0 lg:pb-0">
       
       {/* ========================================================================= */}
       {/* DESKTOP HERO COMPOSITION (>= lg: 1024px)                                  */}
-      {/* Exact reference match at 1760px - 2048px viewport:                        */}
-      {/* - Left Image: left: 0, top: 148px, width: 617px, height: 645px           */}
-      {/* - Text Block: left: 758px, width: ~680px, large 3-line heading           */}
-      {/* - Right Image: right: 0, visible width: ~150px-200px, focal point: waves  */}
+      {/* Exact pixel-match to Target Screenshot at reference viewport:             */}
+      {/* - Left Image: left: 0px, top: 148px, width: 617px, height: 645px           */}
+      {/* - Eyebrow: left: 758px, top: 148px, single line                           */}
+      {/* - Heading Block: left: 758px, top: 395px, width: 740px, 3 lines           */}
+      {/* - Right Image: right: 0, top: 380px, height: 415px, ocean waves crop       */}
       {/* ========================================================================= */}
-      <div className="hidden lg:block w-full h-[820px] xl:h-[860px] relative">
+      <div className="hidden lg:block w-full h-[850px] xl:h-[880px] relative">
         
         {/* 1. MAIN LEFT IMAGE */}
-        <div className="absolute left-0 top-[148px] w-[560px] xl:w-[617px] h-[590px] xl:h-[645px] z-10">
+        <div className="absolute left-0 top-[148px] w-[617px] h-[645px] z-10">
           <Image
             src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/80513bd1-30ee-4a2d-aaf6-782d9be095ce/Jennifer+A+-+Images+%2866%29.jpg"
             alt="Family therapy session in a warm, welcoming counseling setting"
             fill
             priority
-            sizes="(max-width: 1440px) 560px, 617px"
+            sizes="617px"
             className="object-cover object-center"
           />
         </div>
 
-        {/* 2. HERO TEXT CONTENT */}
-        <div className="absolute left-[660px] xl:left-[758px] top-[148px] w-[620px] xl:w-[690px] text-left z-20">
-          
-          {/* Label with exact 2-line break */}
-          <p className="text-[11px] xl:text-[12px] font-sans font-medium tracking-[0.16em] uppercase text-[#666] mb-7 max-w-[420px] leading-[1.6]">
-            ONLINE &amp; IN-PERSON COUNSELING IN NEWBURY PARK &amp; ACROSS<br />CA
+        {/* 2. EYEBROW (Aligned with top of left image at y=148px) */}
+        <div className="absolute left-[758px] top-[148px] z-20">
+          <p className="text-[11px] xl:text-[12px] font-sans font-medium tracking-[0.18em] uppercase text-[#666] whitespace-nowrap">
+            ONLINE &amp; IN-PERSON COUNSELING IN NEWBURY PARK &amp; ACROSS CA
           </p>
+        </div>
+
+        {/* 3. HERO HEADING + SUPPORTING TEXT + CTA BLOCK (Starts at y ≈ 395px–405px) */}
+        <div className="absolute left-[758px] top-[395px] w-[740px] max-w-[760px] text-left z-20">
           
           {/* Main Heading - Large 3-line wrap matching Target */}
-          <h1 className="font-serif text-[52px] xl:text-[62px] leading-[1.12] font-light text-[#2b2b2b] tracking-[-0.01em] mb-7 max-w-[680px]">
+          <h1 className="font-serif text-[58px] xl:text-[62px] leading-[1.14] font-light text-[#2b2b2b] tracking-[-0.01em] mb-7 max-w-[740px]">
             Rebuild your foundation on<br />
             solid ground and finally begin to<br />
             <span className="text-[#86b3b3] font-serif italic font-normal inline-block">thrive</span>.
           </h1>
           
-          {/* Supporting text - Clean single/two-line sentence case */}
-          <p className="font-sans text-[15px] xl:text-[16px] leading-[1.6] text-[#555] font-light mb-10 max-w-[640px]">
-            Specialized therapy for adults, couples, teens, and children to reflect, heal, and grow.
+          {/* Supporting text - Wide uppercase line */}
+          <p className="font-sans text-[12.5px] xl:text-[13px] leading-[1.7] tracking-[0.06em] text-[#555] font-normal uppercase mb-9 max-w-[720px]">
+            SPECIALIZED THERAPY FOR ADULTS, COUPLES, TEENS, AND CHILDREN TO REFLECT, HEAL, AND GROW.
           </p>
           
           {/* Underlined CTA text */}
@@ -58,8 +61,8 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* 3. SECONDARY RIGHT IMAGE (Showing ocean waves via 87% focal point) */}
-        <div className="absolute right-0 top-[220px] w-[160px] xl:w-[220px] h-[460px] xl:h-[510px] z-10 overflow-hidden">
+        {/* 4. SECONDARY RIGHT IMAGE (Showing ocean shoreline/waves) */}
+        <div className="absolute right-0 top-[380px] w-[180px] xl:w-[220px] h-[415px] z-10 overflow-hidden">
           <Image
             src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/3643a7ac-ff62-4927-b96e-9e65ecff0521/Jennifer+A+-+Images+%2867%29.jpg"
             alt="Ocean waves and shoreline serenity"
@@ -96,8 +99,8 @@ export default function Hero() {
           />
         </div>
 
-        <p className="font-sans text-[15px] leading-[1.6] text-[#555] font-light mb-6">
-          Specialized therapy for adults, couples, teens, and children to reflect, heal, and grow.
+        <p className="font-sans text-[12.5px] leading-[1.7] tracking-[0.06em] text-[#555] font-normal uppercase mb-6">
+          SPECIALIZED THERAPY FOR ADULTS, COUPLES, TEENS, AND CHILDREN TO REFLECT, HEAL, AND GROW.
         </p>
         
         <div>
