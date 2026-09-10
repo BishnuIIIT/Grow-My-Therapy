@@ -5,7 +5,7 @@ import { whoWeHelpCards } from "@/data/homepageData";
 
 export default function WhoWeHelp() {
   return (
-    <section className="relative w-full bg-[#f7f6f2] pt-16 pb-20 md:pt-20 md:pb-24 lg:pt-24 lg:pb-32 overflow-hidden">
+    <section className="relative w-full bg-white pt-16 pb-20 md:pt-20 md:pb-24 lg:pt-24 lg:pb-32 overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16">
         
         {/* Section Heading - Left Aligned */}
