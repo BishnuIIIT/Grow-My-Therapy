@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { modalitiesData } from "@/data/homepageData";
-import { ArrowRight } from "lucide-react";
 
 export default function ModalitiesGrid() {
   const specialtyLinks: Record<string, string> = {
@@ -18,10 +17,12 @@ export default function ModalitiesGrid() {
         {/* Section Top Headings */}
         <div className="max-w-3xl mb-14 md:mb-18">
           <h2 className="font-serif text-[34px] sm:text-[44px] md:text-[52px] leading-[1.2] font-normal text-[#2b2b2b] mb-4">
-            Honoring where you&apos;ve been &amp; helping shape where you&apos;re headed.
+            Honoring where you&apos;ve been{" "}
+            <span className="text-[#86b3b3] font-bold italic">&amp;</span>{" "}
+            helping shape where you&apos;re headed.
           </h2>
-          <p className="font-sans text-[17px] sm:text-[19px] text-[#666] font-normal italic">
-            Our specialties include…
+          <p className="font-serif text-[22px] sm:text-[26px] text-[#2b2b2b] font-normal">
+            Our <span className="text-[#86b3b3] font-bold italic">specialties</span> include…
           </p>
         </div>
 
@@ -57,10 +58,9 @@ export default function ModalitiesGrid() {
                 <div className="pt-4 border-t border-[#f2efe9]">
                   <Link
                     href={specialtyLinks[item.id] || "#"}
-                    className="inline-flex items-center text-[13px] font-medium tracking-wider text-[#2b2b2b] group-hover:text-[#86b3b3] transition-colors"
+                    className="inline-flex items-center justify-center px-5 py-2.5 text-[12px] font-sans font-normal tracking-[0.12em] uppercase text-white bg-[#2b2b2b] hover:bg-[#444] rounded-[6px] transition-all duration-200"
                   >
-                    <span>Learn more</span>
-                    <ArrowRight className="w-3.5 h-3.5 ml-1.5 transition-transform duration-200 group-hover:translate-x-1" />
+                    Learn more
                   </Link>
                 </div>
               </div>

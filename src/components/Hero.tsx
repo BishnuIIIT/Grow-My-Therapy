@@ -17,7 +17,7 @@ export default function Hero() {
         <div className="text-center max-w-4xl mx-auto mb-6 md:mb-8">
           <h1 className="font-serif text-[38px] sm:text-[50px] md:text-[62px] lg:text-[72px] leading-[1.1] font-normal text-[#2b2b2b] tracking-[-0.01em]">
             Rebuild your foundation on solid ground and finally begin to{" "}
-            <span className="italic font-normal">thrive</span>.
+            <span className="text-[#86b3b3] font-bold italic">thrive</span>.
           </h1>
         </div>
 

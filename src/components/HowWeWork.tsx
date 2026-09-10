@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HowWeWork() {
   return (
@@ -7,7 +8,7 @@ export default function HowWeWork() {
       <div className="max-w-[1360px] mx-auto px-6 sm:px-10 lg:px-14">
         {/* Eyebrow */}
         <div className="text-center mb-6 md:mb-8">
-          <p className="text-[12px] sm:text-[13px] font-sans font-semibold tracking-[0.2em] uppercase text-[#777]">
+          <p className="font-sans text-[13px] font-bold italic tracking-[0.15em] uppercase text-[#2b2b2b]">
             HOW WE WORK
           </p>
         </div>
@@ -32,7 +33,7 @@ export default function HowWeWork() {
 
         {/* Lead Quote from reference */}
         <div className="max-w-3xl mx-auto text-center mb-12 md:mb-16">
-          <p className="font-serif text-[20px] sm:text-[24px] md:text-[26px] leading-[1.4] text-[#444] italic font-normal">
+          <p className="font-serif text-[20px] sm:text-[24px] md:text-[26px] leading-[1.4] text-[#2b2b2b] font-bold italic">
             The clients we work with are balancing so many things at once, it’s often hard for them to put themselves first.
           </p>
         </div>
@@ -49,6 +50,16 @@ export default function HowWeWork() {
               Sometimes we may gently challenge you to look at things differently and other times we may explore your emotions, all while encouraging you to practice what you’ve learned in your daily life. We take what we do seriously because we know how important it is for you to heal from what’s hurting you, discover a fulfilling life, and build meaningful relationships. Our goal is to walk alongside you in this journey, offering support and guidance as you uncover your strengths and embrace what the future can hold for you.
             </p>
           </div>
+        </div>
+
+        {/* CTA Button: Learn more about us */}
+        <div className="text-center mt-12 md:mt-16">
+          <Link
+            href="https://www.conejovalleycounseling.com/therapists-newbury-park"
+            className="inline-flex items-center justify-center px-7 py-3.5 text-[13px] font-sans font-normal tracking-[0.12em] uppercase text-white bg-[#2b2b2b] hover:bg-[#444] rounded-[6px] transition-all duration-200"
+          >
+            Learn more about us
+          </Link>
         </div>
       </div>
     </section>

@@ -1,42 +1,71 @@
 import React from "react";
-import Image from "next/image";
-import { expertiseTopics } from "@/data/homepageData";
+import Link from "next/link";
+import { expertiseColumns } from "@/data/homepageData";
 
 export default function AreasOfExpertise() {
   return (
-    <section className="w-full bg-white py-16 md:py-24 border-b border-[#ece9e3] overflow-hidden">
-      <div className="max-w-[1280px] mx-auto px-6 sm:px-10 lg:px-14">
-        <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
-          {/* Decorative Original Botanical Image */}
-          <div className="relative w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0 opacity-75">
-            <Image
-              src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/27b4f80c-ca73-4d1f-824e-ec29a2211142/Jennifer+A+-+Images+%282%29.png"
-              alt="Decorative leaf accent"
-              fill
-              className="object-contain"
-            />
+    <section className="w-full bg-white py-20 md:py-28 lg:py-32 border-b border-[#ece9e3]">
+      <div className="max-w-[1360px] mx-auto px-6 sm:px-10 lg:px-14">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+          {/* Left Column: Heading */}
+          <div className="lg:col-span-4">
+            <h3 className="font-serif text-[34px] sm:text-[42px] md:text-[48px] leading-[1.2] font-normal text-[#2b2b2b]">
+              Our areas of{" "}
+              <span className="text-[#86b3b3] font-bold italic">expertise</span>
+            </h3>
           </div>
 
-          {/* Original 12 Expertise Topics */}
-          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 max-w-3xl">
-            {expertiseTopics.map((topic, idx) => {
-              const isLast = idx === expertiseTopics.length - 1;
-              return (
-                <span
-                  key={topic}
-                  className={`px-5 py-2.5 rounded-full text-[15px] sm:text-[16px] font-serif transition-all duration-200 border ${
-                    isLast
-                      ? "bg-[#ded6cc]/50 border-[#ded6cc] text-[#2b2b2b] italic font-semibold"
-                      : "bg-[#f7f6f2] border-[#e8e5df] text-[#444] hover:border-[#86b3b3] hover:text-[#2b2b2b]"
-                  }`}
+          {/* Right Column: 2-Column List with Divider Lines */}
+          <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-x-12 lg:gap-x-16">
+            {/* Sub-column 1 */}
+            <div className="flex flex-col">
+              {expertiseColumns.col1.map((item) => (
+                <div
+                  key={item.name}
+                  className="border-b border-[#ded6cc]/60 py-3.5 first:pt-0"
                 >
-                  {topic}
-                </span>
-              );
-            })}
+                  {item.href ? (
+                    <Link
+                      href={item.href}
+                      className="font-serif text-[20px] sm:text-[22px] font-bold italic text-[#2b2b2b] hover:text-[#86b3b3] transition-colors inline-block"
+                    >
+                      {item.name}
+                    </Link>
+                  ) : (
+                    <span className="font-serif text-[20px] sm:text-[22px] font-bold italic text-[#2b2b2b]">
+                      {item.name}
+                    </span>
+                  )}
+                </div>
+              ))}
+            </div>
+
+            {/* Sub-column 2 */}
+            <div className="flex flex-col mt-3.5 sm:mt-0">
+              {expertiseColumns.col2.map((item) => (
+                <div
+                  key={item.name}
+                  className="border-b border-[#ded6cc]/60 py-3.5 first:pt-0"
+                >
+                  {item.href ? (
+                    <Link
+                      href={item.href}
+                      className="font-serif text-[20px] sm:text-[22px] font-bold italic text-[#2b2b2b] hover:text-[#86b3b3] transition-colors inline-block"
+                    >
+                      {item.name}
+                    </Link>
+                  ) : (
+                    <span className="font-serif text-[20px] sm:text-[22px] font-bold italic text-[#2b2b2b]">
+                      {item.name}
+                    </span>
+                  )}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
     </section>
   );
 }
+

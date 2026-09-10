@@ -105,13 +105,7 @@ export default function Header() {
           </nav>
 
           {/* Mobile Menu Toggle Button */}
-          <div className="flex items-center lg:hidden space-x-3">
-            <Link
-              href="https://www.conejovalleycounseling.com/contact"
-              className="text-[11px] font-semibold tracking-wider uppercase px-3 py-1.5 border border-[#2b2b2b] rounded-full text-[#2b2b2b]"
-            >
-              Book
-            </Link>
+          <div className="flex items-center lg:hidden">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               type="button"

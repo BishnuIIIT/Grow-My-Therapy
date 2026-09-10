@@ -101,7 +101,31 @@ export const whoWeHelpCards: ServiceCardItem[] = [
   },
 ];
 
-// Exact reference 12 topics
+// Exact reference 12 topics structured into two columns matching Squarespace layout
+export interface ExpertiseItem {
+  name: string;
+  href?: string;
+}
+
+export const expertiseColumns: { col1: ExpertiseItem[]; col2: ExpertiseItem[] } = {
+  col1: [
+    { name: "Dissociation", href: "https://www.conejovalleycounseling.com/dissociative-identity-disorder-therapist-newbury-park" },
+    { name: "Trauma", href: "https://www.conejovalleycounseling.com/trauma-counseling-newbury-park" },
+    { name: "Family conflict" },
+    { name: "Special needs parenting", href: "https://www.conejovalleycounseling.com/counseling-special-needs-parents-newbury-park" },
+    { name: "Depression", href: "https://www.conejovalleycounseling.com/anxiety-depression" },
+    { name: "marriage", href: "https://www.conejovalleycounseling.com/couples-therapy" },
+  ],
+  col2: [
+    { name: "anxiety", href: "https://www.conejovalleycounseling.com/anxiety-depression" },
+    { name: "relationships" },
+    { name: "children", href: "https://www.conejovalleycounseling.com/children-and-teens" },
+    { name: "teens", href: "https://www.conejovalleycounseling.com/children-and-teens" },
+    { name: "intimacy & connection", href: "https://www.conejovalleycounseling.com/couples-therapy" },
+    { name: "…and more." },
+  ],
+};
+
 export const expertiseTopics: string[] = [
   "Dissociation",
   "Trauma",

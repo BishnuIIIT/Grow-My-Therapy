@@ -8,11 +8,10 @@ export default function WhoWeHelp() {
     <section className="w-full bg-[#f7f6f2] py-20 md:py-28 lg:py-32 border-t border-b border-[#ece9e3]">
       <div className="max-w-[1360px] mx-auto px-6 sm:px-10 lg:px-14">
         {/* Section Heading */}
-        <div className="text-center max-w-2xl mx-auto mb-16 md:mb-20">
+        <div className="text-center max-w-2xl mx-auto mb-14 md:mb-16">
           <h2 className="font-serif text-[38px] sm:text-[48px] md:text-[56px] leading-[1.15] font-normal text-[#2b2b2b]">
-            Who we <span className="italic">help</span>
+            Who we <span className="text-[#86b3b3] font-bold italic">help</span>
           </h2>
-          <div className="w-12 h-[2px] bg-[#86b3b3] mx-auto mt-4" />
         </div>
 
         {/* 3 Columns Card Grid - Pure original presentation without artificial CTAs */}

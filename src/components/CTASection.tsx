@@ -22,11 +22,12 @@ export default function CTASection() {
 
           {/* Center Column: Eyebrow, Main Message, Supporting Copy, Prompt, and Book now button */}
           <div className="lg:col-span-6 text-center px-4 sm:px-8">
-            <p className="text-[12px] sm:text-[13px] font-sans font-semibold tracking-[0.2em] uppercase text-[#777] mb-5">
+            <p className="text-[13px] font-sans font-bold italic tracking-[0.15em] uppercase text-[#2b2b2b] mb-5">
               SCHEDULE AN APPOINTMENT
             </p>
             <h2 className="font-serif text-[34px] sm:text-[42px] md:text-[48px] leading-[1.2] font-normal text-[#2b2b2b] mb-6">
-              Find a therapist who is the right fit for you.
+              Find a therapist who is the right fit for{" "}
+              <span className="text-[#86b3b3] font-bold italic">you</span>.
             </h2>
             <p className="font-sans text-[16px] sm:text-[17px] leading-[1.8] text-[#555] font-light mb-6">
               Coming to therapy is a courageous decision, and connecting with the right kind of therapist makes all the difference. We understand that your journey is personal, and we&apos;re here to support you with care and understanding every step of the way. Each member of our team brings dedicated expertise and a commitment to support you in your struggles. We want you to feel prioritized, understood, and empowered.
@@ -36,7 +37,7 @@ export default function CTASection() {
             </p>
             <Link
               href="https://www.conejovalleycounseling.com/contact"
-              className="inline-flex items-center justify-center px-8 py-4 text-[13px] sm:text-[14px] font-sans font-medium tracking-[0.1em] uppercase text-white bg-[#2b2b2b] hover:bg-[#444] rounded-full transition-all duration-300 shadow-sm hover:shadow-md transform hover:-translate-y-0.5"
+              className="inline-flex items-center justify-center px-8 py-3.5 text-[13px] font-sans font-normal tracking-[0.12em] uppercase text-[#2b2b2b] border border-[#2b2b2b] hover:bg-[#2b2b2b] hover:text-white rounded-[6px] transition-all duration-200"
             >
               Book now
             </Link>
