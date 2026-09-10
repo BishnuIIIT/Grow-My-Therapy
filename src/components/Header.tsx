@@ -100,7 +100,7 @@ export default function Header() {
               href="https://www.conejovalleycounseling.com/contact"
               className="inline-flex items-center justify-center px-5 py-2.5 text-[13px] font-medium tracking-[0.05em] uppercase text-[#2b2b2b] border border-[#2b2b2b] rounded-full hover:bg-[#2b2b2b] hover:text-white transition-all duration-200"
             >
-              Book an Appointment
+              Contact
             </Link>
           </nav>
 
@@ -180,7 +180,7 @@ export default function Header() {
               onClick={() => setMobileMenuOpen(false)}
               className="block w-full text-center py-3 px-6 bg-[#2b2b2b] text-white text-[13px] font-medium tracking-wider uppercase rounded-full hover:bg-[#444] transition-colors"
             >
-              Book an Appointment
+              Contact
             </Link>
             <div className="mt-6 text-center text-[13px] text-[#777] space-y-1">
               <p>925 Broadbeck Dr, Newbury Park, CA</p>

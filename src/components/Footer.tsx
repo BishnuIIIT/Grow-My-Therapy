@@ -62,19 +62,23 @@ export default function Footer() {
               <p>{siteConfig.address.street}</p>
               <p>{siteConfig.address.suites}</p>
               <p>{siteConfig.address.cityStateZip}</p>
-              <div className="pt-2">
-                <a
-                  href={`mailto:${siteConfig.email}`}
-                  className="block hover:text-[#86b3b3] transition-colors"
-                >
-                  {siteConfig.email}
-                </a>
-                <a
-                  href={`tel:${siteConfig.phone.replace(/[^0-9]/g, "")}`}
-                  className="block font-medium text-[#2b2b2b] hover:text-[#86b3b3] transition-colors pt-1"
-                >
-                  {siteConfig.phone}
-                </a>
+              <div className="pt-4 space-y-2">
+                <p>
+                  <a
+                    href={`mailto:${siteConfig.email}`}
+                    className="hover:text-[#86b3b3] transition-colors"
+                  >
+                    {siteConfig.email}
+                  </a>
+                </p>
+                <p>
+                  <a
+                    href={`tel:${siteConfig.phone.replace(/[^0-9]/g, "")}`}
+                    className="font-medium text-[#2b2b2b] hover:text-[#86b3b3] transition-colors"
+                  >
+                    {siteConfig.phone}
+                  </a>
+                </p>
               </div>
               <p className="pt-3 text-[13px] text-[#777] italic">
                 {siteConfig.serviceAreas}
@@ -101,41 +105,44 @@ export default function Footer() {
             </ul>
           </div>
         </div>
+      </div>
 
-        {/* Bottom Legal & Attribution Bar */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-[12px] text-[#777] space-y-4 sm:space-y-0">
-          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-x-3 gap-y-1">
+      {/* Bottom Legal & Attribution Bar — Dark Teal background per reference */}
+      <div className="w-full bg-[#86b3b3] mt-12 md:mt-16">
+        <div className="max-w-[1360px] mx-auto px-6 sm:px-10 lg:px-14 py-4 flex flex-col sm:flex-row items-center justify-center text-[12px] text-white space-y-2 sm:space-y-0 sm:space-x-2">
+          <div className="flex flex-wrap items-center justify-center gap-x-1 gap-y-1">
             <Link
               href="https://www.conejovalleycounseling.com/terms"
-              className="hover:text-[#2b2b2b] transition-colors"
+              className="hover:text-white/80 transition-colors"
             >
               Terms
             </Link>
             <span>|</span>
             <Link
               href="https://www.conejovalleycounseling.com/privacy-policy"
-              className="hover:text-[#2b2b2b] transition-colors"
+              className="hover:text-white/80 transition-colors"
             >
               Privacy Policy
             </Link>
             <span>|</span>
             <Link
               href="https://www.conejovalleycounseling.com/disclaimer"
-              className="hover:text-[#2b2b2b] transition-colors"
+              className="hover:text-white/80 transition-colors"
             >
               Disclaimer
             </Link>
-          </div>
-          <div className="text-center sm:text-right">
-            <span>Website by </span>
-            <Link
-              href="https://walkerstrategyco.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-[#2b2b2b] underline underline-offset-2 transition-colors"
-            >
-              Walker Strategy Co.
-            </Link>
+            <span>|</span>
+            <span>
+              Website by{" "}
+              <Link
+                href="https://walkerstrategyco.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white/80 transition-colors"
+              >
+                Walker Strategy Co.
+              </Link>
+            </span>
           </div>
         </div>
       </div>

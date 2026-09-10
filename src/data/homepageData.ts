@@ -1,34 +1,4 @@
-export interface DropdownItem {
-  title: string;
-  href: string;
-}
-
-export interface NavigationItem {
-  title: string;
-  href: string;
-  dropdown?: DropdownItem[];
-}
-
-export interface ServiceCardItem {
-  id: string;
-  title: string;
-  description: string;
-  image: string;
-  alt: string;
-  link: string;
-}
-
-export interface ModalityItem {
-  id: string;
-  title: string;
-  description: string;
-}
-
-export interface TherapistItem {
-  name: string;
-  title: string;
-  href: string;
-}
+import { NavItem, ServiceCardItem, ModalityItem, TherapistItem } from "@/types";
 
 export const siteConfig = {
   name: "Conejo Valley Family Counseling",
@@ -48,17 +18,21 @@ export const siteConfig = {
     "Serving Thousand Oaks, Westlake Village, Camarillo, Moorpark, & Simi Valley",
 };
 
-export const navigationItems: NavigationItem[] = [
+export const navigationItems: NavItem[] = [
+  {
+    title: "About",
+    href: "https://www.conejovalleycounseling.com/therapists-newbury-park",
+  },
   {
     title: "Our Team",
     href: "https://www.conejovalleycounseling.com/our-team",
     dropdown: [
       { title: "Jennifer Anderson, LMFT", href: "https://www.conejovalleycounseling.com/jennifer-anderson" },
-      { title: "Heather Williams-Baumgart, AMFT", href: "https://www.conejovalleycounseling.com/heather-williams-baumgart" },
-      { title: "Autumn Bodily, AMFT", href: "https://www.conejovalleycounseling.com/autumn-bodily" },
-      { title: "Michaela Gorospe, AMFT", href: "https://www.conejovalleycounseling.com/michaela-gorospe" },
       { title: "Candace Bletscher, AMFT", href: "https://www.conejovalleycounseling.com/candace-bletscher" },
+      { title: "Heather Williams-Baumgart, AMFT", href: "https://www.conejovalleycounseling.com/heather-williams-baumgart" },
+      { title: "Michaela Gorospe, AMFT", href: "https://www.conejovalleycounseling.com/michaela-gorospe" },
       { title: "Samantha Johnson, AMFT", href: "https://www.conejovalleycounseling.com/samantha-johnson" },
+      { title: "Autumn Bodily, AMFT", href: "https://www.conejovalleycounseling.com/autumn-bodily" },
       { title: "Andrea Watkins, APCC", href: "https://www.conejovalleycounseling.com/andrea-watkins" },
       { title: "Rosa Gomez, AMFT", href: "https://www.conejovalleycounseling.com/rosa-gomez" },
       { title: "Chad Flores, AMFT", href: "https://www.conejovalleycounseling.com/chad-flores" },
@@ -90,10 +64,6 @@ export const navigationItems: NavigationItem[] = [
   {
     title: "FAQs",
     href: "https://www.conejovalleycounseling.com/faqs",
-  },
-  {
-    title: "Contact",
-    href: "https://www.conejovalleycounseling.com/contact",
   },
 ];
 
