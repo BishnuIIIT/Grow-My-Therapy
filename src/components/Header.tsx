@@ -26,7 +26,7 @@ export default function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full transition-all duration-300 bg-white/95 backdrop-blur-sm ${
+      className={`sticky top-0 z-50 w-full transition-all duration-300 bg-[#f7f6f2] ${
         isScrolled ? "shadow-sm border-b border-[#e8e5df]" : "border-b border-transparent"
       }`}
     >
@@ -46,7 +46,7 @@ export default function Header() {
             </div>
           </Link>
 
-          {/* Desktop Navigation - Exact reference: Our Team, Specialties, Methods, FAQs, Contact, Book an Appointment */}
+          {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-7 xl:space-x-9" aria-label="Main Navigation">
             {navigationItems.map((item) => {
               const hasDropdown = item.dropdown && item.dropdown.length > 0;
@@ -59,7 +59,8 @@ export default function Header() {
                 >
                   <Link
                     href={item.href}
-                    className="flex items-center text-[14px] xl:text-[15px] font-normal tracking-[0.02em] text-[#2b2b2b] hover:text-[#86b3b3] transition-colors py-2"
+                    className="flex items-center text-[14px] xl:text-[15px] font-normal tracking-[0.02em] text-[#2b2b2b] hover:text-[#86b3b3] transition-colors py-2 uppercase"
+                    style={{ textTransform: 'none' }} // Ensure original case if it wasn't uppercase
                   >
                     <span>{item.title}</span>
                     {hasDropdown && (
@@ -95,10 +96,10 @@ export default function Header() {
               );
             })}
 
-            {/* Header CTA Button - Exact text: Book an Appointment */}
+            {/* Header CTA Button - Thin outlined oval/pill border, Transparent/cream bg, Small uppercase text */}
             <Link
               href="https://www.conejovalleycounseling.com/contact"
-              className="inline-flex items-center justify-center px-5 py-2.5 text-[13px] font-medium tracking-[0.05em] uppercase text-[#2b2b2b] border border-[#2b2b2b] rounded-full hover:bg-[#2b2b2b] hover:text-white transition-all duration-200"
+              className="inline-flex items-center justify-center px-6 py-2 text-[11px] font-medium tracking-[0.1em] uppercase text-[#2b2b2b] border border-[#2b2b2b] rounded-full hover:bg-black/5 transition-all duration-200"
             >
               Contact
             </Link>
@@ -178,7 +179,7 @@ export default function Header() {
             <Link
               href="https://www.conejovalleycounseling.com/contact"
               onClick={() => setMobileMenuOpen(false)}
-              className="block w-full text-center py-3 px-6 bg-[#2b2b2b] text-white text-[13px] font-medium tracking-wider uppercase rounded-full hover:bg-[#444] transition-colors"
+              className="block w-full text-center py-3 px-6 bg-[#f7f6f2] text-[#2b2b2b] border border-[#2b2b2b] text-[13px] font-medium tracking-wider uppercase rounded-full hover:bg-black/5 transition-colors"
             >
               Contact
             </Link>

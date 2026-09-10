@@ -1,0 +1,461 @@
+<div class="sqs-text-block-container">
+  
+  <div class="sqs-html-content" data-sqsp-text-block-content><p class="sqsrte-large" style="white-space:pre-wrap;"><strong><em>ONLINE &amp; IN-PERSON COUNSELING IN NEWBURY PARK &amp; ACROSS CA</em></strong></p></div>
+
+
+  
+<style id="container-styles">#block-yui_3_17_2_1_1728329027525_8139 {
+    
+    --stroke-style: none;--stroke-thickness: 6px;
+    
+      
+      
+      
+    
+
+
+
+  }
+
+  #block-yui_3_17_2_1_1728329027525_8139 .sqs-html-content {
+    
+    --tweak-text-block-padding: 6% 6% 6% 6%;
+  --tweak-text-block-padding: initial;
+}
+
+  .fe-block-yui_3_17_2_1_1728329027525_8139 {
+      mix-blend-mode: var(--tweak-text-block-blend
+  );
+      border-radius: var(--tweak-text-block-radius);
+  }
+
+  
+  
+.fe-block-yui_3_17_2_1_1728329027525_8139 {
+      --tweak-text-block-radius: 0px 0px 0px 0px;
+    }
+
+
+  
+  .fe-block-yui_3_17_2_1_1728329027525_8139 {
+      --tweak-text-block-blend
+  : normal;
+    }
+  
+
+  .fe-block-yui_3_17_2_1_1728329027525_8139 {
+    --blur-value: blur(15px);}
+
+</style>
+
+<style id="override-container-styles">
+    @media screen and (max-width: 767px) {
+          
+            
+
+#block-yui_3_17_2_1_1728329027525_8139 {
+            
+            }
+        }
+    
+  
+    @media screen and (max-width: 767px) {
+          #block-yui_3_17_2_1_1728329027525_8139 .sqs-html-content {
+            
+            }
+        }
+    
+  @media screen and (max-width: 767px) {
+          
+          
+
+          
+          
+          
+        }</style>
+<style class="transform-overrides-vars">
+  
+</style>
+
+
+
+
+</div>
+<div class="sqs-text-block-container">
+  
+  <div class="sqs-html-content" data-sqsp-text-block-content><h1 style="white-space:pre-wrap;">Rebuild your foundation on solid ground and finally begin to  <span class="sqsrte-text-color--darkAccent"><strong><em>thrive</em></strong></span>.&nbsp;</h1><p class="" style="white-space:pre-wrap;">Specialized therapy for adults, couples, teens, and children to reflect, heal, and grow.</p></div>
+
+
+  
+<style id="container-styles">#block-9564345a748403b0e7bb {
+    
+    --stroke-style: none;--stroke-thickness: 6px;
+    
+      
+      
+      
+    
+
+
+
+  }
+
+  #block-9564345a748403b0e7bb .sqs-html-content {
+    
+    --tweak-text-block-padding: 6% 6% 6% 6%;
+  --tweak-text-block-padding: initial;
+}
+
+  .fe-block-9564345a748403b0e7bb {
+      mix-blend-mode: var(--tweak-text-block-blend
+  );
+      border-radius: var(--tweak-text-block-radius);
+  }
+
+  
+  
+.fe-block-9564345a748403b0e7bb {
+      --tweak-text-block-radius: 0px 0px 0px 0px;
+    }
+
+
+  
+  .fe-block-9564345a748403b0e7bb {
+      --tweak-text-block-blend
+  : normal;
+    }
+  
+
+  .fe-block-9564345a748403b0e7bb {
+    --blur-value: blur(15px);}
+
+</style>
+
+<style id="override-container-styles">
+    @media screen and (max-width: 767px) {
+          
+            
+
+#block-9564345a748403b0e7bb {
+            
+            }
+        }
+    
+  
+    @media screen and (max-width: 767px) {
+          #block-9564345a748403b0e7bb .sqs-html-content {
+            
+            }
+        }
+    
+  @media screen and (max-width: 767px) {
+          
+          
+
+          
+          
+          
+        }</style>
+<style class="transform-overrides-vars">
+  
+</style>
+
+
+
+
+</div>
+<div
+  class="sqs-block-button-container sqs-button-block-container-system_desktop sqs-block-button-container--left "
+  data-animation-role="button"
+  data-button-size="medium"
+  data-button-type="primary"
+  
+>
+  <a
+    href="/contact"
+    class="sqs-block-button-element--medium sqs-button-element--primary sqs-block-button-element"
+    data-sqsp-button
+    
+  >
+    Book an Appointment
+  </a>
+  
+
+
+
+</div>
+
+    
+  
+    
+    
+      
+    
+  
+
+
+<style>
+  #block-124697bcbb528b821fdc {
+    --sqs-block-content-flex: 0;
+  }
+
+  
+  
+    
+      
+      
+    
+      
+      
+        
+      
+    
+  
+</style>
+<style class="transform-overrides-vars">
+  
+</style>
+<div
+    class="fluid-image-component-root image-block-outer-wrapper design-layout-fluid image-position-center combination-animation-site-default individual-animation-site-default
+    }"
+    data-component-id="yui_3_17_2_1_1728329624987_7398"
+    data-test="image-block-fluid-outer-wrapper"
+    data-is-image-stretched="true"
+    data-is-mask-applied="false"
+    data-media-focal-point="0.5,0.5"
+    
+    
+      data-bpo=""
+      data-breakpoints="[{&quot;id&quot;:&quot;system_desktop&quot;,&quot;name&quot;:&quot;Desktop&quot;},{&quot;id&quot;:&quot;system_mobile&quot;,&quot;name&quot;:&quot;Mobile&quot;,&quot;maxWidth&quot;:&quot;767px&quot;}]"
+    
+    
+  >
+    <div
+      class="fluid-image-animation-wrapper sqs-image sqs-block-alignment-wrapper"
+      data-animation-role="image"
+    >
+      <div
+        class="fluid-image-container sqs-image-content js-image-container visitor-mode"
+        
+        data-sqsp-image-block-image-container
+      >
+        
+          
+  
+      
+        
+        
+        
+  
+  <div class="js-content-mode-element-wrapper js-content-mode-element-system_desktop">
+    
+      
+        <div class="js-content-mode-element content-fill">
+          
+  
+  
+  
+  
+  
+  
+  <img data-stretch="true"
+  data-src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/80513bd1-30ee-4a2d-aaf6-782d9be095ce/Jennifer+A+-+Images+%2866%29.jpg"
+  data-image="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/80513bd1-30ee-4a2d-aaf6-782d9be095ce/Jennifer+A+-+Images+%2866%29.jpg"
+  data-image-dimensions="1365x1246"
+  data-image-focal-point="0.5,0.5"
+  data-sqsp-image-block-image
+  alt="family therapy"
+  data-licensed-asset-preview="false"
+  data-load="false" elementtiming="system-image-block" src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/80513bd1-30ee-4a2d-aaf6-782d9be095ce/Jennifer+A+-+Images+%2866%29.jpg" width="1365" height="1246" alt="" sizes="auto, 100vw" style="display:block;object-position: var(--image-component-focal-point);object-fit: var(--image-component-object-fit);" srcset="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/80513bd1-30ee-4a2d-aaf6-782d9be095ce/Jennifer+A+-+Images+%2866%29.jpg?format=100w 100w, https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/80513bd1-30ee-4a2d-aaf6-782d9be095ce/Jennifer+A+-+Images+%2866%29.jpg?format=300w 300w, https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/80513bd1-30ee-4a2d-aaf6-782d9be095ce/Jennifer+A+-+Images+%2866%29.jpg?format=500w 500w, https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/80513bd1-30ee-4a2d-aaf6-782d9be095ce/Jennifer+A+-+Images+%2866%29.jpg?format=750w 750w, https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/80513bd1-30ee-4a2d-aaf6-782d9be095ce/Jennifer+A+-+Images+%2866%29.jpg?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/80513bd1-30ee-4a2d-aaf6-782d9be095ce/Jennifer+A+-+Images+%2866%29.jpg?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/80513bd1-30ee-4a2d-aaf6-782d9be095ce/Jennifer+A+-+Images+%2866%29.jpg?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+  
+    
+  
+  <div class="fluidImageOverlay"></div>
+
+        </div>
+      
+    
+  </div>
+  
+  
+  
+
+
+      
+    
+      
+         
+      
+    
+  
+
+        
+      </div>
+    </div>
+    <style>
+      
+      
+      
+      #block-yui_3_17_2_1_1728329624987_7398 {
+        --image-component-focal-point: 50% 50%;
+        
+  --image-component-object-fit: cover;
+  --image-component-overlay-opacity: 1;
+  --image-component-overlay-blend-mode: normal;
+  
+  --image-component-native-aspect-ratio: 1365/1246;
+  
+  
+  
+    --image-block-overlay-color: hsla(var(--accent-hsl), 0.07)
+;
+  
+
+      }
+      #block-yui_3_17_2_1_1728329624987_7398 .fluid-image-container.visitor-mode {
+        
+  
+  overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);clip-path: none;-webkit-clip-path: none;
+
+      }
+      #block-yui_3_17_2_1_1728329624987_7398 .js-content-mode-element-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: none;
+      }
+      #block-yui_3_17_2_1_1728329624987_7398 .js-content-mode-element-system_desktop {
+        display: block;
+      }
+    </style>
+    <style class="transform-overrides-vars">
+  
+</style>
+
+    
+
+
+
+  </div>
+<div
+    class="fluid-image-component-root image-block-outer-wrapper design-layout-fluid image-position-center combination-animation-site-default individual-animation-site-default
+    }"
+    data-component-id="50cb5ccf042e9e731869"
+    data-test="image-block-fluid-outer-wrapper"
+    data-is-image-stretched="true"
+    data-is-mask-applied="false"
+    data-media-focal-point="0.8729505855469866,0.5600350021876368"
+    
+    
+      data-bpo=""
+      data-breakpoints="[{&quot;id&quot;:&quot;system_desktop&quot;,&quot;name&quot;:&quot;Desktop&quot;},{&quot;id&quot;:&quot;system_mobile&quot;,&quot;name&quot;:&quot;Mobile&quot;,&quot;maxWidth&quot;:&quot;767px&quot;}]"
+    
+    
+  >
+    <div
+      class="fluid-image-animation-wrapper sqs-image sqs-block-alignment-wrapper"
+      data-animation-role="image"
+    >
+      <div
+        class="fluid-image-container sqs-image-content js-image-container visitor-mode"
+        
+        data-sqsp-image-block-image-container
+      >
+        
+          
+  
+      
+        
+        
+        
+  
+  <div class="js-content-mode-element-wrapper js-content-mode-element-system_desktop">
+    
+      
+        <div class="js-content-mode-element content-fill">
+          
+  
+  
+  
+  
+  
+  
+  <img data-stretch="true"
+  data-src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/3643a7ac-ff62-4927-b96e-9e65ecff0521/Jennifer+A+-+Images+%2867%29.jpg"
+  data-image="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/3643a7ac-ff62-4927-b96e-9e65ecff0521/Jennifer+A+-+Images+%2867%29.jpg"
+  data-image-dimensions="1365x1246"
+  data-image-focal-point="0.8729505855469866,0.5600350021876368"
+  data-sqsp-image-block-image
+  alt="child therapy"
+  data-licensed-asset-preview="false"
+  data-load="false" elementtiming="system-image-block" src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/3643a7ac-ff62-4927-b96e-9e65ecff0521/Jennifer+A+-+Images+%2867%29.jpg" width="1365" height="1246" alt="" sizes="auto, 100vw" style="display:block;object-position: var(--image-component-focal-point);object-fit: var(--image-component-object-fit);" srcset="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/3643a7ac-ff62-4927-b96e-9e65ecff0521/Jennifer+A+-+Images+%2867%29.jpg?format=100w 100w, https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/3643a7ac-ff62-4927-b96e-9e65ecff0521/Jennifer+A+-+Images+%2867%29.jpg?format=300w 300w, https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/3643a7ac-ff62-4927-b96e-9e65ecff0521/Jennifer+A+-+Images+%2867%29.jpg?format=500w 500w, https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/3643a7ac-ff62-4927-b96e-9e65ecff0521/Jennifer+A+-+Images+%2867%29.jpg?format=750w 750w, https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/3643a7ac-ff62-4927-b96e-9e65ecff0521/Jennifer+A+-+Images+%2867%29.jpg?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/3643a7ac-ff62-4927-b96e-9e65ecff0521/Jennifer+A+-+Images+%2867%29.jpg?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/3643a7ac-ff62-4927-b96e-9e65ecff0521/Jennifer+A+-+Images+%2867%29.jpg?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+  
+    
+  
+  <div class="fluidImageOverlay"></div>
+
+        </div>
+      
+    
+  </div>
+  
+  
+  
+
+
+      
+    
+      
+         
+      
+    
+  
+
+        
+      </div>
+    </div>
+    <style>
+      
+      
+      
+      #block-50cb5ccf042e9e731869 {
+        --image-component-focal-point: 87.29505855469866% 56.003500218763676%;
+        
+  --image-component-object-fit: cover;
+  --image-component-overlay-opacity: 1;
+  --image-component-overlay-blend-mode: normal;
+  
+  --image-component-native-aspect-ratio: 1365/1246;
+  
+  
+  
+    --image-block-overlay-color: hsla(var(--accent-hsl), 0.14)
+;
+  
+
+      }
+      #block-50cb5ccf042e9e731869 .fluid-image-container.visitor-mode {
+        
+  
+  overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);clip-path: none;-webkit-clip-path: none;
+
+      }
+      #block-50cb5ccf042e9e731869 .js-content-mode-element-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: none;
+      }
+      #block-50cb5ccf042e9e731869 .js-content-mode-element-system_desktop {
+        display: block;
+      }
+    </style>
+    <style class="transform-overrides-vars">
+  
+</style>
+
+    
+
+
+
+  </div>
