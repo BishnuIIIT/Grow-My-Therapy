@@ -26,9 +26,11 @@ export default function QuoteBanner() {
         {/* Quote Content Container */}
         <div className="w-full max-w-[700px] lg:max-w-[750px] xl:max-w-[820px] text-left mb-28 lg:mb-40 pl-0 lg:pl-10 xl:pl-16">
           <h2 className="font-serif text-[30px] sm:text-[36px] md:text-[42px] lg:text-[46px] xl:text-[50px] leading-[1.25] text-[#f7f6f2] font-light tracking-normal">
-            You deserve a place where your story is heard, valued, and understood.{" "}
+            You deserve a place where your story is heard,<br className="hidden md:block" />
+            valued, and understood.{" "}
             <em className="italic font-normal">
-              Nothing will be too heavy for us to carry together.
+              Nothing will be too heavy<br className="hidden md:block" />
+              for us to carry together.
             </em>
           </h2>
         </div>
