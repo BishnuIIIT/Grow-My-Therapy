@@ -4,63 +4,61 @@ import Link from "next/link";
 
 export default function HowWeWork() {
   return (
-    <section className="w-full bg-white py-20 md:py-28 lg:py-32">
-      <div className="max-w-[1360px] mx-auto px-6 sm:px-10 lg:px-14">
-        {/* Eyebrow */}
-        <div className="text-center mb-6 md:mb-8">
-          <p className="font-sans text-[13px] font-bold italic tracking-[0.15em] uppercase text-[#2b2b2b]">
+    <section className="w-full bg-white py-20 md:py-28 lg:py-36">
+      <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-14 flex flex-col items-center">
+        
+        {/* Eyebrow Label */}
+        <div className="mb-10 md:mb-14">
+          <p className="font-['gravesend-sans',sans-serif] text-[12px] sm:text-[13px] font-[500] tracking-[0.18em] uppercase text-[#666]">
             HOW WE WORK
           </p>
         </div>
 
-        {/* Featured Original Beach Sunset Image */}
-        <div className="relative w-full aspect-[16/9] sm:aspect-[21/9] max-h-[540px] rounded-2xl md:rounded-3xl overflow-hidden shadow-sm bg-[#f7f6f2] mb-14 md:mb-20 group">
+        {/* Hero Image - Centered Horizontal Slice */}
+        <div className="relative w-full lg:w-[70%] xl:w-[65%] aspect-[4/3] sm:aspect-[16/9] md:aspect-[2.2/1] rounded-[20px] md:rounded-[24px] overflow-hidden shadow-sm mb-16 md:mb-24">
           <Image
             src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/389808ad-7273-4e03-a32b-c172aa735f12/Jennifer+A+-+Images+%286%29.jpg"
             alt="A woman and a child in white dresses dancing on a sandy beach with tall grasses and a distant building in the background during sunset"
             fill
-            sizes="100vw"
-            className="object-cover object-center transition-transform duration-700 group-hover:scale-102"
+            sizes="(max-width: 1024px) 100vw, 70vw"
+            className="object-cover object-center"
           />
         </div>
 
-        {/* Original Main Heading: We're here to make a difference. */}
-        <div className="max-w-4xl mx-auto text-center mb-8 md:mb-10">
-          <h2 className="font-serif text-[34px] sm:text-[44px] md:text-[52px] leading-[1.2] font-normal text-[#2b2b2b]">
+        {/* Main Heading */}
+        <div className="text-center mb-8 md:mb-12 max-w-4xl">
+          <h2 className="font-['beaufort-pro',serif] text-[38px] sm:text-[46px] md:text-[54px] lg:text-[60px] leading-[1.15] font-light text-[#2b2b2b] tracking-[-0.01em]">
             We&apos;re here to make a difference.
           </h2>
         </div>
 
-        {/* Lead Quote from reference */}
-        <div className="max-w-3xl mx-auto text-center mb-12 md:mb-16">
-          <p className="font-serif text-[20px] sm:text-[24px] md:text-[26px] leading-[1.4] text-[#2b2b2b] font-bold italic">
+        {/* Introductory Statement */}
+        <div className="text-center mb-10 md:mb-16 max-w-[800px] lg:max-w-[900px] px-4">
+          <p className="font-['beaufort-pro',serif] text-[22px] sm:text-[26px] md:text-[30px] leading-[1.4] text-[#2b2b2b] font-normal italic">
             The clients we work with are balancing so many things at once, it’s often hard for them to put themselves first.
           </p>
         </div>
 
-        {/* Two-Column Supporting Body Copy */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 max-w-4xl mx-auto">
-          <div>
-            <p className="font-sans text-[16px] leading-[1.8] text-[#555] font-light">
-              Here, your needs are always top priority. Our team takes the time to deeply listen to our clients in order to truly understand their story and their struggles. We recognize that no two people are the same and that personalized therapy means an intentional, tailored approach. (You won’t find anything “one-size-fits-all” here.) If you’re ready to do the work, we’re ready to help.
-            </p>
-          </div>
-          <div>
-            <p className="font-sans text-[16px] leading-[1.8] text-[#555] font-light">
-              Sometimes we may gently challenge you to look at things differently and other times we may explore your emotions, all while encouraging you to practice what you’ve learned in your daily life. We take what we do seriously because we know how important it is for you to heal from what’s hurting you, discover a fulfilling life, and build meaningful relationships. Our goal is to walk alongside you in this journey, offering support and guidance as you uncover your strengths and embrace what the future can hold for you.
-            </p>
-          </div>
+        {/* Body Content - Centered Flow */}
+        <div className="max-w-[700px] lg:max-w-[800px] text-center space-y-6 md:space-y-8 mb-14 md:mb-20 px-2">
+          <p className="font-['gravesend-sans',sans-serif] text-[15.5px] sm:text-[16.5px] leading-[1.8] text-[#555] font-[300]">
+            Here, your needs are always top priority. Our team takes the time to deeply listen to our clients in order to truly understand their story and their struggles. We recognize that no two people are the same and that personalized therapy means an intentional, tailored approach. (You won’t find anything “one-size-fits-all” here.) If you’re ready to do the work, we’re ready to help.
+          </p>
+          <p className="font-['gravesend-sans',sans-serif] text-[15.5px] sm:text-[16.5px] leading-[1.8] text-[#555] font-[300]">
+            Sometimes we may gently challenge you to look at things differently and other times we may explore your emotions, all while encouraging you to practice what you’ve learned in your daily life. We take what we do seriously because we know how important it is for you to heal from what’s hurting you, discover a fulfilling life, and build meaningful relationships. Our goal is to walk alongside you in this journey, offering support and guidance as you uncover your strengths and embrace what the future can hold for you.
+          </p>
         </div>
 
-        {/* CTA Button: Learn more about us */}
-        <div className="text-center mt-12 md:mt-16">
+        {/* Understated CTA Link */}
+        <div className="text-center">
           <Link
             href="https://www.conejovalleycounseling.com/therapists-newbury-park"
-            className="inline-flex items-center justify-center px-7 py-3.5 text-[13px] font-sans font-normal tracking-[0.12em] uppercase text-white bg-[#2b2b2b] hover:bg-[#444] rounded-[6px] transition-all duration-200"
+            className="inline-block font-['gravesend-sans',sans-serif] text-[12px] sm:text-[13px] font-[500] tracking-[0.15em] uppercase text-[#2b2b2b] border-b-[1.5px] border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
           >
-            Learn more about us
+            LEARN MORE ABOUT US
           </Link>
         </div>
+
       </div>
     </section>
   );
