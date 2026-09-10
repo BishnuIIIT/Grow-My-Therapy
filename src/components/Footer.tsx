@@ -12,14 +12,14 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="w-full bg-[#f7f6f2] border-t border-[#e8e5df] pt-16 md:pt-24 pb-12">
-      <div className="max-w-[1360px] mx-auto px-6 sm:px-10 lg:px-14">
+    <footer className="w-full bg-[#f7f6f2] pt-16 md:pt-20 pb-0">
+      <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16">
         {/* Main Footer Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-14 pb-16 border-b border-[#e8e5df]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 pb-10 border-b border-[#dfdbd1]">
           {/* Brand & Introduction (4 Columns) */}
           <div className="lg:col-span-4 space-y-6">
             <Link href="/" className="inline-block group">
-              <div className="relative w-[220px] sm:w-[250px] h-[65px]">
+              <div className="relative w-[210px] sm:w-[230px] h-[60px]">
                 <Image
                   src={siteConfig.logoUrl}
                   alt={siteConfig.name}
@@ -29,17 +29,17 @@ export default function Footer() {
                 />
               </div>
             </Link>
-            <p className="font-sans text-[14px] sm:text-[15px] leading-[1.8] text-[#555] font-light max-w-sm">
+            <p className="font-['gravesend-sans',sans-serif] text-[13.5px] leading-[1.8] text-[#555] font-[300] max-w-sm">
               We want to make getting started simple. You’re welcome to come into our office in Newbury Park or schedule virtual appointments from anywhere in CA—whatever works best for you.
             </p>
           </div>
 
           {/* Column 1: Navigate (2 Columns) */}
           <div className="lg:col-span-2">
-            <h4 className="font-serif text-[18px] sm:text-[20px] font-bold text-[#2b2b2b] mb-5 italic">
+            <h4 className="font-['beaufort-pro',serif] text-[20px] font-normal text-[#2b2b2b] mb-4 italic">
               Navigate
             </h4>
-            <ul className="space-y-3 font-sans text-[14px] text-[#555]">
+            <ul className="space-y-2 font-['gravesend-sans',sans-serif] text-[13.5px] font-[300] text-[#555]">
               {navLinks.map((item) => (
                 <li key={item.title}>
                   <Link
@@ -55,14 +55,14 @@ export default function Footer() {
 
           {/* Column 2: Contact (3 Columns) */}
           <div className="lg:col-span-3">
-            <h4 className="font-serif text-[18px] sm:text-[20px] font-bold text-[#2b2b2b] mb-5 italic">
+            <h4 className="font-['beaufort-pro',serif] text-[20px] font-normal text-[#2b2b2b] mb-4 italic">
               Contact
             </h4>
-            <div className="space-y-2 font-sans text-[14px] leading-[1.6] text-[#555]">
+            <div className="space-y-1 font-['gravesend-sans',sans-serif] text-[13.5px] leading-[1.6] text-[#555] font-[300]">
               <p>{siteConfig.address.street}</p>
               <p>{siteConfig.address.suites}</p>
               <p>{siteConfig.address.cityStateZip}</p>
-              <div className="pt-4 space-y-2">
+              <div className="pt-3 space-y-1">
                 <p>
                   <a
                     href={`mailto:${siteConfig.email}`}
@@ -74,7 +74,7 @@ export default function Footer() {
                 <p>
                   <a
                     href={`tel:${siteConfig.phone.replace(/[^0-9]/g, "")}`}
-                    className="font-medium text-[#2b2b2b] hover:text-[#86b3b3] transition-colors"
+                    className="font-[500] text-[#2b2b2b] hover:text-[#86b3b3] transition-colors"
                   >
                     {siteConfig.phone}
                   </a>
@@ -88,10 +88,10 @@ export default function Footer() {
 
           {/* Column 3: Our Team (3 Columns) */}
           <div className="lg:col-span-3">
-            <h4 className="font-serif text-[18px] sm:text-[20px] font-bold text-[#2b2b2b] mb-5 italic">
+            <h4 className="font-['beaufort-pro',serif] text-[20px] font-normal text-[#2b2b2b] mb-4 italic">
               Our Team
             </h4>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-y-2 font-sans text-[13px] text-[#555]">
+            <ul className="grid grid-cols-1 gap-y-2 font-['gravesend-sans',sans-serif] text-[13.5px] font-[300] text-[#555]">
               {therapistsList.map((t) => (
                 <li key={t.name}>
                   <Link
@@ -107,10 +107,12 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom Legal & Attribution Bar — Dark Teal background per reference */}
-      <div className="w-full bg-[#86b3b3] mt-12 md:mt-16">
-        <div className="max-w-[1360px] mx-auto px-6 sm:px-10 lg:px-14 py-4 flex flex-col sm:flex-row items-center justify-center text-[12px] text-white space-y-2 sm:space-y-0 sm:space-x-2">
-          <div className="flex flex-wrap items-center justify-center gap-x-1 gap-y-1">
+      <div className="h-10 w-full bg-[#f7f6f2]"></div>
+
+      {/* Bottom Legal & Attribution Bar */}
+      <div className="w-full bg-[#86b3b3]">
+        <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-14 py-3 flex flex-col sm:flex-row items-center justify-center font-['gravesend-sans',sans-serif] text-[11px] font-[300] text-white">
+          <div className="flex flex-wrap items-center justify-center gap-x-1.5 gap-y-1 tracking-wide">
             <Link
               href="https://www.conejovalleycounseling.com/terms"
               className="hover:text-white/80 transition-colors"
