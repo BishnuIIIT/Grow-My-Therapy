@@ -24,7 +24,7 @@ export default function QuoteBanner() {
       <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 pt-[120px] pb-[120px] sm:pt-[160px] sm:pb-[160px] lg:pt-[240px] lg:pb-[240px] flex flex-col items-start justify-center">
         
         {/* Quote Content Container */}
-        <div className="w-full max-w-[500px] lg:max-w-[550px] xl:max-w-[600px] text-left ml-0 md:ml-[10%] lg:ml-[15%] xl:ml-[22%]">
+        <div className="w-full max-w-[340px] lg:max-w-[400px] xl:max-w-[450px] text-left ml-0 md:ml-[10%] lg:ml-[15%] xl:ml-[18%]">
           <h2 className="font-serif text-[30px] sm:text-[34px] md:text-[38px] lg:text-[42px] xl:text-[46px] leading-[1.3] text-[#f7f6f2] font-light tracking-normal">
             You deserve a place where your story is heard, valued, and understood.{" "}
             <em className="italic font-normal">
