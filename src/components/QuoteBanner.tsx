@@ -17,20 +17,18 @@ export default function QuoteBanner() {
           sizes="100vw"
           className="object-cover object-center"
         />
-        {/* Exact reference overlay: black at 54% opacity */}
-        <div className="absolute inset-0 bg-black/[0.54]" />
+        {/* Exact reference overlay: black at 50% opacity */}
+        <div className="absolute inset-0 bg-black/50" />
       </div>
 
-      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 pt-24 pb-16 sm:pt-32 sm:pb-24 lg:pt-40 lg:pb-32 flex flex-col items-start w-full">
+      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 pt-28 pb-16 sm:pt-36 sm:pb-24 lg:pt-[180px] lg:pb-36 flex flex-col items-start w-full">
         
         {/* Quote Content Container */}
-        <div className="w-full max-w-[940px] text-left lg:pl-4 xl:pl-6 mb-24 lg:mb-32">
-          <h2 className="font-serif text-[26px] sm:text-[32px] md:text-[38px] lg:text-[43px] xl:text-[46px] leading-[1.28] text-[#f7f6f2] font-light tracking-[-0.01em]">
-            You deserve a place where your story is heard, valued,<br className="hidden md:inline" />{" "}
-            and understood.{" "}
+        <div className="w-full max-w-[760px] lg:max-w-[840px] xl:max-w-[880px] text-left lg:pl-4 xl:pl-6 mb-28 lg:mb-40">
+          <h2 className="font-serif text-[28px] sm:text-[34px] md:text-[40px] lg:text-[44px] xl:text-[48px] leading-[1.3] text-[#f7f6f2] font-light tracking-normal">
+            You deserve a place where your story is heard, valued, and understood.{" "}
             <em className="italic font-normal">
-              Nothing will be too heavy for us to<br className="hidden md:inline" />{" "}
-              carry together.
+              Nothing will be too heavy for us to carry together.
             </em>
           </h2>
         </div>
