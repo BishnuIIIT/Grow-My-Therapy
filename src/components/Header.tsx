@@ -14,7 +14,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
+      setIsScrolled(window.scrollY > 15);
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
@@ -31,22 +31,22 @@ export default function Header() {
       }`}
     >
       <div className="max-w-[1800px] mx-auto px-6 sm:px-10 lg:px-14">
-        <div className="flex items-center justify-between h-[85px] lg:h-[95px]">
+        <div className="flex items-center justify-between h-[80px] lg:h-[95px]">
           {/* Logo */}
           <Link href="/" className="flex items-center flex-shrink-0 group">
-            <div className="relative w-[180px] sm:w-[220px] md:w-[260px] h-[55px] sm:h-[65px] lg:h-[75px]">
+            <div className="relative w-[190px] sm:w-[230px] md:w-[270px] h-[55px] sm:h-[65px] lg:h-[75px]">
               <Image
                 src={siteConfig.logoUrl}
                 alt={siteConfig.name}
                 fill
                 priority
-                sizes="(max-width: 640px) 180px, (max-width: 1024px) 220px, 260px"
+                sizes="(max-width: 640px) 190px, (max-width: 1024px) 230px, 270px"
                 className="object-contain object-left transition-opacity group-hover:opacity-90"
               />
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Navigation - Exact reference: Our Team, Specialties, Methods, FAQs, Contact, Book an Appointment */}
           <nav className="hidden lg:flex items-center space-x-7 xl:space-x-9" aria-label="Main Navigation">
             {navigationItems.map((item) => {
               const hasDropdown = item.dropdown && item.dropdown.length > 0;
@@ -59,7 +59,7 @@ export default function Header() {
                 >
                   <Link
                     href={item.href}
-                    className="flex items-center text-[14px] xl:text-[15px] font-normal tracking-[0.03em] text-[#2b2b2b] hover:text-[#86b3b3] transition-colors py-2"
+                    className="flex items-center text-[14px] xl:text-[15px] font-normal tracking-[0.02em] text-[#2b2b2b] hover:text-[#86b3b3] transition-colors py-2"
                   >
                     <span>{item.title}</span>
                     {hasDropdown && (
@@ -95,20 +95,20 @@ export default function Header() {
               );
             })}
 
-            {/* Header CTA Button */}
+            {/* Header CTA Button - Exact text: Book an Appointment */}
             <Link
               href="https://www.conejovalleycounseling.com/contact"
               className="inline-flex items-center justify-center px-5 py-2.5 text-[13px] font-medium tracking-[0.05em] uppercase text-[#2b2b2b] border border-[#2b2b2b] rounded-full hover:bg-[#2b2b2b] hover:text-white transition-all duration-200"
             >
-              Book a Consultation
+              Book an Appointment
             </Link>
           </nav>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Toggle Button */}
           <div className="flex items-center lg:hidden space-x-3">
             <Link
               href="https://www.conejovalleycounseling.com/contact"
-              className="text-[11px] font-semibold tracking-wider uppercase px-3.5 py-1.5 border border-[#2b2b2b] rounded-full text-[#2b2b2b]"
+              className="text-[11px] font-semibold tracking-wider uppercase px-3 py-1.5 border border-[#2b2b2b] rounded-full text-[#2b2b2b]"
             >
               Book
             </Link>
@@ -127,7 +127,7 @@ export default function Header() {
 
       {/* Mobile Drawer Menu */}
       <div
-        className={`fixed inset-0 top-[85px] bg-white z-40 lg:hidden overflow-y-auto transition-all duration-300 ${
+        className={`fixed inset-0 top-[80px] bg-white z-40 lg:hidden overflow-y-auto transition-all duration-300 ${
           mobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"
         }`}
       >
@@ -186,7 +186,7 @@ export default function Header() {
               onClick={() => setMobileMenuOpen(false)}
               className="block w-full text-center py-3 px-6 bg-[#2b2b2b] text-white text-[13px] font-medium tracking-wider uppercase rounded-full hover:bg-[#444] transition-colors"
             >
-              Schedule a Free Consultation
+              Book an Appointment
             </Link>
             <div className="mt-6 text-center text-[13px] text-[#777] space-y-1">
               <p>925 Broadbeck Dr, Newbury Park, CA</p>

@@ -6,31 +6,38 @@ export default function HowWeWork() {
     <section className="w-full bg-white py-20 md:py-28 lg:py-32">
       <div className="max-w-[1360px] mx-auto px-6 sm:px-10 lg:px-14">
         {/* Eyebrow */}
-        <div className="text-center mb-8">
+        <div className="text-center mb-6 md:mb-8">
           <p className="text-[12px] sm:text-[13px] font-sans font-semibold tracking-[0.2em] uppercase text-[#777]">
             HOW WE WORK
           </p>
         </div>
 
-        {/* Featured Editorial Photo */}
+        {/* Featured Original Beach Sunset Image */}
         <div className="relative w-full aspect-[16/9] sm:aspect-[21/9] max-h-[540px] rounded-2xl md:rounded-3xl overflow-hidden shadow-sm bg-[#f7f6f2] mb-14 md:mb-20 group">
           <Image
             src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/389808ad-7273-4e03-a32b-c172aa735f12/Jennifer+A+-+Images+%286%29.jpg"
-            alt="Woman and child dancing on a sandy beach at sunset, embodying warmth and emotional freedom"
+            alt="A woman and a child in white dresses dancing on a sandy beach with tall grasses and a distant building in the background during sunset"
             fill
             sizes="100vw"
             className="object-cover object-center transition-transform duration-700 group-hover:scale-102"
           />
         </div>
 
-        {/* Lead Quote / Philosophy */}
-        <div className="max-w-4xl mx-auto text-center mb-12 md:mb-16">
-          <h2 className="font-serif text-[28px] sm:text-[36px] md:text-[42px] leading-[1.3] font-normal text-[#2b2b2b] italic">
-            &ldquo;The clients we work with are balancing so many things at once, it’s often hard for them to put themselves first.&rdquo;
+        {/* Original Main Heading: We're here to make a difference. */}
+        <div className="max-w-4xl mx-auto text-center mb-8 md:mb-10">
+          <h2 className="font-serif text-[34px] sm:text-[44px] md:text-[52px] leading-[1.2] font-normal text-[#2b2b2b]">
+            We&apos;re here to make a difference.
           </h2>
         </div>
 
-        {/* Two Column Detailed Copy */}
+        {/* Lead Quote from reference */}
+        <div className="max-w-3xl mx-auto text-center mb-12 md:mb-16">
+          <p className="font-serif text-[20px] sm:text-[24px] md:text-[26px] leading-[1.4] text-[#444] italic font-normal">
+            The clients we work with are balancing so many things at once, it’s often hard for them to put themselves first.
+          </p>
+        </div>
+
+        {/* Two-Column Supporting Body Copy */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 max-w-4xl mx-auto">
           <div>
             <p className="font-sans text-[16px] leading-[1.8] text-[#555] font-light">

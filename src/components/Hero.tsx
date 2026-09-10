@@ -6,14 +6,14 @@ export default function Hero() {
   return (
     <section className="relative w-full bg-[#f7f6f2] pt-12 md:pt-16 lg:pt-20 pb-16 md:pb-24 overflow-hidden border-b border-[#ece9e3]">
       <div className="max-w-[1400px] mx-auto px-6 sm:px-10 lg:px-14">
-        {/* Eyebrow / Tagline */}
+        {/* Original Eyebrow Tagline */}
         <div className="text-center max-w-4xl mx-auto mb-4 md:mb-6">
           <p className="text-[11px] sm:text-[12px] md:text-[13px] font-sans font-semibold tracking-[0.2em] uppercase text-[#666] italic">
             ONLINE & IN-PERSON COUNSELING IN NEWBURY PARK & ACROSS CA
           </p>
         </div>
 
-        {/* H1 Main Heading */}
+        {/* Original H1 Main Heading */}
         <div className="text-center max-w-4xl mx-auto mb-6 md:mb-8">
           <h1 className="font-serif text-[38px] sm:text-[50px] md:text-[62px] lg:text-[72px] leading-[1.1] font-normal text-[#2b2b2b] tracking-[-0.01em]">
             Rebuild your foundation on solid ground and finally begin to{" "}
@@ -21,20 +21,20 @@ export default function Hero() {
           </h1>
         </div>
 
-        {/* Subtitle */}
+        {/* Original Supporting Text */}
         <div className="text-center max-w-2xl mx-auto mb-8 md:mb-10">
           <p className="font-sans text-[16px] sm:text-[18px] md:text-[19px] leading-[1.6] text-[#555] font-light">
             Specialized therapy for adults, couples, teens, and children to reflect, heal, and grow.
           </p>
         </div>
 
-        {/* CTA Button */}
+        {/* Original CTA: Book an Appointment */}
         <div className="text-center mb-14 md:mb-20">
           <Link
             href="https://www.conejovalleycounseling.com/contact"
             className="inline-flex items-center justify-center px-8 py-4 text-[13px] sm:text-[14px] font-sans font-medium tracking-[0.1em] uppercase text-white bg-[#2b2b2b] hover:bg-[#444] rounded-full transition-all duration-300 shadow-sm hover:shadow-md transform hover:-translate-y-0.5"
           >
-            Schedule a Consultation
+            Book an Appointment
           </Link>
         </div>
 

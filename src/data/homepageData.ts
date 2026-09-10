@@ -18,11 +18,8 @@ export const siteConfig = {
     "Serving Thousand Oaks, Westlake Village, Camarillo, Moorpark, & Simi Valley",
 };
 
+// Exact original navigation: Our Team, Specialties, Methods, FAQs, Contact
 export const navigationItems: NavItem[] = [
-  {
-    title: "About",
-    href: "https://www.conejovalleycounseling.com/therapists-newbury-park",
-  },
   {
     title: "Our Team",
     href: "https://www.conejovalleycounseling.com/our-team",
@@ -102,6 +99,22 @@ export const whoWeHelpCards: ServiceCardItem[] = [
     alt: "A boy carrying a girl on a beach with waves in the background.",
     link: "https://www.conejovalleycounseling.com/children-and-teens",
   },
+];
+
+// Exact reference 12 topics
+export const expertiseTopics: string[] = [
+  "Dissociation",
+  "Trauma",
+  "Family conflict",
+  "Special needs parenting",
+  "Depression",
+  "marriage",
+  "anxiety",
+  "relationships",
+  "children",
+  "teens",
+  "intimacy & connection",
+  "…and more.",
 ];
 
 export const modalitiesData: ModalityItem[] = [

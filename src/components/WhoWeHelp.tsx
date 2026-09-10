@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { whoWeHelpCards } from "@/data/homepageData";
-import { ArrowRight } from "lucide-react";
 
 export default function WhoWeHelp() {
   return (
@@ -16,12 +15,12 @@ export default function WhoWeHelp() {
           <div className="w-12 h-[2px] bg-[#86b3b3] mx-auto mt-4" />
         </div>
 
-        {/* 3 Columns Card Grid */}
+        {/* 3 Columns Card Grid - Pure original presentation without artificial CTAs */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
           {whoWeHelpCards.map((card) => (
             <div
               key={card.id}
-              className="flex flex-col bg-white rounded-2xl md:rounded-3xl overflow-hidden shadow-sm border border-[#e8e5df] transition-all duration-300 hover:shadow-md hover:-translate-y-1 group"
+              className="flex flex-col bg-white rounded-2xl md:rounded-3xl overflow-hidden shadow-sm border border-[#e8e5df] transition-all duration-300 hover:shadow-md group"
             >
               {/* Card Image Container */}
               <div className="relative w-full aspect-[4/3] overflow-hidden bg-[#e8e5df]">
@@ -37,21 +36,16 @@ export default function WhoWeHelp() {
               {/* Card Content */}
               <div className="flex flex-col flex-grow p-6 sm:p-8">
                 <h3 className="font-serif text-[26px] sm:text-[28px] font-normal text-[#2b2b2b] mb-3">
-                  {card.title}
-                </h3>
-                <p className="font-sans text-[15px] sm:text-[16px] leading-[1.7] text-[#555] font-light flex-grow mb-6">
-                  {card.description}
-                </p>
-
-                <div className="pt-2 border-t border-[#f0eee9]">
                   <Link
                     href={card.link}
-                    className="inline-flex items-center text-[13px] font-medium tracking-wider uppercase text-[#2b2b2b] hover:text-[#86b3b3] transition-colors group/link"
+                    className="hover:text-[#86b3b3] transition-colors"
                   >
-                    <span>Explore Support</span>
-                    <ArrowRight className="w-3.5 h-3.5 ml-1.5 transition-transform duration-200 group-hover/link:translate-x-1" />
+                    {card.title}
                   </Link>
-                </div>
+                </h3>
+                <p className="font-sans text-[15px] sm:text-[16px] leading-[1.7] text-[#555] font-light">
+                  {card.description}
+                </p>
               </div>
             </div>
           ))}
