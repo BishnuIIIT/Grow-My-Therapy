@@ -4,63 +4,72 @@ import Link from "next/link";
 
 export default function CTASection() {
   return (
-    <section className="w-full bg-[#f7f6f2] py-16 md:py-24 lg:py-32 overflow-hidden">
-      <div className="flex flex-col lg:flex-row w-full items-center justify-between">
+    <section className="w-full bg-[#f7f6f2] py-20 lg:py-32 xl:py-44 overflow-hidden relative flex items-center min-h-[750px]">
+      
+      {/* DESKTOP LEFT IMAGE - Flush to the left edge, approx 370x548px */}
+      <div className="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 w-[370px] h-[548px] z-0">
+        <Image
+          src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/7557312a-044d-4489-a9d1-6f43ee9888b1/Jennifer+A+-+Images+%2811%29.jpg"
+          alt="A person in a striped dress on the beach"
+          fill
+          sizes="370px"
+          className="object-cover object-center"
+        />
+      </div>
+
+      <div className="w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-0 relative z-10 flex flex-col lg:block">
         
-        {/* LEFT IMAGE (Bleeding off left edge) */}
-        <div className="hidden lg:block w-[18%] xl:w-[15%] h-[400px] xl:h-[500px] relative flex-shrink-0">
+        {/* MOBILE IMAGE */}
+        <div className="lg:hidden w-full h-[450px] relative mb-12">
           <Image
-            src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/1b9495e0-ce39-4826-9df9-e24de99da82f/Jennifer+A+-+Images+%2812%29.jpg"
-            alt="A person picking up seashells on a sandy beach"
+            src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/7557312a-044d-4489-a9d1-6f43ee9888b1/Jennifer+A+-+Images+%2811%29.jpg"
+            alt="A person in a striped dress on the beach"
             fill
-            sizes="(max-width: 1024px) 0vw, 20vw"
-            className="object-cover object-right"
+            sizes="100vw"
+            className="object-cover object-center"
           />
         </div>
 
-        {/* CENTER-LEFT CONTENT */}
-        <div className="w-full lg:w-[45%] xl:w-[45%] flex flex-col items-start text-left px-6 sm:px-12 lg:px-10 xl:px-16 z-10 py-10 lg:py-0">
+        {/* CONTENT - Starts at approx x=500px on desktop */}
+        <div className="w-full lg:w-[500px] xl:w-[560px] lg:ml-[450px] xl:ml-[500px] flex flex-col items-start text-left">
           
-          {/* Label */}
-          <p className="font-['gravesend-sans',sans-serif] text-[11px] sm:text-[12px] font-[500] tracking-[0.18em] uppercase text-[#777] mb-8">
+          {/* Eyebrow */}
+          <p className="font-sans text-[11px] sm:text-[12px] font-semibold tracking-[0.2em] uppercase text-[#739294] mb-5">
             SCHEDULE AN APPOINTMENT
           </p>
 
           {/* Main Heading */}
-          <h2 className="font-['beaufort-pro',serif] text-[36px] sm:text-[44px] md:text-[48px] lg:text-[42px] xl:text-[48px] leading-[1.2] font-light text-[#2b2b2b] tracking-[-0.01em] mb-8">
-            Find a therapist who is the right<br className="hidden sm:block" /> fit for <span className="font-['beaufort-pro',serif] text-[#86b3b3] font-bold italic">you</span>.
+          {/* Do NOT let it wrap unpredictably; force the break as requested */}
+          <h2 className="font-serif text-[38px] sm:text-[44px] md:text-[46px] leading-[1.1] font-light text-[#2b2b2b] tracking-normal mb-8">
+            Find a therapist who is the right<br className="hidden md:block" />{" "}
+            fit for <span className="font-serif text-[#739294] italic font-bold">you</span>.
           </h2>
 
-          {/* Body Copy */}
-          <div className="flex flex-col space-y-6 mb-10 max-w-[560px]">
-            <p className="font-['gravesend-sans',sans-serif] text-[14.5px] sm:text-[15.5px] leading-[1.8] text-[#555] font-[300]">
-              Coming to therapy is a courageous decision, and connecting with the right kind of therapist makes all the difference. We understand that your journey is personal, and we&apos;re here to support you with care and understanding every step of the way. Each member of our team brings dedicated expertise and a commitment to support you in your struggles. We want you to feel prioritized, understood, and empowered.
+          {/* Body Copy (UPPERCASE) */}
+          <div className="flex flex-col space-y-6 mb-10 text-[#6a757e]">
+            <p className="font-sans text-[11px] sm:text-[11.5px] leading-[1.9] tracking-[0.06em] uppercase font-medium">
+              COMING TO THERAPY IS A COURAGEOUS DECISION, AND CONNECTING
+              WITH THE RIGHT KIND OF THERAPIST MAKES ALL THE DIFFERENCE. WE
+              UNDERSTAND THAT YOUR JOURNEY IS PERSONAL, AND WE&apos;RE HERE TO
+              SUPPORT YOU WITH CARE AND UNDERSTANDING EVERY STEP OF THE
+              WAY. EACH MEMBER OF OUR TEAM BRINGS DEDICATED EXPERTISE AND
+              A COMMITMENT TO SUPPORT YOU IN YOUR STRUGGLES. WE WANT YOU
+              TO FEEL PRIORITIZED, UNDERSTOOD, AND EMPOWERED.
             </p>
-            <p className="font-['gravesend-sans',sans-serif] text-[14.5px] sm:text-[15.5px] leading-[1.8] text-[#555] font-[300]">
-              Click the button below to schedule an appointment.
+            <p className="font-sans text-[11px] sm:text-[11.5px] leading-[1.9] tracking-[0.06em] uppercase font-medium">
+              CLICK THE BUTTON BELOW TO SCHEDULE AN APPOINTMENT.
             </p>
           </div>
 
           {/* Pill Button */}
           <Link
             href="https://www.conejovalleycounseling.com/contact"
-            className="inline-block px-9 py-3.5 font-['gravesend-sans',sans-serif] text-[11px] sm:text-[12px] font-[500] tracking-[0.15em] uppercase text-[#777] border-[1px] border-[#999] rounded-full hover:bg-[#2b2b2b] hover:text-white hover:border-[#2b2b2b] transition-colors duration-300"
+            className="inline-flex items-center justify-center px-8 py-[10px] font-sans text-[10.5px] font-semibold tracking-[0.18em] uppercase text-[#6a757e] border border-[#6a757e] rounded-full hover:bg-black/5 hover:text-[#2b2b2b] transition-colors duration-300"
           >
             BOOK NOW
           </Link>
+          
         </div>
-
-        {/* RIGHT IMAGE (Bleeding off right edge) */}
-        <div className="w-full lg:w-[35%] xl:w-[35%] h-[500px] lg:h-[600px] xl:h-[700px] relative flex-shrink-0 mt-12 lg:mt-0">
-          <Image
-            src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/7557312a-044d-4489-a9d1-6f43ee9888b1/Jennifer+A+-+Images+%2811%29.jpg"
-            alt="A person in a striped dress pointing at shells on the sandy beach with a child"
-            fill
-            sizes="(max-width: 1024px) 100vw, 40vw"
-            className="object-cover object-left"
-          />
-        </div>
-
       </div>
     </section>
   );
