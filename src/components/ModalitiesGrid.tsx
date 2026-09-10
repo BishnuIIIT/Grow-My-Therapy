@@ -18,7 +18,7 @@ export default function ModalitiesGrid() {
         <div className="flex flex-col lg:flex-row w-full max-w-[1800px] mx-auto items-stretch">
           
           {/* LEFT: Large Horizontal Image Bleeding to Left Edge */}
-          <div className="w-full lg:w-[54%] xl:w-[52%] flex-shrink-0">
+          <div className="w-full lg:w-[52%] xl:w-[50%] flex-shrink-0">
             <div className="relative w-full aspect-[4/3] sm:aspect-[3/2] lg:aspect-[1.5/1] xl:aspect-[1.55/1]">
               <Image
                 src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/6f1501bf-74a5-4c57-a957-8ce4c5876848/Jennifer+A+-+Images+%285%29.jpg"
@@ -31,13 +31,27 @@ export default function ModalitiesGrid() {
           </div>
 
           {/* RIGHT: Heading positioned toward lower-middle of image */}
-          <div className="w-full lg:w-[46%] xl:w-[48%] px-6 sm:px-10 lg:pl-16 xl:pl-20 lg:pr-10 pt-10 sm:pt-14 lg:pt-0 flex flex-col justify-end pb-4 lg:pb-12 xl:pb-16">
-            <div className="max-w-[560px]">
-              <h2 className="font-['beaufort-pro',serif] text-[34px] sm:text-[42px] md:text-[48px] lg:text-[44px] xl:text-[50px] leading-[1.2] font-light text-[#2b2b2b] tracking-[-0.01em]">
-                Honoring where you&apos;ve been{" "}
-                <span className="font-['beaufort-pro',serif] text-[#86b3b3] font-bold italic">&amp;</span>
-                <br className="hidden sm:inline" /> helping shape where you&apos;re
-                <br className="hidden sm:inline" /> headed.
+          <div 
+            className="w-full lg:w-[48%] xl:w-[50%] px-6 sm:px-10 lg:px-0 pt-10 sm:pt-14 lg:pt-0 flex flex-col justify-end lg:pb-8 xl:pb-12"
+            style={{ paddingLeft: "clamp(32px, 5vw, 96px)", paddingRight: "3vw" }}
+          >
+            <div className="max-w-[900px] w-full">
+              <h2 className="font-['beaufort-pro',serif] text-[34px] sm:text-[42px] lg:text-[60px] xl:text-[68px] leading-[1.18] font-normal text-[#2b2b2b] tracking-normal">
+                <span>Honoring where you&apos;ve been</span>
+                <span 
+                  className="text-[#86b3b3] italic font-medium"
+                  style={{ 
+                    fontFamily: "var(--font-cormorant), Georgia, serif",
+                    fontSize: "1.35em",
+                    verticalAlign: "-0.1em",
+                    marginLeft: "0.2em",
+                    display: "inline-block"
+                  }}
+                >&amp;</span>
+                <br className="hidden lg:block" />
+                <span> helping shape where you&apos;re</span>
+                <br className="hidden lg:block" />
+                <span> headed.</span>
               </h2>
             </div>
           </div>
