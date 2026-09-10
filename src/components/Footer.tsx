@@ -36,7 +36,7 @@ export default function Footer() {
 
           {/* Column 1: Navigate (2 Columns) */}
           <div className="lg:col-span-2">
-            <h4 className="font-serif text-[18px] sm:text-[20px] font-normal text-[#2b2b2b] mb-5 italic">
+            <h4 className="font-serif text-[18px] sm:text-[20px] font-bold text-[#2b2b2b] mb-5 italic">
               Navigate
             </h4>
             <ul className="space-y-3 font-sans text-[14px] text-[#555]">
@@ -55,7 +55,7 @@ export default function Footer() {
 
           {/* Column 2: Contact (3 Columns) */}
           <div className="lg:col-span-3">
-            <h4 className="font-serif text-[18px] sm:text-[20px] font-normal text-[#2b2b2b] mb-5 italic">
+            <h4 className="font-serif text-[18px] sm:text-[20px] font-bold text-[#2b2b2b] mb-5 italic">
               Contact
             </h4>
             <div className="space-y-2 font-sans text-[14px] leading-[1.6] text-[#555]">
@@ -84,7 +84,7 @@ export default function Footer() {
 
           {/* Column 3: Our Team (3 Columns) */}
           <div className="lg:col-span-3">
-            <h4 className="font-serif text-[18px] sm:text-[20px] font-normal text-[#2b2b2b] mb-5 italic">
+            <h4 className="font-serif text-[18px] sm:text-[20px] font-bold text-[#2b2b2b] mb-5 italic">
               Our Team
             </h4>
             <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-y-2 font-sans text-[13px] text-[#555]">

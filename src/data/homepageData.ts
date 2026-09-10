@@ -1,4 +1,34 @@
-import { NavItem, ServiceCardItem, ModalityItem, TherapistItem } from "@/types";
+export interface DropdownItem {
+  title: string;
+  href: string;
+}
+
+export interface NavigationItem {
+  title: string;
+  href: string;
+  dropdown?: DropdownItem[];
+}
+
+export interface ServiceCardItem {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  alt: string;
+  link: string;
+}
+
+export interface ModalityItem {
+  id: string;
+  title: string;
+  description: string;
+}
+
+export interface TherapistItem {
+  name: string;
+  title: string;
+  href: string;
+}
 
 export const siteConfig = {
   name: "Conejo Valley Family Counseling",
@@ -18,18 +48,17 @@ export const siteConfig = {
     "Serving Thousand Oaks, Westlake Village, Camarillo, Moorpark, & Simi Valley",
 };
 
-// Exact original navigation: Our Team, Specialties, Methods, FAQs, Contact
-export const navigationItems: NavItem[] = [
+export const navigationItems: NavigationItem[] = [
   {
     title: "Our Team",
     href: "https://www.conejovalleycounseling.com/our-team",
     dropdown: [
       { title: "Jennifer Anderson, LMFT", href: "https://www.conejovalleycounseling.com/jennifer-anderson" },
-      { title: "Candace Bletscher, AMFT", href: "https://www.conejovalleycounseling.com/candace-bletscher" },
       { title: "Heather Williams-Baumgart, AMFT", href: "https://www.conejovalleycounseling.com/heather-williams-baumgart" },
-      { title: "Michaela Gorospe, AMFT", href: "https://www.conejovalleycounseling.com/michaela-gorospe" },
-      { title: "Samantha Johnson, AMFT", href: "https://www.conejovalleycounseling.com/samantha-johnson" },
       { title: "Autumn Bodily, AMFT", href: "https://www.conejovalleycounseling.com/autumn-bodily" },
+      { title: "Michaela Gorospe, AMFT", href: "https://www.conejovalleycounseling.com/michaela-gorospe" },
+      { title: "Candace Bletscher, AMFT", href: "https://www.conejovalleycounseling.com/candace-bletscher" },
+      { title: "Samantha Johnson, AMFT", href: "https://www.conejovalleycounseling.com/samantha-johnson" },
       { title: "Andrea Watkins, APCC", href: "https://www.conejovalleycounseling.com/andrea-watkins" },
       { title: "Rosa Gomez, AMFT", href: "https://www.conejovalleycounseling.com/rosa-gomez" },
       { title: "Chad Flores, AMFT", href: "https://www.conejovalleycounseling.com/chad-flores" },
@@ -72,36 +101,29 @@ export const whoWeHelpCards: ServiceCardItem[] = [
   {
     id: "adults",
     title: "Adults",
-    description:
-      "Feeling stuck or overwhelmed? We help adults find clarity, build resilience, and move forward with confidence by addressing the root causes of anxiety, stress, and emotional pain.",
-    image:
-      "https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/066f60e6-1354-4d47-a586-ab3f2f2ba612/Jennifer+A+-+Images+%288%29.jpg",
+    description: "Feeling stuck or overwhelmed? We help adults find clarity, build resilience, and move forward with confidence by addressing the root causes of anxiety, stress, and emotional pain.",
+    image: "https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/066f60e6-1354-4d47-a586-ab3f2f2ba612/Jennifer+A+-+Images+%288%29.jpg",
     alt: "Two people sitting on a log at the beach, facing a lake with mountains in the background.",
     link: "https://www.conejovalleycounseling.com/anxiety-depression",
   },
   {
     id: "couples",
     title: "Couples",
-    description:
-      "Relationships require effort, and we’re here to help you strengthen yours. We guide couples through challenges like communication breakdowns and trust issues, helping you rebuild intimacy and strengthen your relationship.",
-    image:
-      "https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/d0157712-388c-4800-aada-c78db97ee966/Jennifer+A+-+Images+%289%29.jpg",
+    description: "Relationships require effort, and we're here to help you strengthen yours. We guide couples through challenges like communication breakdowns and trust issues, helping you rebuild intimacy and strengthen your relationship.",
+    image: "https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/d0157712-388c-4800-aada-c78db97ee966/Jennifer+A+-+Images+%289%29.jpg",
     alt: "A couple embracing on the beach, with both wearing casual summer clothing and smiling at each other.",
     link: "https://www.conejovalleycounseling.com/couples-therapy",
   },
   {
     id: "children-teens",
     title: "Children & Teens",
-    description:
-      "Kids need support, too. We help them process big emotions, cope with challenging family situations, build coping skills, and feel understood, while also working closely with their parents to create a nurturing environment.",
-    image:
-      "https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/d5d62bf4-34a7-4bf4-bf00-e1169863ace7/Jennifer+A+-+Images+%2810%29.jpg",
+    description: "Kids need support, too. We help them process big emotions, cope with challenging family situations, build coping skills, and feel understood, while also working closely with their parents to create a nurturing environment.",
+    image: "https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/d5d62bf4-34a7-4bf4-bf00-e1169863ace7/Jennifer+A+-+Images+%2810%29.jpg",
     alt: "A boy carrying a girl on a beach with waves in the background.",
     link: "https://www.conejovalleycounseling.com/children-and-teens",
   },
 ];
 
-// Exact reference 12 topics structured into two columns matching Squarespace layout
 export interface ExpertiseItem {
   name: string;
   href?: string;
@@ -145,26 +167,22 @@ export const modalitiesData: ModalityItem[] = [
   {
     id: "trauma",
     title: "Trauma",
-    description:
-      "We don’t always know when and how we’ve experienced trauma. In therapy, we’ll work together to help you process your past, understand what’s causing you to stay “stuck,” and regain a sense of safety, control, and hope. You don’t have to carry your burdens alone.",
+    description: "We don't always know when and how we've experienced trauma. In therapy, we'll work together to help you process your past, understand what's causing you to stay \"stuck,\" and regain a sense of safety, control, and hope. You don't have to carry your burdens alone.",
   },
   {
     id: "dissociation",
     title: "Dissociation",
-    description:
-      "The feeling of losing time, hearing conflicting voices, or questioning your sense of self can be overwhelming. In therapy, we’ll help you understand these experiences, recognize your own triggers, and create a sense of balance and identity so that you can feel more grounded.",
+    description: "The feeling of losing time, hearing conflicting voices, or questioning your sense of self can be overwhelming. In therapy, we'll help you understand these experiences, recognize your own triggers, and create a sense of balance and identity so that you can feel more grounded.",
   },
   {
     id: "emdr",
     title: "EMDR",
-    description:
-      "Eye Movement Desensitization and Reprocessing (EMDR) is a powerful therapeutic technique that helps process and heal trauma by reworking how painful memories are stored in your brain. This allows you to find relief and move toward lasting healing.",
+    description: "Eye Movement Desensitization and Reprocessing (EMDR) is a powerful therapeutic technique that helps process and heal trauma by reworking how painful memories are stored in your brain. This allows you to find relief and move toward lasting healing.",
   },
   {
     id: "special-needs",
     title: "Special Needs Parenting",
-    description:
-      "Parenting a child with special needs presents unique challenges and complex emotions. We provide compassionate support through lived experience and expertise to help you navigate this journey with tools, understanding, and self-care.",
+    description: "Parenting a child with special needs presents unique challenges and complex emotions. We provide compassionate support through lived experience and expertise to help you navigate this journey with tools, understanding, and self-care.",
   },
 ];
 
