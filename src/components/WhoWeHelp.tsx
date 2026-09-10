@@ -5,7 +5,7 @@ import { whoWeHelpCards } from "@/data/homepageData";
 
 export default function WhoWeHelp() {
   return (
-    <section className="relative w-full bg-white pt-16 pb-20 md:pt-24 md:pb-28 lg:pt-32 lg:pb-36 overflow-hidden">
+    <section className="relative w-full bg-white pt-16 pb-16 md:pt-20 md:pb-20 lg:pt-24 lg:pb-24 overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16">
         
         {/* Section Heading - Centered as per reference */}
