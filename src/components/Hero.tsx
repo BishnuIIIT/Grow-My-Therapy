@@ -4,64 +4,117 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative w-full bg-[#f7f6f2] overflow-hidden">
+    <section className="relative w-full bg-[#f7f6f2] overflow-hidden min-h-[auto] lg:min-h-[850px] xl:min-h-[880px] pt-16 pb-16 lg:pt-0 lg:pb-0">
       
-      {/* Desktop Grid Layout that preserves DOM order */}
-      <div className="w-full max-w-[1600px] mx-auto min-h-[60vh] md:min-h-[85vh] grid grid-cols-1 lg:grid-cols-12 relative pt-20 pb-12 md:py-24">
+      {/* ========================================================================= */}
+      {/* DESKTOP HERO COMPOSITION (>= lg: 1024px)                                  */}
+      {/* Matches exact reference geometry at 2048px:                               */}
+      {/* - Left Image: left ≈ 0, top ≈ 148px, width ≈ 617px, height ≈ 645px        */}
+      {/* - Text Block: left ≈ 758px, top ≈ 148px - 180px, width ≈ 520px - 560px    */}
+      {/* - Secondary Image: Far right edge, partially visible                      */}
+      {/* ========================================================================= */}
+      <div className="hidden lg:block w-full h-[850px] xl:h-[880px] relative">
         
-        {/* 1. HERO TEXT */}
-        <div className="lg:col-span-5 lg:col-start-7 lg:row-start-1 flex flex-col justify-center px-6 sm:px-10 lg:px-0 z-20">
-          <p className="text-[11px] sm:text-[12px] md:text-[13px] font-sans font-semibold tracking-[0.2em] uppercase text-[#666] mb-4 md:mb-6">
+        {/* 1. MAIN LEFT IMAGE */}
+        <div className="absolute left-0 top-[120px] xl:top-[148px] w-[540px] xl:w-[617px] h-[580px] xl:h-[645px] z-10">
+          <Image
+            src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/80513bd1-30ee-4a2d-aaf6-782d9be095ce/Jennifer+A+-+Images+%2866%29.jpg"
+            alt="Family therapy session in a warm, welcoming counseling setting"
+            fill
+            priority
+            sizes="(max-width: 1280px) 540px, 617px"
+            className="object-cover object-center"
+          />
+        </div>
+
+        {/* 2. HERO TEXT CONTENT */}
+        <div className="absolute left-[580px] xl:left-[758px] top-[110px] xl:top-[140px] w-[500px] xl:w-[560px] text-left z-20">
+          <p className="text-[11px] xl:text-[12px] font-sans font-medium tracking-[0.18em] uppercase text-[#666] mb-5 xl:mb-7">
             ONLINE & IN-PERSON COUNSELING IN NEWBURY PARK & ACROSS CA
           </p>
           
-          <h1 className="font-serif text-[42px] sm:text-[50px] md:text-[56px] lg:text-[68px] xl:text-[76px] leading-[1.05] font-light text-[#2b2b2b] tracking-[-0.01em] mb-6 lg:mb-8">
-            Rebuild your foundation on solid ground and finally begin to{" "}
-            <span className="text-[#86b3b3] font-serif font-bold italic inline-block transform translate-y-1">thrive</span>.
+          <h1 className="font-serif text-[48px] xl:text-[62px] leading-[1.08] font-light text-[#2b2b2b] tracking-[-0.01em] mb-6 xl:mb-8">
+            Rebuild your<br />
+            foundation on solid<br />
+            ground and finally<br />
+            begin to{" "}
+            <span className="text-[#86b3b3] font-serif italic font-normal">thrive</span>.
           </h1>
           
-          <p className="font-sans text-[16px] sm:text-[17px] md:text-[18px] leading-[1.6] text-[#555] font-light mb-10 max-w-lg">
-            Specialized therapy for adults, couples, teens, and children to reflect, heal, and grow.
+          <p className="font-sans text-[12.5px] xl:text-[13.5px] leading-[1.7] tracking-[0.06em] text-[#555] font-normal uppercase mb-8 xl:mb-10 max-w-[490px]">
+            SPECIALIZED THERAPY FOR ADULTS, COUPLES, TEENS, AND CHILDREN TO REFLECT, HEAL, AND GROW.
           </p>
           
           <div>
             <Link
               href="https://www.conejovalleycounseling.com/contact"
-              className="inline-block text-[12px] sm:text-[13px] font-sans font-medium tracking-[0.1em] uppercase text-[#2b2b2b] border-b-[1.5px] border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
+              className="inline-block text-[12px] xl:text-[13px] font-sans font-medium tracking-[0.14em] uppercase text-[#2b2b2b] border-b-[1.5px] border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
             >
               BOOK AN APPOINTMENT
             </Link>
           </div>
         </div>
 
-        {/* 2. FAMILY THERAPY IMAGE (Main left image) */}
-        <div className="lg:col-span-4 lg:col-start-1 lg:row-start-1 relative w-full h-[50vh] md:h-full mt-16 lg:mt-0 z-10">
+        {/* 3. SECONDARY RIGHT IMAGE (Far right edge) */}
+        <div className="absolute right-0 top-[200px] xl:top-[240px] w-[140px] xl:w-[200px] h-[360px] xl:h-[430px] z-10 overflow-hidden">
+          <Image
+            src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/3643a7ac-ff62-4927-b96e-9e65ecff0521/Jennifer+A+-+Images+%2867%29.jpg"
+            alt="Child and teen therapy support"
+            fill
+            priority
+            sizes="200px"
+            className="object-cover object-left"
+          />
+        </div>
+
+      </div>
+
+      {/* ========================================================================= */}
+      {/* MOBILE / TABLET ADAPTIVE LAYOUT (< lg: 1024px)                           */}
+      {/* Clean vertical flow preventing overflow and preserving visual hierarchy   */}
+      {/* ========================================================================= */}
+      <div className="lg:hidden flex flex-col px-6 sm:px-10">
+        
+        {/* Label */}
+        <p className="text-[11px] sm:text-[12px] font-sans font-medium tracking-[0.18em] uppercase text-[#666] mb-4">
+          ONLINE & IN-PERSON COUNSELING IN NEWBURY PARK & ACROSS CA
+        </p>
+        
+        {/* Heading */}
+        <h1 className="font-serif text-[38px] sm:text-[46px] leading-[1.1] font-light text-[#2b2b2b] tracking-[-0.01em] mb-6">
+          Rebuild your foundation on solid ground and finally begin to{" "}
+          <span className="text-[#86b3b3] font-serif italic font-normal">thrive</span>.
+        </h1>
+        
+        {/* Main Image */}
+        <div className="relative w-full aspect-[4/5] sm:aspect-[1/1] mb-6 overflow-hidden">
           <Image
             src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/80513bd1-30ee-4a2d-aaf6-782d9be095ce/Jennifer+A+-+Images+%2866%29.jpg"
             alt="Family therapy session in a warm, welcoming counseling setting"
             fill
             priority
-            sizes="(max-width: 1024px) 100vw, 40vw"
-            className="object-cover object-center lg:py-[5%]"
+            sizes="100vw"
+            className="object-cover object-center"
           />
         </div>
 
-        {/* 3. CHILD THERAPY IMAGE (Right sliver image next to the main left image) */}
-        {/* We place it in col 5, which sits between the left image (cols 1-4) and the text (cols 7-11) */}
-        <div className="hidden lg:block lg:col-span-1 lg:col-start-5 lg:row-start-1 relative w-full h-full z-10">
-          <div className="absolute inset-y-[20%] right-0 w-full">
-            <Image
-              src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/3643a7ac-ff62-4927-b96e-9e65ecff0521/Jennifer+A+-+Images+%2867%29.jpg"
-              alt="Child and teen therapy support"
-              fill
-              priority
-              sizes="10vw"
-              className="object-cover object-left"
-            />
-          </div>
+        {/* Supporting text */}
+        <p className="font-sans text-[12.5px] sm:text-[13.5px] leading-[1.7] tracking-[0.06em] text-[#555] font-normal uppercase mb-6">
+          SPECIALIZED THERAPY FOR ADULTS, COUPLES, TEENS, AND CHILDREN TO REFLECT, HEAL, AND GROW.
+        </p>
+        
+        {/* CTA */}
+        <div>
+          <Link
+            href="https://www.conejovalleycounseling.com/contact"
+            className="inline-block text-[12px] font-sans font-medium tracking-[0.14em] uppercase text-[#2b2b2b] border-b-[1.5px] border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
+          >
+            BOOK AN APPOINTMENT
+          </Link>
         </div>
 
       </div>
+
     </section>
   );
 }
