@@ -6,10 +6,11 @@ export default function HowWeWork() {
   return (
     <section className="w-full bg-[#ded6cc] py-20 md:py-28 lg:py-36 overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-14">
+        
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 xl:gap-20 items-start">
           
           {/* LEFT CONTENT AREA */}
-          <div className="lg:col-span-7 xl:col-span-7 flex flex-col pt-4 lg:pt-10">
+          <div className="lg:col-span-7 xl:col-span-7 flex flex-col pt-4 lg:pt-6">
             
             {/* Top Label */}
             <div className="mb-10 md:mb-12">
@@ -25,26 +26,24 @@ export default function HowWeWork() {
               </h2>
             </div>
 
-            {/* Two Text Columns (Inside Left Area) */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-14 md:mb-20">
+            {/* Text Flow (Stacked, NOT 2 columns) */}
+            <div className="flex flex-col space-y-8 mb-14 md:mb-20 max-w-2xl">
               
-              {/* Left Text Column */}
-              <div className="flex flex-col space-y-8">
-                <p className="font-['gravesend-sans',sans-serif] text-[12px] sm:text-[13px] md:text-[14px] font-[500] uppercase tracking-[0.15em] text-[#2b2b2b] leading-[1.6]">
-                  THE CLIENTS WE WORK WITH ARE BALANCING SO MANY THINGS AT ONCE. IT&apos;S OFTEN HARD FOR THEM TO PUT THEMSELVES FIRST.
-                </p>
-                <p className="font-['gravesend-sans',sans-serif] text-[15.5px] sm:text-[16.5px] leading-[1.8] text-[#2b2b2b] font-[300]">
-                  Here, your needs are always top priority. Our team takes the time to deeply listen to our clients in order to truly understand their story and their struggles. We recognize that no two people are the same and that personalized therapy means an intentional, tailored approach. (You won&apos;t find anything &ldquo;one-size-fits-all&rdquo; here.) If you&apos;re ready to do the work, we&apos;re ready to help.
-                </p>
-              </div>
+              {/* Uppercase Introductory Paragraph */}
+              <p className="font-['gravesend-sans',sans-serif] text-[12px] sm:text-[13px] md:text-[14px] font-[500] uppercase tracking-[0.15em] text-[#2b2b2b] leading-[1.6]">
+                THE CLIENTS WE WORK WITH ARE BALANCING SO MANY THINGS AT ONCE. IT&apos;S OFTEN HARD FOR THEM TO PUT THEMSELVES FIRST.
+              </p>
+              
+              {/* Regular Body Paragraph */}
+              <p className="font-['gravesend-sans',sans-serif] text-[15.5px] sm:text-[16.5px] leading-[1.8] text-[#2b2b2b] font-[300]">
+                Here, your needs are always top priority. Our team takes the time to deeply listen to our clients in order to truly understand their story and their struggles. We recognize that no two people are the same and that personalized therapy means an intentional, tailored approach. (You won&apos;t find anything &ldquo;one-size-fits-all&rdquo; here.) If you&apos;re ready to do the work, we&apos;re ready to help.
+              </p>
 
-              {/* Right Text Column */}
-              <div className="flex flex-col pt-0 md:pt-1">
-                <p className="font-['gravesend-sans',sans-serif] text-[15.5px] sm:text-[16.5px] leading-[1.8] text-[#2b2b2b] font-[300]">
-                  Sometimes we may gently challenge you to look at things differently and other times we may explore your emotions, all while encouraging you to practice what you&apos;ve learned in your daily life. We take what we do seriously because we know how important it is for you to heal from what&apos;s hurting you, discover a fulfilling life, and build meaningful relationships. Our goal is to walk alongside you in this journey, offering support and guidance as you uncover your strengths and embrace what the future can hold for you.
-                </p>
-              </div>
-              
+              {/* Second Body Paragraph */}
+              <p className="font-['gravesend-sans',sans-serif] text-[15.5px] sm:text-[16.5px] leading-[1.8] text-[#2b2b2b] font-[300]">
+                Sometimes we may gently challenge you to look at things differently and other times we may explore your emotions, all while encouraging you to practice what you&apos;ve learned in your daily life. We take what we do seriously because we know how important it is for you to heal from what&apos;s hurting you, discover a fulfilling life, and build meaningful relationships. Our goal is to walk alongside you in this journey, offering support and guidance as you uncover your strengths and embrace what the future can hold for you.
+              </p>
+
             </div>
 
             {/* Bottom Label / CTA */}

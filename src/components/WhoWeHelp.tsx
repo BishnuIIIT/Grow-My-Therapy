@@ -5,11 +5,11 @@ import { whoWeHelpCards } from "@/data/homepageData";
 
 export default function WhoWeHelp() {
   return (
-    <section className="relative w-full bg-white pt-16 pb-20 md:pt-20 md:pb-24 lg:pt-24 lg:pb-32 overflow-hidden">
+    <section className="relative w-full bg-white pt-16 pb-20 md:pt-24 md:pb-28 lg:pt-32 lg:pb-36 overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16">
         
-        {/* Section Heading - Left Aligned */}
-        <div className="mb-10 lg:mb-12 w-full text-left">
+        {/* Section Heading - Centered as per reference */}
+        <div className="mb-14 lg:mb-20 w-full flex justify-center text-center">
           <h2 className="text-[38px] sm:text-[44px] md:text-[50px] lg:text-[46px] xl:text-[52px] leading-[1.2] font-light text-[#2b2b2b] tracking-[-0.01em] font-['beaufort-pro',serif]">
             Who we <span className="text-[#86b3b3] font-['beaufort-pro',serif] font-bold italic">help</span>
           </h2>
@@ -20,8 +20,8 @@ export default function WhoWeHelp() {
           {whoWeHelpCards.map((card) => (
             <div key={card.id} className="flex flex-col group">
               
-              {/* Image Container - Taller vertical aspect, no rounding, no shadow */}
-              <div className="relative w-full aspect-[3/4] lg:aspect-[4/5] overflow-hidden mb-5 lg:mb-6">
+              {/* Image Container - Square/Rectangle, no rounding, no shadow */}
+              <div className="relative w-full aspect-[4/5] sm:aspect-[1/1] lg:aspect-[4/5] overflow-hidden mb-6 lg:mb-8">
                 <Image
                   src={card.image}
                   alt={card.alt}
@@ -33,7 +33,7 @@ export default function WhoWeHelp() {
 
               {/* Text Content - No background, text sits on section bg */}
               <div className="flex flex-col text-left">
-                <h3 className="mb-3">
+                <h3 className="mb-4">
                   <Link
                     href={card.link}
                     className="font-['beaufort-pro',serif] text-[26px] sm:text-[28px] lg:text-[32px] font-normal text-[#2b2b2b] hover:text-[#86b3b3] transition-colors"
