@@ -17,8 +17,8 @@ const config: Config = {
         subtle: "var(--color-border)",
       },
       fontFamily: {
-        serif: ["var(--font-cormorant)", "Georgia", "serif"],
-        sans: ["var(--font-mulish)", "system-ui", "-apple-system", "sans-serif"],
+        serif: ["beaufort-pro", "Georgia", "serif"],
+        sans: ["gravesend-sans", "system-ui", "-apple-system", "sans-serif"],
       },
       maxWidth: {
         "site": "1800px",

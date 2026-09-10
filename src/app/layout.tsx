@@ -1,24 +1,7 @@
 import type { Metadata } from "next";
-import { Cormorant_Infant, Mulish } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-
-const cormorant = Cormorant_Infant({
-  subsets: ["latin"],
-  weight: ["400", "600", "700"],
-  style: ["normal", "italic"],
-  variable: "--font-cormorant",
-  display: "swap",
-});
-
-const mulish = Mulish({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
-  style: ["normal", "italic"],
-  variable: "--font-mulish",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "Counseling in Newbury Park, CA | Conejo Valley Family Counseling",
@@ -52,7 +35,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${mulish.variable}`}>
+    <html lang="en">
+      <head>
+        <link rel="stylesheet" href="https://use.typekit.net/fsc1wsd.css" />
+      </head>
       <body className="min-h-screen flex flex-col antialiased bg-white text-[#2b2b2b] font-sans selection:bg-[#ded6cc] selection:text-[#2b2b2b]">
         <Header />
         <main className="flex-grow">{children}</main>
