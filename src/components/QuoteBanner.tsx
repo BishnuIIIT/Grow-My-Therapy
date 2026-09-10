@@ -6,7 +6,7 @@ import { expertiseColumns } from "@/data/homepageData";
 export default function QuoteBanner() {
   return (
     <section className="relative w-full min-h-[80vh] flex flex-col justify-start overflow-hidden">
-      
+
       {/* Background Image Layer */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -21,18 +21,14 @@ export default function QuoteBanner() {
         <div className="absolute inset-0 bg-black/50" />
       </div>
 
-      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 pt-[120px] pb-[120px] sm:pt-[160px] sm:pb-[160px] lg:pt-[240px] lg:pb-[240px] flex flex-col items-start justify-center">
-        
-        {/* Quote Content Container */}
-        <div className="w-full max-w-[340px] lg:max-w-[400px] xl:max-w-[450px] text-left ml-0 md:ml-[10%] lg:ml-[15%] xl:ml-[18%]">
-          <h2 className="font-serif text-[30px] sm:text-[34px] md:text-[38px] lg:text-[42px] xl:text-[46px] leading-[1.3] text-[#f7f6f2] font-light tracking-normal">
-            You deserve a place where your story is heard, valued, and understood.{" "}
-            <em className="italic font-normal">
-              Nothing will be too heavy for us to carry together.
-            </em>
-          </h2>
-        </div>
-
+      {/* Quote Content Container */}
+      <div className="relative z-10 w-full max-w-[850px] lg:max-w-[900px] xl:max-w-[950px] text-left ml-0 md:ml-[25%] lg:ml-[28%] xl:ml-[30%]">
+        <h2 className="font-serif text-[30px] sm:text-[34px] md:text-[38px] lg:text-[42px] xl:text-[46px] leading-[1.3] text-[#f7f7f7]">
+          You deserve a place where your story is heard, valued, and understood.{" "}
+          <em className="italic font-normal">
+            Nothing will be too heavy for us to carry together.
+          </em>
+        </h2>
       </div>
     </section>
   );
