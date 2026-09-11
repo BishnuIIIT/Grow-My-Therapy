@@ -47,7 +47,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-7 xl:space-x-9" aria-label="Main Navigation">
+          <nav className="hidden lg:flex items-center space-x-8 xl:space-x-11" aria-label="Main Navigation">
             {navigationItems.map((item) => {
               const hasDropdown = item.dropdown && item.dropdown.length > 0;
               return (
@@ -59,17 +59,9 @@ export default function Header() {
                 >
                   <Link
                     href={item.href}
-                    className="flex items-center text-[14px] xl:text-[15px] font-normal tracking-[0.02em] text-[#2b2b2b] hover:text-[#86b3b3] transition-colors py-2 uppercase"
-                    style={{ textTransform: 'none' }} // Ensure original case if it wasn't uppercase
+                    className="flex items-center text-[12.5px] xl:text-[13.5px] font-normal tracking-[0.16em] xl:tracking-[0.18em] uppercase text-[#4a4a4a] hover:text-[#86b3b3] transition-colors py-2"
                   >
                     <span>{item.title}</span>
-                    {hasDropdown && (
-                      <ChevronDown
-                        className={`ml-1 w-3.5 h-3.5 text-[#666] transition-transform duration-200 ${
-                          activeDropdown === item.title ? "rotate-180 text-[#86b3b3]" : ""
-                        }`}
-                      />
-                    )}
                   </Link>
 
                   {/* Dropdown Menu */}
@@ -96,13 +88,16 @@ export default function Header() {
               );
             })}
 
-            {/* Header CTA Button - Thin outlined oval/pill border, Transparent/cream bg, Small uppercase text */}
-            <Link
-              href="https://www.conejovalleycounseling.com/contact"
-              className="inline-flex items-center justify-center px-6 py-2 text-[11px] font-medium tracking-[0.1em] uppercase text-[#2b2b2b] border border-[#2b2b2b] rounded-full hover:bg-black/5 transition-all duration-200"
-            >
-              Contact
-            </Link>
+            {/* Header CTA Button - Smooth elongated oval, subtle 1px border, light tracked uppercase text */}
+            <div className="pl-4 xl:pl-6">
+              <Link
+                href="https://www.conejovalleycounseling.com/contact"
+                className="inline-flex items-center justify-center px-8 py-2.5 text-[12px] xl:text-[13px] font-normal tracking-[0.18em] uppercase text-[#4a4a4a] border border-[#2b2b2b]/50 rounded-full hover:border-[#86b3b3] hover:text-[#86b3b3] hover:bg-transparent transition-all duration-200"
+                style={{ height: "44px", minWidth: "135px" }}
+              >
+                CONTACT
+              </Link>
+            </div>
           </nav>
 
           {/* Mobile Menu Toggle Button */}
