@@ -54,15 +54,8 @@ export default function Footer() {
                     <p>{siteConfig.address.street}</p>
                     <p>{siteConfig.address.cityStateZip}</p>
                   </div>
-                  <div className="pt-5 sm:pt-6 space-y-1.5 leading-[1.6]">
-                    <p>
-                      <a
-                        href="mailto:hello@example.com"
-                        className="hover:text-primary transition-colors break-all sm:break-normal"
-                      >
-                        hello@example.com
-                      </a>
-                    </p>
+                  <div className="pt-3 space-y-1.5 leading-[1.6]">
+                    <p className="max-w-[250px]">{siteConfig.practiceFormat}</p>
                   </div>
                 </div>
               </div>
@@ -77,7 +70,7 @@ export default function Footer() {
       <div className="w-full bg-primary">
         <div className="max-w-[1600px] mx-auto px-6 sm:px-12 lg:px-20 xl:px-24 py-4 flex flex-col md:flex-row items-center justify-center font-body text-[11.5px] font-light text-white">
           <div className="flex flex-wrap items-center justify-center gap-x-1.5 gap-y-1 tracking-wide text-center">
-            <span>© {new Date().getFullYear()} {siteConfig.name}. All rights reserved.</span>
+            <span>&copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.</span>
           </div>
         </div>
       </div>

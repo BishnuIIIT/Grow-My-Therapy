@@ -23,8 +23,8 @@ export const siteConfig = {
   description:
     "Dr. Maya Reynolds is a Licensed Clinical Psychologist in Santa Monica, CA, offering in-person and secure telehealth therapy for adults navigating anxiety, trauma, and professional burnout.",
   address: {
-    street: "123th Street 45 W",
-    cityStateZip: "Santa Monica, CA 90401",
+    street: "",
+    cityStateZip: "Santa Monica, CA",
   },
   practiceFormat: "In-person from the Santa Monica office and secure telehealth throughout California.",
 };
