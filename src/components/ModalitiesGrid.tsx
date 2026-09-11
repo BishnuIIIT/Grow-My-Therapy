@@ -58,18 +58,18 @@ export default function ModalitiesGrid() {
       {/* SECTION B: Specialties 3-Column Editorial Grid (Pure white background with generous whitespace) */}
       <section className="w-full bg-white pt-10 sm:pt-16 md:pt-24 pb-28 sm:pb-36 md:pb-44 lg:pb-56">
         <div 
-          className="w-full max-w-[1680px] mx-auto"
+          className="w-full max-w-[1720px] mx-auto"
           style={{
-            paddingLeft: "clamp(35px, 4.5vw, 90px)",
-            paddingRight: "clamp(35px, 4.5vw, 90px)"
+            paddingLeft: "clamp(20px, 3.2vw, 60px)",
+            paddingRight: "clamp(30px, 4.5vw, 90px)"
           }}
         >
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14 xl:gap-20 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-[1.15fr_1fr_1fr] lg:grid-cols-[1.2fr_1fr_1fr] gap-8 lg:gap-12 xl:gap-16 items-start">
             
-            {/* COLUMN 1: Subheading (Larger scale, PrintedMoments script font) */}
-            <div className="flex flex-col pt-1">
-              <h3 className="font-serif text-[36px] sm:text-[42px] lg:text-[46px] xl:text-[50px] leading-[1.15] font-light text-[#2b2b2b] tracking-[-0.01em]">
+            {/* COLUMN 1: Subheading (Moved a little left, locked to single line) */}
+            <div className="flex flex-col pt-1 lg:-ml-2 xl:-ml-6">
+              <h3 className="font-serif text-[32px] sm:text-[38px] lg:text-[42px] xl:text-[46px] leading-[1.2] font-light text-[#2b2b2b] tracking-[-0.01em] whitespace-nowrap">
                 Our{" "}
                 <span className="font-['PrintedMoments'] text-[#86b3b3] text-[1.25em] font-normal not-italic inline-block mx-1 leading-none">
                   specialties
