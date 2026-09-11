@@ -28,9 +28,7 @@ export default function Hero() {
           
           {/* Eyebrow: Top edge aligns exactly with where the main left image starts */}
           <p className="mt-0 text-[15px] xl:text-[17px] font-sans font-medium tracking-[0.14em] uppercase text-[#555] mb-[80px] xl:mb-[110px] max-w-[660px] leading-[1.6]">
-            ONLINE &amp; IN-PERSON COUNSELING IN NEWBURY PARK &amp;
-            <br className="hidden sm:inline" />
-            ACROSS CA
+            ONLINE &amp; IN-PERSON COUNSELING IN NEWBURY PARK &amp; ACROSS CA
           </p>
 
           {/* Heading + Supporting Text + CTA Block: Lowered position towards bottom */}

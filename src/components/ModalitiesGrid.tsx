@@ -43,10 +43,8 @@ export default function ModalitiesGrid() {
                   <span className="font-['PrintedMoments'] text-[#86b3b3] text-[1.15em] font-normal not-italic px-1">
                     &amp;
                   </span>
-                </span>
-                <br className="hidden lg:inline" />
-                <span className="whitespace-normal">helping shape where you’re</span>
-                <br className="hidden sm:inline lg:hidden" />
+                </span>{" "}
+                <span className="whitespace-normal">helping shape where you’re</span>{" "}
                 headed.
               </h2>
             </div>
