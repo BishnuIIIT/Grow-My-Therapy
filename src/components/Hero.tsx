@@ -9,10 +9,10 @@ export default function Hero() {
       {/* ========================================================================= */}
       {/* DESKTOP HERO COMPOSITION (>= lg: 1024px)                                  */}
       {/* ========================================================================= */}
-      <div className="hidden lg:flex w-full h-[800px] xl:h-[900px] relative items-center justify-between">
+      <div className="hidden lg:flex w-full h-[860px] xl:h-[950px] relative items-center justify-between">
         
-        {/* 1. MAIN LEFT IMAGE (Width increased 1.4x) */}
-        <div className="relative w-[44vw] max-w-[760px] min-w-[480px] h-[82%] xl:h-[88%] z-10 flex-shrink-0">
+        {/* 1. MAIN LEFT IMAGE */}
+        <div className="relative w-[40vw] max-w-[700px] min-w-[440px] h-[82%] xl:h-[88%] z-10 flex-shrink-0">
           <Image
             src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/80513bd1-30ee-4a2d-aaf6-782d9be095ce/Jennifer+A+-+Images+%2866%29.jpg"
             alt="Family therapy session in a warm, welcoming counseling setting"
@@ -24,40 +24,43 @@ export default function Hero() {
         </div>
 
         {/* 2. HERO HEADING + SUPPORTING TEXT + CTA BLOCK (Exact target styling) */}
-        <div className="flex flex-col w-full max-w-[620px] xl:max-w-[660px] text-left z-20 px-8 xl:px-12 mt-0 lg:mt-[10px] xl:mt-[25px] flex-shrink-0">
+        <div className="flex flex-col w-full max-w-[680px] xl:max-w-[760px] text-left z-20 px-6 xl:px-10 flex-shrink-0">
           
-          {/* Eyebrow with target 2-line break: ONLINE & IN-PERSON COUNSELING IN NEWBURY PARK & / ACROSS CA */}
-          <p className="text-[11px] xl:text-[12px] font-sans font-medium tracking-[0.16em] uppercase text-[#555] mb-[22px] max-w-[540px] leading-[1.6]">
+          {/* Eyebrow (Image 1): Shifted upper side, 1.5x font size, ACROSS CA on one line */}
+          <p className="-mt-8 lg:-mt-12 xl:-mt-16 text-[15px] xl:text-[17px] font-sans font-medium tracking-[0.14em] uppercase text-[#555] mb-[32px] xl:mb-[40px] max-w-[660px] leading-[1.6]">
             <span className="whitespace-nowrap">ONLINE &amp; IN-PERSON COUNSELING IN NEWBURY PARK &amp;</span>
             <br className="hidden sm:inline" />
             <span className="whitespace-nowrap">ACROSS CA</span>
           </p>
 
-          {/* Main Heading with PrintedMoments cursive thrive. */}
-          <h1 className="font-serif text-[42px] lg:text-[46px] xl:text-[54px] leading-[1.12] font-light text-[#2b2b2b] tracking-[-0.01em] mb-[25px]">
-            <span className="whitespace-nowrap">Rebuild your foundation on</span><br />
-            <span className="whitespace-nowrap">solid ground and finally begin to</span><br />
-            <span className="font-['PrintedMoments'] text-[#86b3b3] text-[1.25em] font-normal not-italic inline-block mr-1 leading-none">thrive</span>.
-          </h1>
-          
-          {/* Supporting text in sentence case */}
-          <p className="font-body text-[13.5px] xl:text-[15px] leading-[1.65] text-[#555] font-light mb-[32px] max-w-[560px]">
-            Specialized therapy for adults, couples, teens, and children to reflect, heal, and grow.
-          </p>
-          
-          {/* CTA Link */}
-          <div>
-            <Link
-              href="/contact"
-              className="inline-block text-[11px] font-sans font-medium tracking-[0.16em] uppercase text-[#2b2b2b] border-b-[1.5px] border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
-            >
-              BOOK AN APPOINTMENT
-            </Link>
+          {/* Image 2 Block: Shifted to a little lower position, 1.5x size */}
+          <div className="flex flex-col">
+            {/* Main Heading with PrintedMoments cursive thrive (1.5x size) */}
+            <h1 className="font-serif text-[52px] lg:text-[58px] xl:text-[68px] leading-[1.12] font-light text-[#2b2b2b] tracking-[-0.01em] mb-[28px] xl:mb-[34px]">
+              <span className="whitespace-nowrap">Rebuild your foundation on</span><br />
+              <span className="whitespace-nowrap">solid ground and finally begin to</span><br />
+              <span className="font-['PrintedMoments'] text-[#86b3b3] text-[1.25em] font-normal not-italic inline-block mr-1 leading-none">thrive</span>.
+            </h1>
+            
+            {/* Supporting text in sentence case (1.5x size) */}
+            <p className="font-body text-[18px] xl:text-[21px] leading-[1.65] text-[#555] font-light mb-[36px] xl:mb-[44px] max-w-[640px]">
+              Specialized therapy for adults, couples, teens, and children to reflect, heal, and grow.
+            </p>
+            
+            {/* CTA Link (1.5x size) */}
+            <div>
+              <Link
+                href="/contact"
+                className="inline-block text-[15px] xl:text-[16px] font-sans font-medium tracking-[0.16em] uppercase text-[#2b2b2b] border-b-[2px] border-[#2b2b2b] pb-1 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
+              >
+                BOOK AN APPOINTMENT
+              </Link>
+            </div>
           </div>
         </div>
 
         {/* 3. SECONDARY RIGHT IMAGE */}
-        <div className="relative w-[11vw] max-w-[190px] min-w-[120px] h-[65%] xl:h-[72%] z-10 overflow-hidden mt-[80px] xl:mt-[110px] flex-shrink-0">
+        <div className="relative w-[10vw] max-w-[170px] min-w-[110px] h-[65%] xl:h-[72%] z-10 overflow-hidden mt-[60px] xl:mt-[90px] flex-shrink-0">
           <Image
             src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/3643a7ac-ff62-4927-b96e-9e65ecff0521/Jennifer+A+-+Images+%2867%29.jpg"
             alt="Ocean waves and shoreline serenity"
@@ -74,17 +77,17 @@ export default function Hero() {
       {/* MOBILE / TABLET ADAPTIVE LAYOUT (< lg: 1024px)                           */}
       {/* ========================================================================= */}
       <div className="lg:hidden flex flex-col px-6 sm:px-10">
-        <p className="text-[11px] sm:text-[12px] font-sans font-medium tracking-[0.16em] uppercase text-[#555] mb-4">
+        <p className="text-[14px] sm:text-[15px] font-sans font-medium tracking-[0.14em] uppercase text-[#555] mb-6">
           <span className="whitespace-nowrap">ONLINE &amp; IN-PERSON COUNSELING IN NEWBURY PARK &amp;</span><br className="hidden sm:inline" />{" "}
           <span className="whitespace-nowrap">ACROSS CA</span>
         </p>
         
-        <h1 className="font-serif text-[38px] sm:text-[46px] leading-[1.1] font-light text-[#2b2b2b] tracking-[-0.01em] mb-6">
+        <h1 className="font-serif text-[46px] sm:text-[54px] leading-[1.1] font-light text-[#2b2b2b] tracking-[-0.01em] mb-7">
           Rebuild your foundation on solid ground and finally begin to{" "}
           <span className="font-['PrintedMoments'] text-[#86b3b3] text-[1.2em] font-normal not-italic inline-block">thrive</span>.
         </h1>
         
-        <div className="relative w-full aspect-[4/5] sm:aspect-[1/1] mb-6 overflow-hidden">
+        <div className="relative w-full aspect-[4/5] sm:aspect-[1/1] mb-7 overflow-hidden">
           <Image
             src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/80513bd1-30ee-4a2d-aaf6-782d9be095ce/Jennifer+A+-+Images+%2866%29.jpg"
             alt="Family therapy session in a warm, welcoming counseling setting"
@@ -95,14 +98,14 @@ export default function Hero() {
           />
         </div>
 
-        <p className="font-body text-[14px] leading-[1.7] text-[#555] font-light mb-6">
+        <p className="font-body text-[17px] sm:text-[19px] leading-[1.7] text-[#555] font-light mb-7">
           Specialized therapy for adults, couples, teens, and children to reflect, heal, and grow.
         </p>
         
         <div>
           <Link
             href="/contact"
-            className="inline-block text-[12px] font-sans font-medium tracking-[0.16em] uppercase text-[#2b2b2b] border-b-[1.5px] border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
+            className="inline-block text-[14px] font-sans font-medium tracking-[0.16em] uppercase text-[#2b2b2b] border-b-[1.5px] border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
           >
             BOOK AN APPOINTMENT
           </Link>
