@@ -30,17 +30,17 @@ export default function Header() {
         isScrolled ? "shadow-sm border-b border-[#e8e5df]" : "border-b border-transparent"
       }`}
     >
-      <div className="max-w-[1800px] mx-auto px-4 sm:px-8 lg:px-12">
-        <div className="flex items-center justify-between h-[95px] lg:h-[125px]">
-          {/* Logo (Shifted a little left, size increased 1.5x) */}
-          <Link href="/" className="flex items-center flex-shrink-0 group -ml-2 sm:-ml-4 lg:-ml-6 xl:-ml-8">
-            <div className="relative w-[285px] sm:w-[345px] md:w-[405px] h-[82px] sm:h-[98px] lg:h-[112px]">
+      <div className="max-w-[1800px] mx-auto px-3 sm:px-6 lg:px-8 xl:px-10">
+        <div className="flex items-center justify-between h-[88px] lg:h-[105px]">
+          {/* Logo (Shifted further left, size reduced by 20%) */}
+          <Link href="/" className="flex items-center flex-shrink-0 group -ml-3 sm:-ml-5 lg:-ml-8 xl:-ml-10">
+            <div className="relative w-[225px] sm:w-[275px] md:w-[325px] h-[66px] sm:h-[78px] lg:h-[90px]">
               <Image
                 src={siteConfig.logoUrl}
                 alt={siteConfig.name}
                 fill
                 priority
-                sizes="(max-width: 640px) 285px, (max-width: 1024px) 345px, 410px"
+                sizes="(max-width: 640px) 225px, (max-width: 1024px) 275px, 325px"
                 className="object-contain object-left transition-opacity group-hover:opacity-90"
               />
             </div>
