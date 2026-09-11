@@ -16,7 +16,7 @@ export default function AreasOfExpertise() {
           
           {/* Left Column: Heading on a single horizontal line, shifted towards left */}
           <div className="flex-shrink-0 flex flex-col justify-start pt-1">
-            <h3 className="font-serif text-[36px] sm:text-[42px] lg:text-[48px] xl:text-[52px] leading-[1.2] text-[#2b2b2b] font-light whitespace-normal sm:whitespace-nowrap">
+            <h3 className="font-serif text-[36px] sm:text-[42px] lg:text-[48px] xl:text-[52px] leading-[1.2] text-[#2b2b2b] font-light">
               Our areas of{" "}
               <span className="font-['PrintedMoments'] text-[#86b3b3] text-[1.25em] font-normal not-italic inline-block ml-1 leading-none">
                 expertise

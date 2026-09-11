@@ -34,18 +34,18 @@ export default function ModalitiesGrid() {
 
           {/* RIGHT: Heading aligned to the bottom horizontal line of the image */}
           <div 
-            className="w-full flex-1 px-6 sm:px-10 lg:px-0 pt-10 sm:pt-14 lg:pt-0 flex flex-col justify-end lg:self-end pb-4 lg:pb-6 xl:pb-10"
+            className="w-full flex-1 px-6 sm:px-10 lg:px-0 pt-10 sm:pt-14 lg:pt-0 flex flex-col justify-end lg:self-end pb-4 lg:pb-6 xl:pb-10 min-w-0"
             style={{ paddingLeft: "clamp(45px, 5.5vw, 120px)", paddingRight: "clamp(24px, 3vw, 60px)" }}
           >
             <div className="max-w-[700px] w-full">
               <h2 className="font-serif text-[42px] sm:text-[48px] lg:text-[54px] xl:text-[58px] leading-[1.15] font-light text-[#2b2b2b] tracking-[-0.01em] mb-[45px] xl:mb-[55px]">
-                <span className="whitespace-normal sm:whitespace-nowrap">Honoring where you’ve been{" "}
+                <span className="whitespace-normal">Honoring where you’ve been{" "}
                   <span className="font-['PrintedMoments'] text-[#86b3b3] text-[1.15em] font-normal not-italic px-1">
                     &amp;
                   </span>
                 </span>
                 <br className="hidden lg:inline" />
-                <span className="whitespace-normal sm:whitespace-nowrap">helping shape where you’re</span>
+                <span className="whitespace-normal">helping shape where you’re</span>
                 <br className="hidden sm:inline lg:hidden" />
                 headed.
               </h2>

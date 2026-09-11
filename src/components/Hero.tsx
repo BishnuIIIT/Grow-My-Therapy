@@ -12,7 +12,7 @@ export default function Hero() {
       <div className="hidden lg:flex w-full h-[860px] xl:h-[950px] relative items-center justify-between">
         
         {/* 1. MAIN LEFT IMAGE (Width increased by 20%) */}
-        <div className="relative w-[48vw] max-w-[840px] min-w-[520px] h-[82%] xl:h-[88%] z-10 flex-shrink-0">
+        <div className="relative w-[48vw] max-w-[840px] min-w-[400px] h-[82%] xl:h-[88%] z-10 flex-shrink-0">
           <Image
             src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/80513bd1-30ee-4a2d-aaf6-782d9be095ce/Jennifer+A+-+Images+%2866%29.jpg"
             alt="Family therapy session in a warm, welcoming counseling setting"
@@ -24,26 +24,26 @@ export default function Hero() {
         </div>
 
         {/* 2. HERO HEADING + SUPPORTING TEXT + CTA BLOCK (Exact target styling) */}
-        <div className="flex flex-col w-full max-w-[680px] xl:max-w-[780px] text-left z-20 px-4 xl:px-8 flex-shrink-0 self-start pt-[77px] xl:pt-[57px]">
+        <div className="flex flex-col w-full max-w-[680px] xl:max-w-[780px] text-left z-20 px-4 xl:px-8 self-start pt-[77px] xl:pt-[57px] min-w-0">
           
           {/* Eyebrow: Top edge aligns exactly with where the main left image starts */}
           <p className="mt-0 text-[15px] xl:text-[17px] font-sans font-medium tracking-[0.14em] uppercase text-[#555] mb-[80px] xl:mb-[110px] max-w-[660px] leading-[1.6]">
-            <span className="whitespace-nowrap">ONLINE &amp; IN-PERSON COUNSELING IN NEWBURY PARK &amp;</span>
+            ONLINE &amp; IN-PERSON COUNSELING IN NEWBURY PARK &amp;
             <br className="hidden sm:inline" />
-            <span className="whitespace-nowrap">ACROSS CA</span>
+            ACROSS CA
           </p>
 
           {/* Heading + Supporting Text + CTA Block: Lowered position towards bottom */}
           <div className="flex flex-col mt-10 lg:mt-16 xl:mt-20">
             {/* Main Heading with PrintedMoments cursive thrive (1.5x size) */}
             <h1 className="font-serif text-[52px] lg:text-[58px] xl:text-[68px] leading-[1.12] font-light text-[#2b2b2b] tracking-[-0.01em] mb-[28px] xl:mb-[34px]">
-              <span className="whitespace-nowrap">Rebuild your foundation on</span><br />
-              <span className="whitespace-nowrap">solid ground and finally begin to</span><br />
+              Rebuild your foundation on<br />
+              solid ground and finally begin to<br />
               <span className="font-['PrintedMoments'] text-[#86b3b3] text-[1.25em] font-normal not-italic inline-block mr-1 leading-none">thrive</span>.
             </h1>
             
             {/* Supporting text (Image 1) - Single line */}
-            <p className="font-body text-[15.5px] lg:text-[16.5px] xl:text-[18px] leading-[1.6] text-[#555] font-light mb-[36px] xl:mb-[44px] whitespace-nowrap">
+            <p className="font-body text-[15.5px] lg:text-[16.5px] xl:text-[18px] leading-[1.6] text-[#555] font-light mb-[36px] xl:mb-[44px]">
               Specialized therapy for adults, couples, teens, and children to reflect, heal, and grow.
             </p>
             
