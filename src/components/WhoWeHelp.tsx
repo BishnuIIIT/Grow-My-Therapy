@@ -41,7 +41,7 @@ export default function WhoWeHelp() {
                     {card.title}
                   </Link>
                 </h3>
-                <p className="font-['gravesend-sans',sans-serif] text-[15.5px] sm:text-[16.5px] leading-[1.8] text-[#555] font-[300]">
+                <p className="font-body text-[15.5px] sm:text-[16.5px] leading-[1.8] text-[#555] font-[300]">
                   {card.description}
                 </p>
               </div>

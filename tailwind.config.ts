@@ -19,6 +19,7 @@ const config: Config = {
       fontFamily: {
         serif: ["beaufort-pro", "Georgia", "serif"],
         sans: ["gravesend-sans", "system-ui", "-apple-system", "sans-serif"],
+        body: ["var(--font-mulish)", "system-ui", "-apple-system", "sans-serif"],
       },
       maxWidth: {
         "site": "1800px",

@@ -106,14 +106,15 @@ export default function HopeSection() {
             <p className="font-sans font-medium uppercase text-[#2b2b2b] mb-4" style={{ fontSize: "11px", letterSpacing: "0.15em", lineHeight: "1.7" }}>
               At Conejo Valley Family Counseling We Want To Make That Hope A Reality.
             </p>
-            <p className="font-light text-[#555] text-[15px] leading-[1.75]" style={{ fontFamily: "var(--font-mulish), system-ui, sans-serif" }}>
-              Whether you’re an adult seeking personal growth, looking to work through your trauma, a couple working on your relationship, or a parent looking for support for your child, we provide a compassionate and safe space to help you navigate all of life’s ups and downs.
+            <p className="font-body text-[16px] xl:text-[17px] leading-[1.7] text-[#555] font-[300] mb-8">
+              Whether you&apos;re an adult seeking personal growth, looking to work through your trauma, a couple working on your relationship, or a parent looking for support for your child, we provide a compassionate and safe space to help you navigate all of life&apos;s ups and downs.
             </p>
           </div>
 
-          <div>
-            <p className="font-light text-[#555] text-[15px] leading-[1.75]" style={{ fontFamily: "var(--font-mulish), system-ui, sans-serif" }}>
-              First and foremost, we believe what you’re going through is real, valid, and worthy of support. Our team offers clients in the Newbury Park area and across CA an environment to discover a new life and a deeper sense of self in the midst of their struggles. As we tap into the power of connection and understanding, you can find your footing again and take a transformative path forward.
+          {/* Column 2 */}
+          <div className="flex flex-col">
+            <p className="font-body text-[16px] xl:text-[17px] leading-[1.7] text-[#555] font-[300] mb-8">
+              First and foremost, we believe what you&apos;re going through is real, valid, and worthy of support. Our team offers clients in the Newbury Park area and across CA an environment to discover a new life and a deeper sense of self in the midst of their struggles. As we tap into the power of connection and understanding, you can find your footing again and take a transformative path forward.
             </p>
           </div>
         </div>

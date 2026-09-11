@@ -80,7 +80,7 @@ export default function ModalitiesGrid() {
                 <h4 className="font-['beaufort-pro',serif] text-[24px] sm:text-[26px] lg:text-[28px] font-normal text-[#2b2b2b] mb-4">
                   {modalitiesData[0].title}
                 </h4>
-                <p className="font-['gravesend-sans',sans-serif] text-[14.5px] sm:text-[15px] leading-[1.8] text-[#555] font-[300] mb-6">
+                <p className="font-body text-[14.5px] sm:text-[15px] leading-[1.8] text-[#555] font-[300] mb-6">
                   {modalitiesData[0].description}
                 </p>
                 <Link
@@ -96,7 +96,7 @@ export default function ModalitiesGrid() {
                 <h4 className="font-['beaufort-pro',serif] text-[24px] sm:text-[26px] lg:text-[28px] font-normal text-[#2b2b2b] mb-4">
                   {modalitiesData[1].title}
                 </h4>
-                <p className="font-['gravesend-sans',sans-serif] text-[14.5px] sm:text-[15px] leading-[1.8] text-[#555] font-[300] mb-6">
+                <p className="font-body text-[14.5px] sm:text-[15px] leading-[1.8] text-[#555] font-[300] mb-6">
                   {modalitiesData[1].description}
                 </p>
                 <Link
@@ -117,7 +117,7 @@ export default function ModalitiesGrid() {
                 <h4 className="font-['beaufort-pro',serif] text-[24px] sm:text-[26px] lg:text-[28px] font-normal text-[#2b2b2b] mb-4">
                   {modalitiesData[2].title}
                 </h4>
-                <p className="font-['gravesend-sans',sans-serif] text-[14.5px] sm:text-[15px] leading-[1.8] text-[#555] font-[300] mb-6">
+                <p className="font-body text-[14.5px] sm:text-[15px] leading-[1.8] text-[#555] font-[300] mb-6">
                   {modalitiesData[2].description}
                 </p>
                 <Link
@@ -133,7 +133,7 @@ export default function ModalitiesGrid() {
                 <h4 className="font-['beaufort-pro',serif] text-[24px] sm:text-[26px] lg:text-[28px] font-normal text-[#2b2b2b] mb-4">
                   {modalitiesData[3].title}
                 </h4>
-                <p className="font-['gravesend-sans',sans-serif] text-[14.5px] sm:text-[15px] leading-[1.8] text-[#555] font-[300] mb-6">
+                <p className="font-body text-[14.5px] sm:text-[15px] leading-[1.8] text-[#555] font-[300] mb-6">
                   {modalitiesData[3].description}
                 </p>
                 <Link

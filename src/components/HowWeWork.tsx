@@ -39,14 +39,14 @@ export default function HowWeWork() {
             <p className="font-sans text-[12px] sm:text-[13px] md:text-[14px] font-[500] uppercase tracking-[0.15em] text-[#2b2b2b] leading-[1.6] mb-8">
               THE CLIENTS WE WORK WITH ARE BALANCING SO MANY THINGS AT ONCE. IT&apos;S OFTEN HARD FOR THEM TO PUT THEMSELVES FIRST.
             </p>
-            <p className="font-sans text-[15.5px] sm:text-[16.5px] leading-[1.8] text-[#2b2b2b] font-[300] mb-8">
+            <p className="font-body text-[15.5px] sm:text-[16.5px] leading-[1.8] text-[#2b2b2b] font-[300] mb-8">
               Here, your needs are always top priority. Our team takes the time to deeply listen to our clients in order to truly understand their story and their struggles. We recognize that no two people are the same and that personalized therapy means an intentional, tailored approach. (You won&apos;t find anything &ldquo;one-size-fits-all&rdquo; here.) If you&apos;re ready to do the work, we&apos;re ready to help.
             </p>
           </div>
 
           {/* 5. Body Paragraph 2 */}
           <div className="lg:col-span-7 lg:row-start-4">
-            <p className="font-sans text-[15.5px] sm:text-[16.5px] leading-[1.8] text-[#2b2b2b] font-[300] mb-12">
+            <p className="font-body text-[15.5px] sm:text-[16.5px] leading-[1.8] text-[#2b2b2b] font-[300] mb-12">
               Sometimes we may gently challenge you to look at things differently and other times we may explore your emotions, all while encouraging you to practice what you&apos;ve learned in your daily life. We take what we do seriously because we know how important it is for you to heal from what&apos;s hurting you, discover a fulfilling life, and build meaningful relationships. Our goal is to walk alongside you in this journey, offering support and guidance as you uncover your strengths and embrace what the future can hold for you.
             </p>
           </div>

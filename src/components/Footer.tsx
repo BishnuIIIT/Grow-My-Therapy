@@ -30,8 +30,8 @@ export default function Footer() {
                 />
               </div>
             </Link>
-            <p className="font-['gravesend-sans',sans-serif] text-[14.5px] sm:text-[15px] leading-[1.8] text-[#555] font-[300] max-w-[380px]">
-              We want to make getting started simple. You&apos;re welcome to come into our office in Newbury Park or schedule virtual appointments from anywhere in CA—whatever works best for you.
+            <p className="font-['var(--font-mulish)'] text-[14.5px] sm:text-[15px] leading-[1.8] text-[#555] font-[300] max-w-[380px]">
+              We want to make getting started simple. You&apos;re welcome to come into our office in Newbury Park or schedule virtual appointments from anywhere in CA?"whatever works best for you.
             </p>
           </div>
 
@@ -40,7 +40,7 @@ export default function Footer() {
             <h4 className="font-['gravesend-sans',sans-serif] text-[11px] sm:text-[12px] font-[500] tracking-[0.18em] uppercase text-[#2b2b2b] mb-6">
               NAVIGATE
             </h4>
-            <ul className="space-y-2.5 font-['gravesend-sans',sans-serif] text-[14px] sm:text-[14.5px] font-[300] text-[#555] leading-snug">
+            <ul className="space-y-2.5 font-['var(--font-mulish)'] text-[14px] sm:text-[14.5px] font-[300] text-[#555] leading-snug">
               {navLinks.map((item) => (
                 <li key={item.title}>
                   <Link
@@ -59,7 +59,7 @@ export default function Footer() {
             <h4 className="font-['gravesend-sans',sans-serif] text-[11px] sm:text-[12px] font-[500] tracking-[0.18em] uppercase text-[#2b2b2b] mb-6">
               OUR TEAM
             </h4>
-            <ul className="space-y-2.5 font-['gravesend-sans',sans-serif] text-[14px] sm:text-[14.5px] font-[300] text-[#555] leading-snug">
+            <ul className="space-y-2.5 font-['var(--font-mulish)'] text-[14px] sm:text-[14.5px] font-[300] text-[#555] leading-snug">
               {therapistsList.map((t) => (
                 <li key={t.name}>
                   <Link
@@ -78,7 +78,7 @@ export default function Footer() {
             <h4 className="font-['gravesend-sans',sans-serif] text-[11px] sm:text-[12px] font-[500] tracking-[0.18em] uppercase text-[#2b2b2b] mb-6">
               CONTACT
             </h4>
-            <div className="space-y-1 font-['gravesend-sans',sans-serif] text-[14px] sm:text-[14.5px] leading-[1.6] text-[#555] font-[300]">
+            <div className="space-y-1 font-['var(--font-mulish)'] text-[14px] sm:text-[14.5px] leading-[1.6] text-[#555] font-[300]">
               <p>925 Broadbeck Dr</p>
               <p>Suites 200 and 225</p>
               <p>Newbury Park, CA 91320</p>
@@ -111,7 +111,7 @@ export default function Footer() {
 
       {/* Bottom Legal & Attribution Bar */}
       <div className="w-full bg-[#86b3b3]">
-        <div className="max-w-[1600px] mx-auto px-6 sm:px-12 lg:px-20 xl:px-24 py-2.5 flex flex-col md:flex-row items-center justify-center font-['gravesend-sans',sans-serif] text-[11px] font-[300] text-white">
+        <div className="max-w-[1600px] mx-auto px-6 sm:px-12 lg:px-20 xl:px-24 py-2.5 flex flex-col md:flex-row items-center justify-center font-['var(--font-mulish)'] text-[11px] font-[300] text-white">
           <div className="flex flex-wrap items-center justify-center gap-x-1.5 gap-y-1 tracking-wide text-center">
             <Link
               href="https://www.conejovalleycounseling.com/terms"
