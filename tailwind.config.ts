@@ -20,6 +20,7 @@ const config: Config = {
         serif: ["beaufort-pro", "Georgia", "serif"],
         sans: ["gravesend-sans", "system-ui", "-apple-system", "sans-serif"],
         body: ["var(--font-mulish)", "system-ui", "-apple-system", "sans-serif"],
+        script: ["PrintedMoments", "cursive", "serif"],
       },
       maxWidth: {
         "site": "1800px",

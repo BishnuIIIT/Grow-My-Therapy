@@ -11,56 +11,57 @@ export default function Hero() {
       {/* ========================================================================= */}
       <div className="hidden lg:flex w-full h-[800px] xl:h-[900px] relative items-center justify-between">
         
-        {/* 1. MAIN LEFT IMAGE (Pinned to far left edge, 1.5x scale) */}
-        <div className="relative w-[32vw] max-w-[560px] min-w-[360px] h-[82%] xl:h-[88%] z-10 flex-shrink-0">
+        {/* 1. MAIN LEFT IMAGE (Width increased 1.4x) */}
+        <div className="relative w-[44vw] max-w-[760px] min-w-[480px] h-[82%] xl:h-[88%] z-10 flex-shrink-0">
           <Image
             src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/80513bd1-30ee-4a2d-aaf6-782d9be095ce/Jennifer+A+-+Images+%2866%29.jpg"
             alt="Family therapy session in a warm, welcoming counseling setting"
             fill
             priority
-            sizes="(max-width: 1440px) 35vw, 560px"
-            className="object-cover object-center"
+            sizes="(max-width: 1440px) 45vw, 760px"
+            className="object-cover object-[center_35%]"
           />
         </div>
 
-        {/* 2. HERO HEADING + SUPPORTING TEXT + CTA BLOCK (Centered between images) */}
-        <div className="flex flex-col w-full max-w-[560px] xl:max-w-[640px] text-left z-20 px-6 xl:px-10 mt-[60px] xl:mt-[90px] flex-shrink-0">
+        {/* 2. HERO HEADING + SUPPORTING TEXT + CTA BLOCK (Exact target styling) */}
+        <div className="flex flex-col w-full max-w-[620px] xl:max-w-[660px] text-left z-20 px-8 xl:px-12 mt-[60px] xl:mt-[90px] flex-shrink-0">
           
-          {/* Eyebrow */}
-          <p className="text-[10px] xl:text-[11.5px] font-sans font-medium tracking-[0.18em] uppercase text-[#666] mb-[20px]">
-            ONLINE &amp; IN-PERSON COUNSELING IN NEWBURY PARK &amp; ACROSS CA
+          {/* Eyebrow with target 2-line break */}
+          <p className="text-[11px] xl:text-[12px] font-sans font-medium tracking-[0.16em] uppercase text-[#555] mb-[22px] max-w-[440px] leading-[1.5]">
+            ONLINE &amp; IN-PERSON COUNSELING IN NEWBURY PARK &amp; ACROSS<br className="hidden sm:inline" /> CA
           </p>
 
-          {/* Main Heading */}
-          <h1 className="font-serif text-[42px] xl:text-[54px] leading-[1.14] font-light text-[#2b2b2b] tracking-[-0.01em] mb-[25px]">
-            Rebuild your foundation on<br />
-            solid ground and finally begin to <span className="text-[#86b3b3] font-serif italic font-normal inline-block">thrive</span>.
+          {/* Main Heading with PrintedMoments cursive thrive. */}
+          <h1 className="font-serif text-[42px] lg:text-[46px] xl:text-[54px] leading-[1.12] font-light text-[#2b2b2b] tracking-[-0.01em] mb-[25px]">
+            <span className="whitespace-nowrap">Rebuild your foundation on</span><br />
+            <span className="whitespace-nowrap">solid ground and finally begin to</span><br />
+            <span className="font-['PrintedMoments'] text-[#86b3b3] text-[1.25em] font-normal not-italic inline-block mr-1 leading-none">thrive</span>.
           </h1>
           
-          {/* Supporting text */}
-          <p className="font-sans text-[11px] xl:text-[12.5px] leading-[1.7] tracking-[0.06em] text-[#555] font-normal uppercase mb-[35px] max-w-[550px]">
-            SPECIALIZED THERAPY FOR ADULTS, COUPLES, TEENS, AND CHILDREN TO REFLECT, HEAL, AND GROW.
+          {/* Supporting text in sentence case */}
+          <p className="font-body text-[13.5px] xl:text-[15px] leading-[1.65] text-[#555] font-light mb-[32px] max-w-[560px]">
+            Specialized therapy for adults, couples, teens, and children to reflect, heal, and grow.
           </p>
           
-          {/* CTA */}
+          {/* CTA Link */}
           <div>
             <Link
               href="/contact"
-              className="inline-block text-[11px] font-sans font-medium tracking-[0.14em] uppercase text-[#2b2b2b] border-b-[1.5px] border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
+              className="inline-block text-[11px] font-sans font-medium tracking-[0.16em] uppercase text-[#2b2b2b] border-b-[1.5px] border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
             >
               BOOK AN APPOINTMENT
             </Link>
           </div>
         </div>
 
-        {/* 3. SECONDARY RIGHT IMAGE (Pinned to far right edge, 1.5x scale) */}
-        <div className="relative w-[13vw] max-w-[220px] min-w-[140px] h-[68%] xl:h-[75%] z-10 overflow-hidden mt-[70px] xl:mt-[100px] flex-shrink-0">
+        {/* 3. SECONDARY RIGHT IMAGE */}
+        <div className="relative w-[11vw] max-w-[190px] min-w-[120px] h-[65%] xl:h-[72%] z-10 overflow-hidden mt-[80px] xl:mt-[110px] flex-shrink-0">
           <Image
             src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/3643a7ac-ff62-4927-b96e-9e65ecff0521/Jennifer+A+-+Images+%2867%29.jpg"
             alt="Ocean waves and shoreline serenity"
             fill
             priority
-            sizes="220px"
+            sizes="190px"
             className="object-cover object-[87%_56%]"
           />
         </div>
@@ -71,13 +72,13 @@ export default function Hero() {
       {/* MOBILE / TABLET ADAPTIVE LAYOUT (< lg: 1024px)                           */}
       {/* ========================================================================= */}
       <div className="lg:hidden flex flex-col px-6 sm:px-10">
-        <p className="text-[11px] sm:text-[12px] font-sans font-medium tracking-[0.18em] uppercase text-[#666] mb-4">
+        <p className="text-[11px] sm:text-[12px] font-sans font-medium tracking-[0.16em] uppercase text-[#555] mb-4">
           ONLINE &amp; IN-PERSON COUNSELING IN NEWBURY PARK &amp; ACROSS CA
         </p>
         
         <h1 className="font-serif text-[38px] sm:text-[46px] leading-[1.1] font-light text-[#2b2b2b] tracking-[-0.01em] mb-6">
           Rebuild your foundation on solid ground and finally begin to{" "}
-          <span className="text-[#86b3b3] font-serif italic font-normal">thrive</span>.
+          <span className="font-['PrintedMoments'] text-[#86b3b3] text-[1.2em] font-normal not-italic inline-block">thrive</span>.
         </h1>
         
         <div className="relative w-full aspect-[4/5] sm:aspect-[1/1] mb-6 overflow-hidden">
@@ -91,14 +92,14 @@ export default function Hero() {
           />
         </div>
 
-        <p className="font-sans text-[12.5px] leading-[1.7] tracking-[0.06em] text-[#555] font-normal uppercase mb-6">
-          SPECIALIZED THERAPY FOR ADULTS, COUPLES, TEENS, AND CHILDREN TO REFLECT, HEAL, AND GROW.
+        <p className="font-body text-[14px] leading-[1.7] text-[#555] font-light mb-6">
+          Specialized therapy for adults, couples, teens, and children to reflect, heal, and grow.
         </p>
         
         <div>
           <Link
-            href="https://www.conejovalleycounseling.com/contact"
-            className="inline-block text-[12px] font-sans font-medium tracking-[0.14em] uppercase text-[#2b2b2b] border-b-[1.5px] border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
+            href="/contact"
+            className="inline-block text-[12px] font-sans font-medium tracking-[0.16em] uppercase text-[#2b2b2b] border-b-[1.5px] border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
           >
             BOOK AN APPOINTMENT
           </Link>
