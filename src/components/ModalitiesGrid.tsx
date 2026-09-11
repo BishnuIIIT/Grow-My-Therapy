@@ -91,7 +91,7 @@ export default function ModalitiesGrid() {
                 </p>
                 <Link
                   href={specialtyLinks[modalitiesData[0].id] || "#"}
-                  className="inline-block font-sans text-[11px] sm:text-[11.5px] font-medium tracking-[0.16em] uppercase text-[#2b2b2b] border-b border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
+                  className="inline-block font-body text-[12px] sm:text-[12.5px] font-normal tracking-[0.14em] uppercase text-[#2b2b2b] border-b border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
                 >
                   LEARN MORE
                 </Link>
@@ -107,7 +107,7 @@ export default function ModalitiesGrid() {
                 </p>
                 <Link
                   href={specialtyLinks[modalitiesData[1].id] || "#"}
-                  className="inline-block font-sans text-[11px] sm:text-[11.5px] font-medium tracking-[0.16em] uppercase text-[#2b2b2b] border-b border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
+                  className="inline-block font-body text-[12px] sm:text-[12.5px] font-normal tracking-[0.14em] uppercase text-[#2b2b2b] border-b border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
                 >
                   LEARN MORE
                 </Link>
@@ -128,7 +128,7 @@ export default function ModalitiesGrid() {
                 </p>
                 <Link
                   href={specialtyLinks[modalitiesData[2].id] || "#"}
-                  className="inline-block font-sans text-[11px] sm:text-[11.5px] font-medium tracking-[0.16em] uppercase text-[#2b2b2b] border-b border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
+                  className="inline-block font-body text-[12px] sm:text-[12.5px] font-normal tracking-[0.14em] uppercase text-[#2b2b2b] border-b border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
                 >
                   LEARN MORE
                 </Link>
@@ -144,7 +144,7 @@ export default function ModalitiesGrid() {
                 </p>
                 <Link
                   href={specialtyLinks[modalitiesData[3].id] || "#"}
-                  className="inline-block font-sans text-[11px] sm:text-[11.5px] font-medium tracking-[0.16em] uppercase text-[#2b2b2b] border-b border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
+                  className="inline-block font-body text-[12px] sm:text-[12.5px] font-normal tracking-[0.14em] uppercase text-[#2b2b2b] border-b border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
                 >
                   LEARN MORE
                 </Link>

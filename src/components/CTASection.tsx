@@ -49,11 +49,11 @@ export default function CTASection() {
             Click the button below to schedule an appointment.
           </p>
 
-          {/* Book Now Button */}
+          {/* Book Now Button - Pure geometric oval / ellipse matching target website */}
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center font-sans font-normal uppercase text-[#2b2b2b] tracking-[0.2em] border border-[#2b2b2b]/40 rounded-full hover:bg-black/5 transition-colors px-7 py-2.5 text-[11.5px] sm:text-[12px]"
-            style={{ minWidth: "140px", height: "42px" }}
+            className="inline-flex items-center justify-center font-body font-normal uppercase text-[#2b2b2b] tracking-[0.12em] border border-[#2b2b2b] hover:border-[#86b3b3] hover:text-[#86b3b3] hover:bg-transparent transition-all duration-200 text-[12.5px]"
+            style={{ borderRadius: "100%", width: "124px", height: "47px" }}
           >
             BOOK NOW
           </Link>
@@ -100,12 +100,12 @@ export default function CTASection() {
           </p>
         </div>
 
-        {/* Book Now Button */}
+        {/* Book Now Button - Pure geometric oval / ellipse matching target website */}
         <div className="mt-2 mb-6">
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center font-sans font-normal uppercase text-[#2b2b2b] tracking-[0.2em] border border-[#2b2b2b]/40 rounded-full hover:bg-black/5 transition-colors px-6 py-2.5 text-[11px] sm:text-[11.5px]"
-            style={{ width: "136px", height: "40px" }}
+            className="inline-flex items-center justify-center font-body font-normal uppercase text-[#2b2b2b] tracking-[0.12em] border border-[#2b2b2b] hover:border-[#86b3b3] hover:text-[#86b3b3] hover:bg-transparent transition-all duration-200 text-[12.5px]"
+            style={{ borderRadius: "100%", width: "126px", height: "48px" }}
           >
             BOOK NOW
           </Link>

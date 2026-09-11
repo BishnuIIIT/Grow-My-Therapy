@@ -56,7 +56,7 @@ export default function HowWeWork() {
           <div className="mt-24 xl:mt-32">
             <Link
               href="https://www.conejovalleycounseling.com/therapists-newbury-park"
-              className="inline-block font-sans text-[14px] xl:text-[15px] font-medium tracking-[0.16em] uppercase text-[#2b2b2b] border-b-[1.5px] border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
+              className="inline-block font-body text-[13px] xl:text-[13.5px] font-normal tracking-[0.14em] uppercase text-[#2b2b2b] border-b border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
             >
               LEARN MORE ABOUT US
             </Link>
@@ -115,7 +115,7 @@ export default function HowWeWork() {
         <div className="mt-4">
           <Link
             href="https://www.conejovalleycounseling.com/therapists-newbury-park"
-            className="inline-block font-sans text-[13px] sm:text-[14px] font-medium tracking-[0.16em] uppercase text-[#2b2b2b] border-b-[1.5px] border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
+            className="inline-block font-body text-[12.5px] sm:text-[13px] font-normal tracking-[0.14em] uppercase text-[#2b2b2b] border-b border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
           >
             LEARN MORE ABOUT US
           </Link>

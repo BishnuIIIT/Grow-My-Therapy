@@ -51,7 +51,7 @@ export default function Hero() {
             <div>
               <Link
                 href="/contact"
-                className="inline-block text-[15px] xl:text-[16px] font-sans font-medium tracking-[0.16em] uppercase text-[#2b2b2b] border-b-[2px] border-[#2b2b2b] pb-1 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
+                className="inline-block text-[13px] xl:text-[13.5px] font-body font-normal tracking-[0.14em] uppercase text-[#2b2b2b] border-b border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
               >
                 BOOK AN APPOINTMENT
               </Link>
@@ -105,7 +105,7 @@ export default function Hero() {
         <div>
           <Link
             href="/contact"
-            className="inline-block text-[14px] font-sans font-medium tracking-[0.16em] uppercase text-[#2b2b2b] border-b-[1.5px] border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
+            className="inline-block text-[12.5px] sm:text-[13px] font-body font-normal tracking-[0.14em] uppercase text-[#2b2b2b] border-b border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
           >
             BOOK AN APPOINTMENT
           </Link>
