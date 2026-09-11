@@ -2,23 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'PrintedMoments';
-  src: url('/fonts/printedmoments-webfont.woff') format('woff'),
-       url('https://static1.squarespace.com/static/670423e106da6c036366fd10/t/67042f1ac94bbb494649b8e4/1728327450432/printedmoments-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 :root {
-  --color-background: #ffffff;
-  --color-foreground: #2b2b2b;
-  --color-muted-bg: #f7f6f2;
-  --color-accent-sand: #ded6cc;
-  --color-accent-sage: #86b3b3;
-  --color-border: #e8e5df;
-  --color-dark: #1f1f1f;
+  --color-primary: #4A5D6B;
+  --color-primary-hover: #3A4A56;
+  --color-secondary: #8B7D6B;
+  --color-accent: #C4A484;
+  --color-main-bg: #F9F8F6;
+  --color-secondary-bg: #EFECE8;
+  --color-primary-text: #2C3539;
+  --color-muted-text: #687178;
+  --color-border: #D8D3CC;
 }
 
 html {
@@ -28,22 +21,21 @@ html {
 }
 
 body {
-  background-color: var(--color-background);
-  color: var(--color-foreground);
-  font-family: var(--font-mulish), system-ui, -apple-system, sans-serif;
+  background-color: var(--color-main-bg);
+  color: var(--color-primary-text);
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-cormorant), Georgia, serif;
-  font-feature-settings: "liga" 1;
+  font-family: var(--font-lora), Georgia, serif;
 }
 
 ::selection {
-  background-color: var(--color-accent-sand);
-  color: var(--color-foreground);
+  background-color: var(--color-secondary-bg);
+  color: var(--color-primary-text);
 }
 
 /* Custom subtle scrollbar */
@@ -51,12 +43,12 @@ h1, h2, h3, h4, h5, h6 {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--color-muted-bg);
+  background: var(--color-main-bg);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--color-accent-sand);
+  background: var(--color-secondary);
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #c5bba8;
+  background: var(--color-primary);
 }

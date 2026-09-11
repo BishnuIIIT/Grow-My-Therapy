@@ -1,10 +1,9 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
 import Link from "next/link";
-import { ChevronDown, Menu, X } from "lucide-react";
-import { navigationItems, siteConfig } from "@/data/homepageData";
+import { siteConfig, navigationItems } from "@/data/homepageData";
+import { Menu, X, ChevronDown } from "lucide-react";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -26,30 +25,23 @@ export default function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full transition-all duration-300 bg-[#f7f6f2] ${
-        isScrolled ? "shadow-sm border-b border-[#e8e5df]" : "border-b border-transparent"
+      className={`sticky top-0 z-50 w-full transition-all duration-300 bg-main-bg ${
+        isScrolled ? "shadow-sm border-b border-border" : "border-b border-transparent"
       }`}
     >
       <div className="max-w-[1800px] mx-auto px-3 sm:px-6 lg:px-8 xl:px-10">
         <div className="flex items-center justify-between h-[88px] lg:h-[105px]">
-          {/* Logo (Shifted further left, size reduced by 20%) */}
-          <Link href="/" className="flex items-center flex-shrink-0 group -ml-3 sm:-ml-5 lg:-ml-8 xl:-ml-10">
-            <div className="relative w-[225px] sm:w-[275px] md:w-[325px] h-[66px] sm:h-[78px] lg:h-[90px]">
-              <Image
-                src={siteConfig.logoUrl}
-                alt={siteConfig.name}
-                fill
-                priority
-                sizes="(max-width: 640px) 225px, (max-width: 1024px) 275px, 325px"
-                className="object-contain object-left transition-opacity group-hover:opacity-90"
-              />
-            </div>
+          {/* Logo (Text for Dr. Maya Reynolds) */}
+          <Link href="/" className="flex items-center flex-shrink-0 group -ml-3 sm:-ml-5 lg:-ml-8 xl:-ml-10 px-4">
+            <span className="font-serif text-[20px] sm:text-[24px] lg:text-[28px] text-primary-text font-normal tracking-[-0.01em] group-hover:text-primary transition-colors">
+              {siteConfig.name}
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8 xl:space-x-11" aria-label="Main Navigation">
             {navigationItems.map((item) => {
-              const hasDropdown = item.dropdown && item.dropdown.length > 0;
+              const hasDropdown = (item as any).dropdown && (item as any).dropdown.length > 0;
               return (
                 <div
                   key={item.title}
@@ -59,43 +51,22 @@ export default function Header() {
                 >
                   <Link
                     href={item.href}
-                    className="flex items-center text-[12.5px] xl:text-[13.5px] font-normal tracking-[0.16em] xl:tracking-[0.18em] uppercase text-[#4a4a4a] hover:text-[#86b3b3] transition-colors py-2"
+                    className="flex items-center text-[12.5px] xl:text-[13.5px] font-normal tracking-[0.16em] xl:tracking-[0.18em] uppercase text-primary-text hover:text-primary transition-colors py-2"
                   >
                     <span>{item.title}</span>
                   </Link>
-
-                  {/* Dropdown Menu */}
-                  {hasDropdown && (
-                    <div
-                      className={`absolute top-full left-0 min-w-[240px] bg-white border border-[#e8e5df] shadow-lg rounded-sm py-2 z-50 transition-all duration-200 ${
-                        activeDropdown === item.title
-                          ? "opacity-100 visible translate-y-0"
-                          : "opacity-0 invisible -translate-y-1"
-                      }`}
-                    >
-                      {item.dropdown!.map((subItem) => (
-                        <Link
-                          key={subItem.title}
-                          href={subItem.href}
-                          className="block px-4 py-2 text-[13px] text-[#333] hover:bg-[#f7f6f2] hover:text-[#86b3b3] transition-colors"
-                        >
-                          {subItem.title}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
                 </div>
               );
             })}
 
-            {/* Header CTA Button - Pure geometric oval / ellipse matching target website */}
+            {/* Header CTA Button */}
             <div className="pl-4 xl:pl-6">
               <Link
-                href="https://www.conejovalleycounseling.com/contact"
-                className="inline-flex items-center justify-center font-body text-[12.5px] font-normal tracking-[0.12em] uppercase text-[#2b2b2b] border border-[#2b2b2b] hover:border-[#86b3b3] hover:text-[#86b3b3] hover:bg-transparent transition-all duration-200"
-                style={{ borderRadius: "100%", width: "110px", height: "47px" }}
+                href="/#contact"
+                className="inline-flex items-center justify-center font-body text-[11px] xl:text-[12px] font-normal tracking-[0.12em] uppercase text-primary-text border border-primary-text hover:border-primary hover:text-primary hover:bg-transparent transition-all duration-200"
+                style={{ borderRadius: "100%", width: "160px", height: "47px" }}
               >
-                CONTACT
+                BOOK CONSULTATION
               </Link>
             </div>
           </nav>
@@ -105,7 +76,7 @@ export default function Header() {
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               type="button"
-              className="p-2 text-[#2b2b2b] hover:text-[#86b3b3] transition-colors focus:outline-none"
+              className="p-2 text-primary-text hover:text-primary transition-colors focus:outline-none"
               aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
               aria-expanded={mobileMenuOpen}
             >
@@ -117,54 +88,21 @@ export default function Header() {
 
       {/* Mobile Drawer Menu */}
       <div
-        className={`fixed inset-0 top-[80px] bg-white z-40 lg:hidden overflow-y-auto transition-all duration-300 ${
+        className={`fixed inset-0 top-[80px] bg-main-bg z-40 lg:hidden overflow-y-auto transition-all duration-300 ${
           mobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"
         }`}
       >
         <div className="px-6 py-6 pb-20 space-y-4">
           {navigationItems.map((item) => {
-            const hasDropdown = item.dropdown && item.dropdown.length > 0;
-            const isExpanded = mobileExpanded[item.title];
-
             return (
-              <div key={item.title} className="border-b border-[#f0eee9] pb-3">
-                {hasDropdown ? (
-                  <div>
-                    <button
-                      onClick={() => toggleMobileSubmenu(item.title)}
-                      className="w-full flex items-center justify-between text-left text-[17px] font-serif text-[#2b2b2b] py-1"
-                    >
-                      <span>{item.title}</span>
-                      <ChevronDown
-                        className={`w-4 h-4 text-[#888] transition-transform duration-200 ${
-                          isExpanded ? "rotate-180" : ""
-                        }`}
-                      />
-                    </button>
-                    {isExpanded && (
-                      <div className="mt-2 ml-3 pl-3 border-l border-[#ded6cc] space-y-2 py-1">
-                        {item.dropdown!.map((subItem) => (
-                          <Link
-                            key={subItem.title}
-                            href={subItem.href}
-                            onClick={() => setMobileMenuOpen(false)}
-                            className="block text-[14px] text-[#555] hover:text-[#86b3b3] py-1"
-                          >
-                            {subItem.title}
-                          </Link>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                ) : (
-                  <Link
-                    href={item.href}
-                    onClick={() => setMobileMenuOpen(false)}
-                    className="block text-[17px] font-serif text-[#2b2b2b] hover:text-[#86b3b3] py-1"
-                  >
-                    {item.title}
-                  </Link>
-                )}
+              <div key={item.title} className="border-b border-border pb-3">
+                <Link
+                  href={item.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="block text-[17px] font-serif text-primary-text hover:text-primary py-1"
+                >
+                  {item.title}
+                </Link>
               </div>
             );
           })}
@@ -173,17 +111,13 @@ export default function Header() {
           <div className="pt-6">
             <div className="flex justify-center">
               <Link
-                href="https://www.conejovalleycounseling.com/contact"
+                href="/#contact"
                 onClick={() => setMobileMenuOpen(false)}
-                className="inline-flex items-center justify-center font-body text-[12.5px] font-normal tracking-[0.12em] uppercase text-[#2b2b2b] border border-[#2b2b2b] hover:bg-black/5 transition-colors"
-                style={{ borderRadius: "100%", width: "160px", height: "46px" }}
+                className="inline-flex items-center justify-center font-body text-[12.5px] font-normal tracking-[0.12em] uppercase text-primary-text border border-primary-text hover:bg-black/5 transition-colors"
+                style={{ borderRadius: "100%", width: "200px", height: "46px" }}
               >
-                Contact
+                BOOK CONSULTATION
               </Link>
-            </div>
-            <div className="mt-6 text-center text-[13px] text-[#777] space-y-1">
-              <p>925 Broadbeck Dr, Newbury Park, CA</p>
-              <p className="font-medium text-[#2b2b2b]">{siteConfig.phone}</p>
             </div>
           </div>
         </div>

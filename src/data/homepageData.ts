@@ -1,169 +1,87 @@
-import { NavItem, ServiceCardItem, ModalityItem, TherapistItem } from "@/types";
+export interface NavItem {
+  title: string;
+  href: string;
+}
+
+export interface ServiceCardItem {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  alt: string;
+  link: string;
+}
+
+export interface FAQItem {
+  question: string;
+  answer: string;
+}
 
 export const siteConfig = {
-  name: "Conejo Valley Family Counseling",
-  title: "Counseling in Newbury Park, CA | Conejo Valley Family Counseling",
+  name: "Dr. Maya Reynolds, PsyD",
+  title: "Dr. Maya Reynolds, PsyD | Clinical Psychologist in Santa Monica, CA",
   description:
-    "Counseling for adults, couples, and children in Newbury & across CA. EMDR, trauma & dissociation, special needs parenting, anxiety, & more. In-person & online.",
-  logoUrl:
-    "https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/7116bf54-a0e1-4128-81d8-24fd9960c7ed/Conejo+Valley+Counseling+Logo.png",
-  phone: "805.242.3120",
-  email: "info@conejovalleycounseling.com",
+    "Dr. Maya Reynolds is a Licensed Clinical Psychologist in Santa Monica, CA, offering in-person and secure telehealth therapy for adults navigating anxiety, trauma, and professional burnout.",
   address: {
-    street: "925 Broadbeck Dr",
-    suites: "Suites 200 and 225",
-    cityStateZip: "Newbury Park, CA 91320",
+    street: "123th Street 45 W",
+    cityStateZip: "Santa Monica, CA 90401",
   },
-  serviceAreas:
-    "Serving Thousand Oaks, Westlake Village, Camarillo, Moorpark, & Simi Valley",
+  practiceFormat: "In-person from the Santa Monica office and secure telehealth throughout California.",
 };
 
 export const navigationItems: NavItem[] = [
-  {
-    title: "About",
-    href: "https://www.conejovalleycounseling.com/therapists-newbury-park",
-  },
-  {
-    title: "Our Team",
-    href: "https://www.conejovalleycounseling.com/our-team",
-    dropdown: [
-      { title: "Jennifer Anderson, LMFT", href: "https://www.conejovalleycounseling.com/jennifer-anderson" },
-      { title: "Candace Bletscher, AMFT", href: "https://www.conejovalleycounseling.com/candace-bletscher" },
-      { title: "Heather Williams-Baumgart, AMFT", href: "https://www.conejovalleycounseling.com/heather-williams-baumgart" },
-      { title: "Michaela Gorospe, AMFT", href: "https://www.conejovalleycounseling.com/michaela-gorospe" },
-      { title: "Samantha Johnson, AMFT", href: "https://www.conejovalleycounseling.com/samantha-johnson" },
-      { title: "Autumn Bodily, AMFT", href: "https://www.conejovalleycounseling.com/autumn-bodily" },
-      { title: "Andrea Watkins, APCC", href: "https://www.conejovalleycounseling.com/andrea-watkins" },
-      { title: "Rosa Gomez, AMFT", href: "https://www.conejovalleycounseling.com/rosa-gomez" },
-      { title: "Chad Flores, AMFT", href: "https://www.conejovalleycounseling.com/chad-flores" },
-    ],
-  },
-  {
-    title: "Specialties",
-    href: "https://www.conejovalleycounseling.com/specialties",
-    dropdown: [
-      { title: "Dissociation", href: "https://www.conejovalleycounseling.com/dissociative-identity-disorder-therapist-newbury-park" },
-      { title: "Trauma", href: "https://www.conejovalleycounseling.com/trauma-counseling-newbury-park" },
-      { title: "Special Needs Parenting", href: "https://www.conejovalleycounseling.com/counseling-special-needs-parents-newbury-park" },
-      { title: "Couples", href: "https://www.conejovalleycounseling.com/couples-therapy" },
-      { title: "Children & Teens", href: "https://www.conejovalleycounseling.com/children-and-teens" },
-      { title: "Anxiety & Depression", href: "https://www.conejovalleycounseling.com/anxiety-depression" },
-      { title: "Adoption", href: "https://www.conejovalleycounseling.com/adoption-therapy-ventura-county-ca" },
-    ],
-  },
-  {
-    title: "Methods",
-    href: "https://www.conejovalleycounseling.com/methods",
-    dropdown: [
-      { title: "EMDR", href: "https://www.conejovalleycounseling.com/emdr-therapy-newbury-park" },
-      { title: "Brainspotting", href: "https://www.conejovalleycounseling.com/brainspotting" },
-      { title: "Somatic Therapy", href: "https://www.conejovalleycounseling.com/somatic-therapy" },
-      { title: "Parts Work Therapy", href: "https://www.conejovalleycounseling.com/parts-work-therapy" },
-    ],
-  },
-  {
-    title: "FAQs",
-    href: "https://www.conejovalleycounseling.com/faqs",
-  },
+  { title: "About", href: "/#about" },
+  { title: "Services", href: "/#services" },
+  { title: "FAQ", href: "/#faq" },
+  { title: "Contact", href: "/#contact" },
 ];
 
 export const whoWeHelpCards: ServiceCardItem[] = [
   {
-    id: "adults",
-    title: "Adults",
-    description: "Feeling stuck or overwhelmed? We help adults find clarity, build resilience, and move forward with confidence by addressing the root causes of anxiety, stress, and emotional pain.",
-    image: "https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/066f60e6-1354-4d47-a586-ab3f2f2ba612/Jennifer+A+-+Images+%288%29.jpg",
-    alt: "Two people sitting on a log at the beach, facing a lake with mountains in the background.",
-    link: "https://www.conejovalleycounseling.com/anxiety-depression",
+    id: "anxiety",
+    title: "Anxiety & Stress Relief",
+    description: "Therapy for adults who feel overwhelmed, stuck in overthinking, or emotionally on edge. We work together to manage constant worry, alleviate physical tension, and help you find a sustainable sense of calm and ease in your daily life.",
+    image: "https://images.unsplash.com/photo-1516302752625-fcc3c50ae61f?auto=format&fit=crop&q=80",
+    alt: "A person's hands holding a warm ceramic mug over a clean desk.",
+    link: "/#services",
   },
-  {
-    id: "couples",
-    title: "Couples",
-    description: "Relationships require effort, and we're here to help you strengthen yours. We guide couples through challenges like communication breakdowns and trust issues, helping you rebuild intimacy and strengthen your relationship.",
-    image: "https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/d0157712-388c-4800-aada-c78db97ee966/Jennifer+A+-+Images+%289%29.jpg",
-    alt: "A couple embracing on the beach, with both wearing casual summer clothing and smiling at each other.",
-    link: "https://www.conejovalleycounseling.com/couples-therapy",
-  },
-  {
-    id: "children-teens",
-    title: "Children & Teens",
-    description: "Kids need support, too. We help them process big emotions, cope with challenging family situations, build coping skills, and feel understood, while also working closely with their parents to create a nurturing environment.",
-    image: "https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/d5d62bf4-34a7-4bf4-bf00-e1169863ace7/Jennifer+A+-+Images+%2810%29.jpg",
-    alt: "A boy carrying a girl on a beach with waves in the background.",
-    link: "https://www.conejovalleycounseling.com/children-and-teens",
-  },
-];
-
-export interface ExpertiseItem {
-  name: string;
-  href?: string;
-}
-
-export const expertiseColumns: { col1: ExpertiseItem[]; col2: ExpertiseItem[] } = {
-  col1: [
-    { name: "Dissociation", href: "https://www.conejovalleycounseling.com/dissociative-identity-disorder-therapist-newbury-park" },
-    { name: "Trauma", href: "https://www.conejovalleycounseling.com/trauma-counseling-newbury-park" },
-    { name: "Family conflict" },
-    { name: "Special needs parenting", href: "https://www.conejovalleycounseling.com/counseling-special-needs-parents-newbury-park" },
-    { name: "Depression", href: "https://www.conejovalleycounseling.com/anxiety-depression" },
-    { name: "marriage", href: "https://www.conejovalleycounseling.com/couples-therapy" },
-  ],
-  col2: [
-    { name: "anxiety", href: "https://www.conejovalleycounseling.com/anxiety-depression" },
-    { name: "relationships" },
-    { name: "children", href: "https://www.conejovalleycounseling.com/children-and-teens" },
-    { name: "teens", href: "https://www.conejovalleycounseling.com/children-and-teens" },
-    { name: "intimacy & connection", href: "https://www.conejovalleycounseling.com/couples-therapy" },
-    { name: "…and more." },
-  ],
-};
-
-export const expertiseTopics: string[] = [
-  "Dissociation",
-  "Trauma",
-  "Family conflict",
-  "Special needs parenting",
-  "Depression",
-  "marriage",
-  "anxiety",
-  "relationships",
-  "children",
-  "teens",
-  "intimacy & connection",
-  "…and more.",
-];
-
-export const modalitiesData: ModalityItem[] = [
   {
     id: "trauma",
-    title: "Trauma",
-    description: "We don't always know when and how we've experienced trauma. In therapy, we'll work together to help you process your past, understand what's causing you to stay \"stuck,\" and regain a sense of safety, control, and hope. You don't have to carry your burdens alone.",
+    title: "Trauma & EMDR Therapy",
+    description: "A carefully paced approach to healing from single-incident trauma and complex, long-standing patterns. Utilizing EMDR and body-oriented techniques, we focus on safety, stabilization, and helping you feel more regulated in your daily life.",
+    image: "https://images.unsplash.com/photo-1473496169904-658ba37448eb?auto=format&fit=crop&q=80",
+    alt: "A calm, muted coastal landscape with gentle waves meeting the shore.",
+    link: "/#services",
   },
   {
-    id: "dissociation",
-    title: "Dissociation",
-    description: "The feeling of losing time, hearing conflicting voices, or questioning your sense of self can be overwhelming. In therapy, we'll help you understand these experiences, recognize your own triggers, and create a sense of balance and identity so that you can feel more grounded.",
-  },
-  {
-    id: "emdr",
-    title: "EMDR",
-    description: "Eye Movement Desensitization and Reprocessing (EMDR) is a powerful therapeutic technique that helps process and heal trauma by reworking how painful memories are stored in your brain. This allows you to find relief and move toward lasting healing.",
-  },
-  {
-    id: "special-needs",
-    title: "Special Needs Parenting",
-    description: "Parenting a child with special needs presents unique challenges and complex emotions. We provide compassionate support through lived experience and expertise to help you navigate this journey with tools, understanding, and self-care.",
+    id: "burnout",
+    title: "Overcoming Burnout & Perfectionism",
+    description: "Tailored support for entrepreneurs, creatives, and professionals navigating high internal pressure. Therapy becomes a dedicated space to slow down, reconnect with yourself, and develop more sustainable, fulfilling ways of living and working.",
+    image: "https://images.unsplash.com/photo-1455390582262-044cdead27d8?auto=format&fit=crop&q=80",
+    alt: "An open notebook and pen resting on an uncluttered wooden desk.",
+    link: "/#services",
   },
 ];
 
-export const therapistsList: TherapistItem[] = [
-  { name: "Jennifer Anderson", title: "LMFT", href: "https://www.conejovalleycounseling.com/jennifer-anderson" },
-  { name: "Heather Williams-Baumgart", title: "AMFT", href: "https://www.conejovalleycounseling.com/heather-williams-baumgart" },
-  { name: "Autumn Bodily", title: "AMFT", href: "https://www.conejovalleycounseling.com/autumn-bodily" },
-  { name: "Michaela Gorospe", title: "AMFT", href: "https://www.conejovalleycounseling.com/michaela-gorospe" },
-  { name: "Candace Bletscher", title: "AMFT", href: "https://www.conejovalleycounseling.com/candace-bletscher" },
-  { name: "Samantha Johnson", title: "AMFT", href: "https://www.conejovalleycounseling.com/samantha-johnson" },
-  { name: "Andrea Watkins", title: "APCC", href: "https://www.conejovalleycounseling.com/andrea-watkins" },
-  { name: "Rosa Gomez", title: "AMFT", href: "https://www.conejovalleycounseling.com/rosa-gomez" },
-  { name: "Chad Flores", title: "AMFT", href: "https://www.conejovalleycounseling.com/chad-flores" },
+export const faqData: FAQItem[] = [
+  {
+    question: "Do you offer in-person or online therapy?",
+    answer: "I offer both in-person therapy from my Santa Monica office and secure telehealth sessions for clients located anywhere in California. My office is designed to be a quiet, private space that feels calm and grounding.",
+  },
+  {
+    question: "What types of clients do you typically work with?",
+    answer: "I work exclusively with adults. Many of my clients are high-achieving, thoughtful, and self-aware individuals—including entrepreneurs, creatives, and professionals—who may feel \"functional\" on the outside but are quietly struggling with stress, overthinking, or burnout.",
+  },
+  {
+    question: "What is your approach to treating trauma?",
+    answer: "Trauma work is an important part of my practice. My approach is paced carefully, with a strong emphasis on safety, stabilization, and helping you feel more regulated in your daily life. I work with both single-incident trauma and more complex, long-standing patterns that may stem from childhood, relationships, or chronic stress.",
+  },
+  {
+    question: "What therapeutic methods do you use?",
+    answer: "I integrate evidence-based methods to help you understand both the emotional and physiological sides of your experience. These include cognitive-behavioral therapy (CBT), EMDR, mindfulness-based practices, and body-oriented techniques.",
+  },
+  {
+    question: "I feel \"functional\" on the outside but struggle internally. Can therapy help?",
+    answer: "Absolutely. It is incredibly common for driven professionals to appear highly capable while internally dealing with constant worry, tension, or a sense of always bracing for something to go wrong. Therapy provides a structured, supportive space to slow down, reconnect, and develop more sustainable ways of living.",
+  },
 ];

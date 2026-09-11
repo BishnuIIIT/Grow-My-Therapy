@@ -1,12 +1,11 @@
 import React from "react";
 import Hero from "@/components/Hero";
-import HopeSection from "@/components/HopeSection";
-import WhoWeHelp from "@/components/WhoWeHelp";
-import QuoteBanner from "@/components/QuoteBanner";
-import AreasOfExpertise from "@/components/AreasOfExpertise";
-import HowWeWork from "@/components/HowWeWork";
-import ModalitiesGrid from "@/components/ModalitiesGrid";
-import CTASection from "@/components/CTASection";
+import HopeSection from "@/components/HopeSection"; // Intro/Philosophy
+import WhoWeHelp from "@/components/WhoWeHelp"; // Services
+import HowWeWork from "@/components/HowWeWork"; // About Maya
+import CTASection from "@/components/CTASection"; // Appointment CTA
+import AreasOfExpertise from "@/components/AreasOfExpertise"; // FAQ
+import ModalitiesGrid from "@/components/ModalitiesGrid"; // Contact
 
 export default function Home() {
   return (
@@ -14,11 +13,10 @@ export default function Home() {
       <Hero />
       <HopeSection />
       <WhoWeHelp />
-      <QuoteBanner />
-      <AreasOfExpertise />
       <HowWeWork />
-      <ModalitiesGrid />
       <CTASection />
+      <AreasOfExpertise />
+      <ModalitiesGrid />
     </main>
   );
 }

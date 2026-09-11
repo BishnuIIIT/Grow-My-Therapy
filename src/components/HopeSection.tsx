@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function HopeSection() {
   return (
-    <section className="w-full bg-[#f9f8f6] overflow-hidden">
+    <section id="about" className="w-full bg-main-bg overflow-hidden">
       
       {/* ============================================================ */}
       {/* DESKTOP LAYOUT (>= 1024px)                                   */}
@@ -18,64 +18,40 @@ export default function HopeSection() {
           gap: "clamp(40px, 4vw, 75px)"
         }}
       >
-        {/* LEFT CONTENT (Shifted to left, 1.5x text scale) */}
+        {/* LEFT CONTENT */}
         <div className="flex flex-col flex-1 max-w-[980px] xl:max-w-[1150px] z-10">
           
           <h2 
-            className="font-serif text-[#2b2b2b] font-light tracking-[-0.01em] mb-[50px] xl:mb-[70px]"
+            className="font-serif text-primary-text font-light tracking-[-0.01em] mb-[50px] xl:mb-[70px]"
             style={{
-              fontSize: "clamp(46px, 3.4vw, 62px)",
-              lineHeight: "1.18",
+              fontSize: "clamp(42px, 3.4vw, 56px)",
+              lineHeight: "1.2",
               maxWidth: "1050px"
             }}
           >
-            You’re holding onto hope that life can be<br className="hidden sm:inline" />
-            better than it is right now.
+            A grounded approach to healing and resilience.
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-[40px] xl:gap-[65px] max-w-[1050px]">
-            {/* Column 1 */}
-            <div className="flex flex-col">
-              <p 
-                className="font-sans font-medium uppercase text-[#2b2b2b] mb-[18px]"
-                style={{ fontSize: "13px", letterSpacing: "0.15em", lineHeight: "1.6" }}
-              >
-                At Conejo Valley Family Counseling We Want To<br className="hidden sm:inline"/> Make That Hope A Reality.
-              </p>
-              <p 
-                className="font-light text-[#555]" 
-                style={{ 
-                  fontSize: "17.5px", 
-                  lineHeight: "1.75",
-                  fontFamily: "var(--font-mulish), system-ui, sans-serif" 
-                }}
-              >
-                Whether you’re an adult seeking personal growth, looking to work through your trauma, a couple working on your relationship, or a parent looking for support for your child, we provide a compassionate and safe space to help you navigate all of life’s ups and downs.
-              </p>
-            </div>
-            
-            {/* Column 2 */}
-            <div className="flex flex-col">
-              <p 
-                className="font-light text-[#555]" 
-                style={{ 
-                  fontSize: "17.5px", 
-                  lineHeight: "1.75",
-                  fontFamily: "var(--font-mulish), system-ui, sans-serif" 
-                }}
-              >
-                First and foremost, we believe what you’re going through is real, valid, and worthy of support. Our team offers clients in the Newbury Park area and across CA an environment to discover a new life and a deeper sense of self in the midst of their struggles. As we tap into the power of connection and understanding, you can find your footing again and take a transformative path forward.
-              </p>
-            </div>
+          <div className="flex flex-col max-w-[800px]">
+            <p 
+              className="font-light text-muted-text" 
+              style={{ 
+                fontSize: "18px", 
+                lineHeight: "1.8",
+                fontFamily: "var(--font-inter), system-ui, sans-serif" 
+              }}
+            >
+              I take a warm, collaborative, and grounded approach to therapy. Sessions are structured enough to feel supportive, while still leaving space for reflection and depth. By integrating evidence-based methods with body-oriented techniques, we work together to help you understand both the emotional and physiological sides of what you are experiencing.
+            </p>
           </div>
           
         </div>
 
-        {/* RIGHT IMAGE (1.4x scale, touching right edge) */}
+        {/* RIGHT IMAGE */}
         <div className="relative flex-shrink-0 w-[38vw] max-w-[760px] min-w-[500px] h-[780px] xl:h-[860px]">
           <Image 
-            src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/7a40691c-70a5-4307-b9ae-974592087a8f/Jennifer+A+-+Images+%283%29.jpg"
-            alt="Sandy beach with gentle ocean waves"
+            src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80"
+            alt="A comfortable modern chair sitting in a quiet, sunlit room."
             fill
             sizes="(max-width: 1440px) 40vw, 760px"
             priority
@@ -87,34 +63,22 @@ export default function HopeSection() {
       {/* ============================================================ */}
       {/* MOBILE / TABLET LAYOUT (< 1024px)                            */}
       {/* ============================================================ */}
-      <div className="lg:hidden flex flex-col px-6 sm:px-10 py-16 gap-10">
+      <div className="lg:hidden flex flex-col px-6 sm:px-10 py-16 gap-8">
         
-        <h2 className="font-serif text-[#2b2b2b] tracking-normal font-light text-[36px] sm:text-[44px] leading-[1.2]">
-          You’re holding onto hope that life can be better than it is right now.
+        <h2 className="font-serif text-primary-text tracking-normal font-light text-[36px] sm:text-[42px] leading-[1.25]">
+          A grounded approach to healing and resilience.
         </h2>
 
-        <div className="flex flex-col gap-8">
-          <div>
-            <p className="font-sans font-medium uppercase text-[#2b2b2b] mb-4 text-[12px] tracking-[0.15em] leading-[1.6]">
-              At Conejo Valley Family Counseling We Want To Make That Hope A Reality.
-            </p>
-            <p className="font-body text-[16px] sm:text-[17px] leading-[1.7] text-[#555] font-light mb-6">
-              Whether you&apos;re an adult seeking personal growth, looking to work through your trauma, a couple working on your relationship, or a parent looking for support for your child, we provide a compassionate and safe space to help you navigate all of life&apos;s ups and downs.
-            </p>
-          </div>
-
-          {/* Column 2 */}
-          <div className="flex flex-col">
-            <p className="font-body text-[16px] sm:text-[17px] leading-[1.7] text-[#555] font-light mb-6">
-              First and foremost, we believe what you&apos;re going through is real, valid, and worthy of support. Our team offers clients in the Newbury Park area and across CA an environment to discover a new life and a deeper sense of self in the midst of their struggles. As we tap into the power of connection and understanding, you can find your footing again and take a transformative path forward.
-            </p>
-          </div>
+        <div className="flex flex-col">
+          <p className="font-body text-[17px] sm:text-[18px] leading-[1.75] text-muted-text font-light mb-6">
+            I take a warm, collaborative, and grounded approach to therapy. Sessions are structured enough to feel supportive, while still leaving space for reflection and depth. By integrating evidence-based methods with body-oriented techniques, we work together to help you understand both the emotional and physiological sides of what you are experiencing.
+          </p>
         </div>
 
-        <div className="relative w-full h-[360px] sm:h-[480px] overflow-hidden mt-4">
+        <div className="relative w-full aspect-square overflow-hidden mt-2">
           <Image
-            src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/7a40691c-70a5-4307-b9ae-974592087a8f/Jennifer+A+-+Images+%283%29.jpg"
-            alt="Sandy beach with gentle ocean waves"
+            src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80"
+            alt="A comfortable modern chair sitting in a quiet, sunlit room."
             fill
             sizes="100vw"
             className="object-cover object-center"

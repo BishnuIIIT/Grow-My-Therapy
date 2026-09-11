@@ -5,23 +5,23 @@ import { whoWeHelpCards } from "@/data/homepageData";
 
 export default function WhoWeHelp() {
   return (
-    <section className="relative w-full bg-white pt-14 pb-20 md:pt-18 md:pb-24 lg:pt-24 lg:pb-28 overflow-hidden">
+    <section id="services" className="relative w-full bg-main-bg pt-14 pb-20 md:pt-18 md:pb-24 lg:pt-24 lg:pb-28 overflow-hidden">
       <div className="max-w-[1440px] xl:max-w-[1540px] mx-auto px-6 sm:px-10 lg:px-16">
         
-        {/* Section Heading - Left-aligned as per target */}
+        {/* Section Heading */}
         <div className="mb-8 lg:mb-12 w-full text-left">
-          <h2 className="text-[38px] sm:text-[46px] lg:text-[54px] leading-[1.15] font-light text-[#2b2b2b] tracking-[-0.01em] font-serif">
-            Who we <span className="text-[#86b3b3] font-['PrintedMoments'] text-[1.25em] font-normal not-italic inline-block ml-1 leading-none">help</span>
+          <h2 className="text-[38px] sm:text-[46px] lg:text-[54px] leading-[1.15] font-light text-primary-text tracking-[-0.01em] font-serif">
+            Professional Therapy Services
           </h2>
         </div>
 
-        {/* 3 Columns Grid - Square (1:1) Images */}
+        {/* 3 Columns Grid - Portrait (4:5) Images */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10 xl:gap-14">
           {whoWeHelpCards.map((card) => (
             <div key={card.id} className="flex flex-col group">
               
-              {/* Image Container - Square (1:1) */}
-              <div className="relative w-full aspect-square overflow-hidden mb-5 lg:mb-6">
+              {/* Image Container - 4:5 Portrait */}
+              <div className="relative w-full aspect-[4/5] overflow-hidden mb-5 lg:mb-6">
                 <Image
                   src={card.image}
                   alt={card.alt}
@@ -34,16 +34,21 @@ export default function WhoWeHelp() {
               {/* Text Content */}
               <div className="flex flex-col text-left">
                 <h3 className="mb-3">
-                  <Link
-                    href={card.link}
-                    className="font-serif text-[24px] sm:text-[26px] lg:text-[28px] font-normal text-[#2b2b2b] hover:text-[#86b3b3] transition-colors leading-[1.25]"
-                  >
+                  <span className="font-serif text-[24px] sm:text-[26px] lg:text-[28px] font-normal text-primary-text leading-[1.25]">
                     {card.title}
-                  </Link>
+                  </span>
                 </h3>
-                <p className="font-body text-[14px] lg:text-[14.5px] leading-[1.65] text-[#555] font-light">
+                <p className="font-body text-[14px] lg:text-[14.5px] leading-[1.65] text-muted-text font-light mb-4">
                   {card.description}
                 </p>
+                <div>
+                  <Link
+                    href={card.link}
+                    className="inline-block text-[12px] lg:text-[12.5px] font-body font-normal tracking-[0.14em] uppercase text-primary-text border-b border-primary-text pb-0.5 hover:text-primary hover:border-primary transition-colors"
+                  >
+                    LEARN MORE
+                  </Link>
+                </div>
               </div>
               
             </div>

@@ -9,18 +9,24 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--color-background)",
-        foreground: "var(--color-foreground)",
-        cream: "var(--color-muted-bg)",
-        sand: "var(--color-accent-sand)",
-        sage: "var(--color-accent-sage)",
-        subtle: "var(--color-border)",
+        background: "var(--color-main-bg)",
+        foreground: "var(--color-primary-text)",
+        primary: {
+          DEFAULT: "var(--color-primary)",
+          hover: "var(--color-primary-hover)",
+        },
+        secondary: "var(--color-secondary)",
+        accent: "var(--color-accent)",
+        "main-bg": "var(--color-main-bg)",
+        "secondary-bg": "var(--color-secondary-bg)",
+        "primary-text": "var(--color-primary-text)",
+        "muted-text": "var(--color-muted-text)",
+        border: "var(--color-border)",
       },
       fontFamily: {
-        serif: ["beaufort-pro", "Georgia", "serif"],
-        sans: ["gravesend-sans", "system-ui", "-apple-system", "sans-serif"],
-        body: ["var(--font-mulish)", "system-ui", "-apple-system", "sans-serif"],
-        script: ["PrintedMoments", "cursive", "serif"],
+        serif: ["var(--font-lora)", "Georgia", "serif"],
+        sans: ["var(--font-inter)", "system-ui", "-apple-system", "sans-serif"],
+        body: ["var(--font-inter)", "system-ui", "-apple-system", "sans-serif"],
       },
       maxWidth: {
         "site": "1800px",

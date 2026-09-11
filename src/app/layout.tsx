@@ -1,46 +1,37 @@
 import type { Metadata } from "next";
-import { Cormorant_Infant, Mulish } from "next/font/google";
+import { Lora, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const cormorant = Cormorant_Infant({
+const lora = Lora({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700"],
   style: ["normal", "italic"],
-  variable: "--font-cormorant",
+  variable: "--font-lora",
   display: "swap",
 });
 
-const mulish = Mulish({
+const inter = Inter({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600"],
-  style: ["normal", "italic"],
-  variable: "--font-mulish",
+  variable: "--font-inter",
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Counseling in Newbury Park, CA | Conejo Valley Family Counseling",
+  title: "Dr. Maya Reynolds, PsyD | Clinical Psychologist in Santa Monica, CA",
   description:
-    "Counseling for adults, couples, and children in Newbury & across CA. EMDR, trauma & dissociation, special needs parenting, anxiety, & more. In-person & online.",
+    "Dr. Maya Reynolds is a Licensed Clinical Psychologist in Santa Monica, CA, offering in-person and secure telehealth therapy for adults navigating anxiety, trauma, and professional burnout.",
   icons: {
-    icon: "https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/9f1bb212-4047-4ddb-a144-79c1f9704dfe/favicon.ico?format=100w",
+    icon: "/favicon.ico", // Or whatever default is good, keeping simple
   },
   openGraph: {
-    title: "Counseling in Newbury Park, CA | Conejo Valley Family Counseling",
+    title: "Dr. Maya Reynolds, PsyD | Clinical Psychologist in Santa Monica, CA",
     description:
-      "Counseling for adults, couples, and children in Newbury & across CA. EMDR, trauma & dissociation, special needs parenting, anxiety, & more. In-person & online.",
-    url: "https://www.conejovalleycounseling.com",
-    siteName: "Conejo Valley Family Counseling",
-    images: [
-      {
-        url: "https://static1.squarespace.com/static/670423e106da6c036366fd10/t/67239b1497e4e117adfdf764/1730386708141/Conejo+Valley+Family+Counseling+SS.png?format=1500w",
-        width: 1485,
-        height: 1485,
-        alt: "Conejo Valley Family Counseling",
-      },
-    ],
+      "Dr. Maya Reynolds is a Licensed Clinical Psychologist in Santa Monica, CA, offering in-person and secure telehealth therapy for adults navigating anxiety, trauma, and professional burnout.",
+    url: "https://www.mayareynoldspsyd.com", // Example URL
+    siteName: "Dr. Maya Reynolds, PsyD",
     locale: "en_US",
     type: "website",
   },
@@ -52,11 +43,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${mulish.variable}`}>
-      <head>
-        <link rel="stylesheet" href="https://use.typekit.net/fsc1wsd.css" />
-      </head>
-      <body className="min-h-screen flex flex-col antialiased bg-white text-[#2b2b2b] font-sans selection:bg-[#ded6cc] selection:text-[#2b2b2b]">
+    <html lang="en" className={`${lora.variable} ${inter.variable}`}>
+      <body className="min-h-screen flex flex-col antialiased bg-main-bg text-primary-text font-sans selection:bg-secondary-bg selection:text-primary-text">
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />
