@@ -16,7 +16,7 @@ export default function CTASection() {
           <div className="relative w-full h-[calc(100%-180px)]">
             <Image
               src="/images/cta-left.jpg"
-              alt="A modern therapy room featuring a grey sofa, curated bookshelves, and a dark leather chair."
+              alt="A cozy, sunlit therapy space with a light beige sofa, a grey chair, and large indoor plants."
               fill
               sizes="20vw"
               priority
@@ -112,7 +112,7 @@ export default function CTASection() {
           <div className="relative w-full sm:w-1/3 h-[320px] sm:h-[420px]">
             <Image
               src="/images/cta-left.jpg"
-              alt="A modern therapy room featuring a grey sofa, curated bookshelves, and a dark leather chair."
+              alt="A cozy, sunlit therapy space with a light beige sofa, a grey chair, and large indoor plants."
               fill
               sizes="100vw"
               className="object-cover object-center"
