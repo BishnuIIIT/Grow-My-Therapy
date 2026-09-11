@@ -24,17 +24,17 @@ export default function Hero() {
         </div>
 
         {/* 2. HERO HEADING + SUPPORTING TEXT + CTA BLOCK (Exact target styling) */}
-        <div className="flex flex-col w-full max-w-[640px] xl:max-w-[720px] text-left z-20 px-4 xl:px-8 flex-shrink-0">
+        <div className="flex flex-col w-full max-w-[680px] xl:max-w-[780px] text-left z-20 px-4 xl:px-8 flex-shrink-0">
           
-          {/* Eyebrow (Image 1): Shifted further upper side, 1.5x font size, ACROSS CA on one line */}
-          <p className="-mt-14 lg:-mt-20 xl:-mt-24 text-[15px] xl:text-[17px] font-sans font-medium tracking-[0.14em] uppercase text-[#555] mb-[52px] xl:mb-[68px] max-w-[660px] leading-[1.6]">
+          {/* Eyebrow: Shifted upper side, ACROSS CA on one line */}
+          <p className="-mt-14 lg:-mt-20 xl:-mt-24 text-[15px] xl:text-[17px] font-sans font-medium tracking-[0.14em] uppercase text-[#555] mb-[64px] xl:mb-[80px] max-w-[660px] leading-[1.6]">
             <span className="whitespace-nowrap">ONLINE &amp; IN-PERSON COUNSELING IN NEWBURY PARK &amp;</span>
             <br className="hidden sm:inline" />
             <span className="whitespace-nowrap">ACROSS CA</span>
           </p>
 
-          {/* Image 2 Block: Shifted to a little lower position, 1.5x size */}
-          <div className="flex flex-col">
+          {/* Image 2 Block: Lowered position towards bottom */}
+          <div className="flex flex-col mt-4 lg:mt-6 xl:mt-8">
             {/* Main Heading with PrintedMoments cursive thrive (1.5x size) */}
             <h1 className="font-serif text-[52px] lg:text-[58px] xl:text-[68px] leading-[1.12] font-light text-[#2b2b2b] tracking-[-0.01em] mb-[28px] xl:mb-[34px]">
               <span className="whitespace-nowrap">Rebuild your foundation on</span><br />
@@ -42,8 +42,8 @@ export default function Hero() {
               <span className="font-['PrintedMoments'] text-[#86b3b3] text-[1.25em] font-normal not-italic inline-block mr-1 leading-none">thrive</span>.
             </h1>
             
-            {/* Supporting text in sentence case (1.5x size) */}
-            <p className="font-body text-[18px] xl:text-[21px] leading-[1.65] text-[#555] font-light mb-[36px] xl:mb-[44px] max-w-[640px]">
+            {/* Supporting text (Image 1) - Single line */}
+            <p className="font-body text-[15.5px] lg:text-[16.5px] xl:text-[18px] leading-[1.6] text-[#555] font-light mb-[36px] xl:mb-[44px] whitespace-nowrap">
               Specialized therapy for adults, couples, teens, and children to reflect, heal, and grow.
             </p>
             
