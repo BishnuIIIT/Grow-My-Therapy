@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function CTASection() {
   return (
-    <section className="w-full bg-[#f7f4ed] overflow-hidden relative">
+    <section className="w-full bg-secondary-bg overflow-hidden relative">
       
       {/* ============================================================ */}
       {/* DESKTOP LAYOUT (>= 1024px)                                   */}
@@ -15,8 +15,8 @@ export default function CTASection() {
         <div className="relative w-[15vw] max-w-[270px] min-w-[100px] flex flex-col justify-end flex-shrink">
           <div className="relative w-full h-[calc(100%-180px)]">
             <Image
-              src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/1b9495e0-ce39-4826-9df9-e24de99da82f/Jennifer+A+-+Images+%2812%29.jpg"
-              alt="Sandy beach with seashells"
+              src="https://images.unsplash.com/photo-1499557354967-2b2d8910bcca?auto=format&fit=crop&q=80"
+              alt="A small decorative wooden bowl resting on an open book."
               fill
               sizes="20vw"
               priority
@@ -29,43 +29,40 @@ export default function CTASection() {
         <div className="relative flex-1 flex flex-col items-start justify-center max-w-[760px] xl:max-w-[800px] py-32 lg:py-40 px-2 sm:px-6 min-w-0">
           
           {/* Eyebrow Label */}
-          <p className="font-sans font-medium uppercase text-[#6e7372] tracking-[0.2em] mb-4 text-[13px] sm:text-[13.5px] leading-normal">
-            SCHEDULE AN APPOINTMENT
+          <p className="font-sans font-medium uppercase text-muted-text tracking-[0.2em] mb-4 text-[13px] sm:text-[13.5px] leading-normal">
+            TAKE THE NEXT STEP
           </p>
 
           {/* Heading */}
-          <h2 className="font-serif text-[#2b2b2b] tracking-normal font-light mb-7 leading-[1.2] text-[38px] sm:text-[44px] lg:text-[48px] xl:text-[52px]">
-            <span>Find a therapist who is the right</span><br className="hidden sm:inline" /> fit for{" "}
-            <span className="font-['PrintedMoments'] text-[#86b3b3] text-[1.25em] font-normal not-italic inline-block ml-1.5 leading-none">
-              you.
-            </span>
+          <h2 className="font-serif text-primary-text tracking-normal font-light mb-7 leading-[1.2] text-[38px] sm:text-[44px] lg:text-[48px] xl:text-[52px]">
+            Ready to begin?
           </h2>
 
           {/* Body Text 1 */}
-          <p className="font-body font-light text-[#555] mb-5 text-[15.5px] lg:text-[16px] xl:text-[16.5px] leading-[1.8]">
-            Coming to therapy is a courageous decision, and connecting with the right kind of therapist makes all the difference. We understand that your journey is personal, and we&apos;re here to support you with care and understanding every step of the way. Each member of our team brings dedicated expertise and a commitment to support you in your struggles. We want you to feel prioritized, understood, and empowered.
+          <p className="font-body font-light text-muted-text mb-5 text-[15.5px] lg:text-[16px] xl:text-[16.5px] leading-[1.8]">
+            Finding the right therapist is a crucial first step. I offer a free 15-minute phone consultation so we can discuss what you&apos;re looking for and see if my approach feels like a good fit for your needs.
           </p>
           
           {/* Body Text 2 */}
-          <p className="font-body font-light text-[#555] mb-8 text-[15.5px] lg:text-[16px] xl:text-[16.5px] leading-[1.8]">
+          <p className="font-body font-light text-muted-text mb-8 text-[15.5px] lg:text-[16px] xl:text-[16.5px] leading-[1.8]">
             Click the button below to schedule an appointment.
           </p>
 
           {/* Book Now Button */}
           <Link
-            href="https://www.conejovalleycounseling.com/contact"
-            className="inline-flex items-center justify-center font-body font-normal uppercase text-[#2b2b2b] tracking-[0.12em] border border-[#2b2b2b] hover:border-[#86b3b3] hover:text-[#86b3b3] hover:bg-transparent transition-all duration-200 text-[12.5px]"
-            style={{ borderRadius: "100%", width: "124px", height: "47px" }}
+            href="/#contact"
+            className="inline-flex items-center justify-center font-body font-normal uppercase text-primary-text tracking-[0.12em] border border-primary-text hover:border-primary hover:text-primary hover:bg-transparent transition-all duration-200 text-[12.5px]"
+            style={{ borderRadius: "100%", width: "190px", height: "47px" }}
           >
-            BOOK NOW
+            BOOK CONSULTATION
           </Link>
         </div>
 
         {/* Right Image (Pinned to right corner, full height) */}
         <div className="relative w-[34vw] lg:w-[36vw] xl:w-[38vw] max-w-[720px] min-w-[280px] flex-shrink">
           <Image
-            src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/7557312a-044d-4489-a9d1-6f43ee9888b1/Jennifer+A+-+Images+%2811%29.jpg"
-            alt="A person in a striped dress pointing at shells"
+            src="https://images.unsplash.com/photo-1510803522197-2ba0f3fc2457?auto=format&fit=crop&q=80"
+            alt="A serene view from a window showing an airy, plant-filled environment."
             fill
             sizes="40vw"
             priority
@@ -80,36 +77,33 @@ export default function CTASection() {
       <div className="lg:hidden flex flex-col px-6 sm:px-10 pt-20 sm:pt-28 pb-16 gap-8">
         
         {/* Label */}
-        <p className="font-sans font-medium uppercase text-[#6e7372] tracking-[0.2em] text-[12px] sm:text-[13px]">
-          SCHEDULE AN APPOINTMENT
+        <p className="font-sans font-medium uppercase text-muted-text tracking-[0.2em] text-[12px] sm:text-[13px]">
+          TAKE THE NEXT STEP
         </p>
 
         {/* Heading */}
-        <h2 className="font-serif text-[#2b2b2b] tracking-normal font-light text-[32px] sm:text-[40px] leading-[1.25]">
-          Find a therapist who is the right fit for{" "}
-          <span className="font-['PrintedMoments'] text-[#86b3b3] text-[1.25em] font-normal not-italic inline-block ml-1 leading-none">
-            you.
-          </span>
+        <h2 className="font-serif text-primary-text tracking-normal font-light text-[32px] sm:text-[40px] leading-[1.25]">
+          Ready to begin?
         </h2>
 
         {/* Body Text */}
         <div className="flex flex-col gap-5 mt-2">
-          <p className="font-body font-light text-[#555] text-[15px] sm:text-[16px] leading-[1.8]">
-            Coming to therapy is a courageous decision, and connecting with the right kind of therapist makes all the difference. We understand that your journey is personal, and we&apos;re here to support you with care and understanding every step of the way. Each member of our team brings dedicated expertise and a commitment to support you in your struggles. We want you to feel prioritized, understood, and empowered.
+          <p className="font-body font-light text-muted-text text-[15px] sm:text-[16px] leading-[1.8]">
+            Finding the right therapist is a crucial first step. I offer a free 15-minute phone consultation so we can discuss what you&apos;re looking for and see if my approach feels like a good fit for your needs.
           </p>
-          <p className="font-body font-light text-[#555] text-[15px] sm:text-[16px] leading-[1.8]">
+          <p className="font-body font-light text-muted-text text-[15px] sm:text-[16px] leading-[1.8]">
             Click the button below to schedule an appointment.
           </p>
         </div>
 
-        {/* Book Now Button - Pure geometric oval / ellipse matching target website */}
+        {/* Book Now Button */}
         <div className="mt-2 mb-6">
           <Link
-            href="/contact"
-            className="inline-flex items-center justify-center font-body font-normal uppercase text-[#2b2b2b] tracking-[0.12em] border border-[#2b2b2b] hover:border-[#86b3b3] hover:text-[#86b3b3] hover:bg-transparent transition-all duration-200 text-[12.5px]"
-            style={{ borderRadius: "100%", width: "126px", height: "48px" }}
+            href="/#contact"
+            className="inline-flex items-center justify-center font-body font-normal uppercase text-primary-text tracking-[0.12em] border border-primary-text hover:border-primary hover:text-primary hover:bg-transparent transition-all duration-200 text-[12.5px]"
+            style={{ borderRadius: "100%", width: "190px", height: "48px" }}
           >
-            BOOK NOW
+            BOOK CONSULTATION
           </Link>
         </div>
 
@@ -117,8 +111,8 @@ export default function CTASection() {
         <div className="flex flex-col sm:flex-row gap-6">
           <div className="relative w-full sm:w-1/3 h-[320px] sm:h-[420px]">
             <Image
-              src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/1b9495e0-ce39-4826-9df9-e24de99da82f/Jennifer+A+-+Images+%2812%29.jpg"
-              alt="Sandy beach with seashells"
+              src="https://images.unsplash.com/photo-1499557354967-2b2d8910bcca?auto=format&fit=crop&q=80"
+              alt="A small decorative wooden bowl resting on an open book."
               fill
               sizes="100vw"
               className="object-cover object-center"
@@ -126,8 +120,8 @@ export default function CTASection() {
           </div>
           <div className="relative w-full sm:w-2/3 h-[420px] sm:h-[420px]">
             <Image
-              src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/7557312a-044d-4489-a9d1-6f43ee9888b1/Jennifer+A+-+Images+%2811%29.jpg"
-              alt="A person in a striped dress pointing at shells"
+              src="https://images.unsplash.com/photo-1510803522197-2ba0f3fc2457?auto=format&fit=crop&q=80"
+              alt="A serene view from a window showing an airy, plant-filled environment."
               fill
               sizes="100vw"
               className="object-cover object-[48%_center]"
