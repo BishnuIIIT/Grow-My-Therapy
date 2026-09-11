@@ -33,8 +33,8 @@ export default function Hero() {
             <span className="whitespace-nowrap">ACROSS CA</span>
           </p>
 
-          {/* Image 2 Block: Lowered position towards bottom */}
-          <div className="flex flex-col mt-4 lg:mt-6 xl:mt-8">
+          {/* Heading + Supporting Text + CTA Block: Lowered position towards bottom */}
+          <div className="flex flex-col mt-10 lg:mt-16 xl:mt-20">
             {/* Main Heading with PrintedMoments cursive thrive (1.5x size) */}
             <h1 className="font-serif text-[52px] lg:text-[58px] xl:text-[68px] leading-[1.12] font-light text-[#2b2b2b] tracking-[-0.01em] mb-[28px] xl:mb-[34px]">
               <span className="whitespace-nowrap">Rebuild your foundation on</span><br />
