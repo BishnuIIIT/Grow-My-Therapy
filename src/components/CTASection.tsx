@@ -9,10 +9,10 @@ export default function CTASection() {
       {/* ============================================================ */}
       {/* DESKTOP LAYOUT (>= 1024px)                                   */}
       {/* ============================================================ */}
-      <div className="hidden lg:flex w-full items-center justify-center relative min-h-[660px] xl:min-h-[720px] py-24 xl:py-32">
+      <div className="hidden lg:flex w-full items-start relative min-h-[760px] lg:min-h-[820px] xl:min-h-[880px] pt-32 lg:pt-40 xl:pt-48 pb-24 lg:pb-32">
         
         {/* Left Image (Starts aligned with heading, flush to left edge and bottom) */}
-        <div className="absolute left-0 top-[18%] xl:top-[20%] bottom-0 w-[13vw] max-w-[240px] min-w-[140px] z-0">
+        <div className="absolute left-0 top-[200px] lg:top-[230px] xl:top-[260px] bottom-0 w-[13vw] max-w-[240px] min-w-[140px] z-0">
           <Image
             src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/1b9495e0-ce39-4826-9df9-e24de99da82f/Jennifer+A+-+Images+%2812%29.jpg"
             alt="Sandy beach with seashells"
@@ -23,8 +23,8 @@ export default function CTASection() {
           />
         </div>
 
-        {/* Center Content */}
-        <div className="relative z-10 flex flex-col items-start w-full max-w-[780px] xl:max-w-[820px] px-8 py-4">
+        {/* Center Content (Shifted to the left, positioned comfortably between images) */}
+        <div className="relative z-10 flex flex-col items-start w-full max-w-[760px] xl:max-w-[800px] ml-[15vw] lg:ml-[16vw] xl:ml-[17vw] 2xl:ml-[18vw] mr-auto px-6 xl:px-8">
           
           {/* Eyebrow Label */}
           <p className="font-sans font-medium uppercase text-[#6e7372] tracking-[0.2em] mb-4 text-[13px] sm:text-[13.5px] leading-normal">
@@ -75,7 +75,7 @@ export default function CTASection() {
       {/* ============================================================ */}
       {/* MOBILE / TABLET LAYOUT (< 1024px)                            */}
       {/* ============================================================ */}
-      <div className="lg:hidden flex flex-col px-6 sm:px-10 py-16 gap-8">
+      <div className="lg:hidden flex flex-col px-6 sm:px-10 pt-20 sm:pt-28 pb-16 gap-8">
         
         {/* Label */}
         <p className="font-sans font-medium uppercase text-[#6e7372] tracking-[0.2em] text-[12px] sm:text-[13px]">
