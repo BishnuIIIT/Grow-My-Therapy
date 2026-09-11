@@ -11,20 +11,20 @@ export default function Hero() {
       {/* ========================================================================= */}
       <div className="hidden lg:flex w-full h-[860px] xl:h-[950px] relative items-center justify-between">
         
-        {/* 1. MAIN LEFT IMAGE */}
-        <div className="relative w-[40vw] max-w-[700px] min-w-[440px] h-[82%] xl:h-[88%] z-10 flex-shrink-0">
+        {/* 1. MAIN LEFT IMAGE (Width increased by 20%) */}
+        <div className="relative w-[48vw] max-w-[840px] min-w-[520px] h-[82%] xl:h-[88%] z-10 flex-shrink-0">
           <Image
             src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/80513bd1-30ee-4a2d-aaf6-782d9be095ce/Jennifer+A+-+Images+%2866%29.jpg"
             alt="Family therapy session in a warm, welcoming counseling setting"
             fill
             priority
-            sizes="(max-width: 1440px) 45vw, 760px"
+            sizes="(max-width: 1440px) 50vw, 840px"
             className="object-cover object-[center_35%]"
           />
         </div>
 
         {/* 2. HERO HEADING + SUPPORTING TEXT + CTA BLOCK (Exact target styling) */}
-        <div className="flex flex-col w-full max-w-[680px] xl:max-w-[760px] text-left z-20 px-6 xl:px-10 flex-shrink-0">
+        <div className="flex flex-col w-full max-w-[640px] xl:max-w-[720px] text-left z-20 px-4 xl:px-8 flex-shrink-0">
           
           {/* Eyebrow (Image 1): Shifted further upper side, 1.5x font size, ACROSS CA on one line */}
           <p className="-mt-14 lg:-mt-20 xl:-mt-24 text-[15px] xl:text-[17px] font-sans font-medium tracking-[0.14em] uppercase text-[#555] mb-[52px] xl:mb-[68px] max-w-[660px] leading-[1.6]">
@@ -59,14 +59,14 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* 3. SECONDARY RIGHT IMAGE */}
-        <div className="relative w-[10vw] max-w-[170px] min-w-[110px] h-[65%] xl:h-[72%] z-10 overflow-hidden mt-[60px] xl:mt-[90px] flex-shrink-0">
+        {/* 3. SECONDARY RIGHT IMAGE (Height decreased by 20%) */}
+        <div className="relative w-[9.5vw] max-w-[160px] min-w-[100px] h-[52%] xl:h-[58%] z-10 overflow-hidden mt-[100px] xl:mt-[130px] flex-shrink-0">
           <Image
             src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/3643a7ac-ff62-4927-b96e-9e65ecff0521/Jennifer+A+-+Images+%2867%29.jpg"
             alt="Ocean waves and shoreline serenity"
             fill
             priority
-            sizes="190px"
+            sizes="160px"
             className="object-cover object-[87%_56%]"
           />
         </div>
