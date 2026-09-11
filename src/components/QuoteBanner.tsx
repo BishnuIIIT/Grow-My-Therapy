@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function QuoteBanner() {
   return (
-    <section className="relative w-full min-h-[500px] md:min-h-[650px] lg:min-h-[750px] flex items-center py-20 overflow-hidden">
+    <section className="relative w-full min-h-[580px] md:min-h-[720px] lg:min-h-[820px] xl:min-h-[880px] flex items-end pt-32 pb-20 md:pb-24 lg:pb-28 xl:pb-32 overflow-hidden">
       
       {/* Background Image Layer */}
       <div className="absolute inset-0 z-0">
@@ -15,16 +15,16 @@ export default function QuoteBanner() {
           sizes="100vw"
           className="object-cover object-center"
         />
-        {/* Exact reference overlay: black at 50% opacity */}
-        <div className="absolute inset-0 bg-[#323232]/80" />
+        {/* Lighter, warmer overlay (~45% opacity) to match target */}
+        <div className="absolute inset-0 bg-black/45" />
       </div>
 
-      {/* Quote Content Container */}
-      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 text-left">
-        <h2 className="font-['beaufort-pro',serif] text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] leading-[1.3] text-[#f7f6f2] font-normal tracking-[-0.01em] max-w-[1100px]">
-          You deserve a place where your story is<br className="hidden lg:block" />
-          heard, valued, and understood. <em className="italic font-normal">Nothing will be<br className="hidden lg:block" />
-          too heavy for us to carry together.</em>
+      {/* Quote Content Container - Positioned towards bottom-left */}
+      <div className="relative z-10 w-full max-w-[1540px] mx-auto px-6 sm:px-10 lg:px-16 xl:px-20 text-left">
+        <h2 className="font-serif text-[28px] sm:text-[36px] md:text-[42px] lg:text-[46px] xl:text-[50px] leading-[1.28] text-[#f7f6f2] font-light tracking-[-0.01em] max-w-[1250px]">
+          <span className="whitespace-nowrap">You deserve a place where your story is heard, valued,</span><br className="hidden lg:inline" />{" "}
+          <span className="whitespace-nowrap">and understood. <em className="italic font-normal">Nothing will be too heavy for us to</em></span><br className="hidden lg:inline" />{" "}
+          <em className="italic font-normal">carry together.</em>
         </h2>
       </div>
 
