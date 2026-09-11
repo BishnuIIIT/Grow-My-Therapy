@@ -32,12 +32,12 @@ export default function ModalitiesGrid() {
             />
           </div>
 
-          {/* RIGHT: Heading moved a little to the right, size increased 1.5x */}
+          {/* RIGHT: Heading moved a little to the right, lowered position */}
           <div 
             className="w-full flex-1 px-6 sm:px-10 lg:px-0 pt-10 sm:pt-14 lg:pt-0 flex flex-col justify-center"
             style={{ paddingLeft: "clamp(45px, 5.5vw, 120px)", paddingRight: "clamp(24px, 3vw, 60px)" }}
           >
-            <div className="max-w-[700px] w-full">
+            <div className="max-w-[700px] w-full lg:translate-y-10 xl:translate-y-12">
               <h2 className="font-serif text-[42px] sm:text-[50px] lg:text-[58px] xl:text-[66px] leading-[1.14] font-light text-[#2b2b2b] tracking-[-0.01em]">
                 <span className="whitespace-nowrap">Honoring where you’ve been{" "}
                   <span 
