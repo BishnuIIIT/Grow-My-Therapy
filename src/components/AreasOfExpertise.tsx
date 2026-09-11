@@ -4,7 +4,7 @@ import { expertiseColumns } from "@/data/homepageData";
 
 export default function AreasOfExpertise() {
   return (
-    <section className="w-full bg-white" style={{ paddingTop: '100px', paddingBottom: '100px' }}>
+    <section className="w-full bg-white pt-32 sm:pt-36 lg:pt-40 pb-32 sm:pb-36 lg:pb-40">
       <div 
         className="w-full max-w-[1680px] mx-auto"
         style={{
@@ -12,11 +12,11 @@ export default function AreasOfExpertise() {
           paddingRight: "clamp(35px, 4.5vw, 90px)"
         }}
       >
-        <div className="flex flex-col lg:flex-row items-start justify-between gap-10 lg:gap-14 xl:gap-20">
+        <div className="flex flex-col lg:flex-row items-start justify-between gap-12 lg:gap-16 xl:gap-20">
           
           {/* Left Column: Heading on a single horizontal line, shifted towards left */}
           <div className="flex-shrink-0 flex flex-col justify-start pt-1">
-            <h3 className="font-serif text-[30px] sm:text-[36px] lg:text-[40px] xl:text-[44px] leading-[1.2] text-[#2b2b2b] font-light whitespace-nowrap">
+            <h3 className="font-serif text-[36px] sm:text-[42px] lg:text-[48px] xl:text-[52px] leading-[1.2] text-[#2b2b2b] font-light whitespace-nowrap">
               Our areas of{" "}
               <span className="font-['PrintedMoments'] text-[#86b3b3] text-[1.25em] font-normal not-italic inline-block ml-1 leading-none">
                 expertise
@@ -32,17 +32,17 @@ export default function AreasOfExpertise() {
               {expertiseColumns.col1.map((item) => (
                 <div
                   key={item.name}
-                  className="border-b border-[#e8e8e8] py-[18px] lg:py-[22px]"
+                  className="border-b border-[#e8e8e8] py-[22px] lg:py-[26px]"
                 >
                   {item.href ? (
                     <Link
                       href={item.href}
-                      className="font-sans text-[11px] sm:text-[11.5px] lg:text-[12px] uppercase tracking-[0.16em] font-medium text-[#555] hover:text-[#86b3b3] transition-colors inline-block"
+                      className="font-sans text-[13px] sm:text-[13.5px] lg:text-[14.5px] uppercase tracking-[0.16em] font-medium text-[#555] hover:text-[#86b3b3] transition-colors inline-block"
                     >
                       {item.name}
                     </Link>
                   ) : (
-                    <span className="font-sans text-[11px] sm:text-[11.5px] lg:text-[12px] uppercase tracking-[0.16em] font-medium text-[#555]">
+                    <span className="font-sans text-[13px] sm:text-[13.5px] lg:text-[14.5px] uppercase tracking-[0.16em] font-medium text-[#555]">
                       {item.name}
                     </span>
                   )}
@@ -55,17 +55,17 @@ export default function AreasOfExpertise() {
               {expertiseColumns.col2.map((item) => (
                 <div
                   key={item.name}
-                  className="border-b border-[#e8e8e8] py-[18px] lg:py-[22px]"
+                  className="border-b border-[#e8e8e8] py-[22px] lg:py-[26px]"
                 >
                   {item.href ? (
                     <Link
                       href={item.href}
-                      className="font-sans text-[11px] sm:text-[11.5px] lg:text-[12px] uppercase tracking-[0.16em] font-medium text-[#555] hover:text-[#86b3b3] transition-colors inline-block"
+                      className="font-sans text-[13px] sm:text-[13.5px] lg:text-[14.5px] uppercase tracking-[0.16em] font-medium text-[#555] hover:text-[#86b3b3] transition-colors inline-block"
                     >
                       {item.name}
                     </Link>
                   ) : (
-                    <span className="font-sans text-[11px] sm:text-[11.5px] lg:text-[12px] uppercase tracking-[0.16em] font-medium text-[#555]">
+                    <span className="font-sans text-[13px] sm:text-[13.5px] lg:text-[14.5px] uppercase tracking-[0.16em] font-medium text-[#555]">
                       {item.name}
                     </span>
                   )}
