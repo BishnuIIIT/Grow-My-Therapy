@@ -58,7 +58,7 @@ export const whoWeHelpCards: ServiceCardItem[] = [
     title: "Overcoming Burnout & Perfectionism",
     description: "Tailored support for entrepreneurs, creatives, and professionals navigating high internal pressure. Therapy becomes a dedicated space to slow down, reconnect with yourself, and develop more sustainable, fulfilling ways of living and working.",
     image: "/images/service-burnout.jpg",
-    alt: "Quiet workspace with a notebook representing reflection and a sustainable pace",
+    alt: "A soft, warm sunset over rolling hills representing rest, perspective, and sustainable pacing.",
     link: "/#services",
   },
 ];
