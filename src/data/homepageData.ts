@@ -42,7 +42,7 @@ export const whoWeHelpCards: ServiceCardItem[] = [
     title: "Anxiety & Stress Relief",
     description: "Therapy for adults who feel overwhelmed, stuck in overthinking, or emotionally on edge. We work together to manage constant worry, alleviate physical tension, and help you find a sustainable sense of calm and ease in your daily life.",
     image: "/images/service-anxiety.jpg",
-    alt: "A person's hands holding a warm ceramic mug over a clean desk.",
+    alt: "A quiet human moment of reflection, representing subtle stress and finding calm.",
     link: "/#services",
   },
   {
@@ -50,7 +50,7 @@ export const whoWeHelpCards: ServiceCardItem[] = [
     title: "Trauma & EMDR Therapy",
     description: "A carefully paced approach to healing from single-incident trauma and complex, long-standing patterns. Utilizing EMDR and body-oriented techniques, we focus on safety, stabilization, and helping you feel more regulated in your daily life.",
     image: "/images/service-trauma.jpg",
-    alt: "Calm shoreline and water representing safety and restoration",
+    alt: "Rugged, beautiful California coastline representing strength and natural grounding.",
     link: "/#services",
   },
   {

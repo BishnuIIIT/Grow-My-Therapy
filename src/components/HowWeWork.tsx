@@ -68,7 +68,7 @@ export default function HowWeWork() {
         <div className="absolute right-0 top-[75px] lg:top-[90px] xl:top-[100px] bottom-[75px] lg:bottom-[90px] xl:bottom-[100px] w-[27vw] lg:w-[28.5vw] xl:w-[29vw] max-w-[530px] min-w-[360px]">
           <Image
             src="/images/about.jpg"
-            alt="An airy, organized minimalist office setting in warm light, representing a calm therapy environment."
+            alt="A beautiful, real therapy room with comfortable seating and natural light."
             fill
             priority
             sizes="35vw"
@@ -93,7 +93,7 @@ export default function HowWeWork() {
         <div className="relative w-full aspect-[4/5] sm:aspect-[3/4] overflow-hidden my-4">
           <Image
             src="/images/about.jpg"
-            alt="An airy, organized minimalist office setting in warm light, representing a calm therapy environment."
+            alt="A beautiful, real therapy room with comfortable seating and natural light."
             fill
             sizes="100vw"
             className="object-cover object-center"

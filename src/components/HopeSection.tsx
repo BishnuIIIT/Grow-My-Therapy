@@ -51,7 +51,7 @@ export default function HopeSection() {
         <div className="relative flex-shrink-0 w-[38vw] max-w-[760px] min-w-[500px] h-[780px] xl:h-[860px]">
           <Image 
             src="/images/intro.jpg"
-            alt="Abstract calm water representing safety and clarity."
+            alt="Abstract aerial view of calm slate-blue water."
             fill
             sizes="(max-width: 1440px) 40vw, 760px"
             priority
@@ -78,7 +78,7 @@ export default function HopeSection() {
         <div className="relative w-full aspect-square overflow-hidden mt-2">
           <Image
             src="/images/intro.jpg"
-            alt="Abstract calm water representing safety and clarity."
+            alt="Abstract aerial view of calm slate-blue water."
             fill
             sizes="100vw"
             className="object-cover object-center"

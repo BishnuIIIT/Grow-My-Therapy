@@ -15,7 +15,7 @@ export default function Hero() {
         <div className="relative w-[48vw] max-w-[840px] min-w-[400px] h-[82%] xl:h-[88%] z-10 flex-shrink-0">
           <Image
             src="/images/hero.jpg"
-            alt="Soft, slate-blue ocean ripples representing a calm, expansive horizon."
+            alt="A serene California boardwalk leading toward the calm ocean."
             fill
             priority
             sizes="(max-width: 1440px) 50vw, 840px"
@@ -82,7 +82,7 @@ export default function Hero() {
           <div className="relative w-full h-full z-10 flex-shrink-0">
             <Image
               src="/images/hero.jpg"
-              alt="Soft, slate-blue ocean ripples representing a calm, expansive horizon."
+              alt="A serene California boardwalk leading toward the calm ocean."
               fill
               priority
               sizes="100vw"
