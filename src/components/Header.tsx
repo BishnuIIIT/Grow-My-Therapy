@@ -30,17 +30,17 @@ export default function Header() {
         isScrolled ? "shadow-sm border-b border-[#e8e5df]" : "border-b border-transparent"
       }`}
     >
-      <div className="max-w-[1800px] mx-auto px-6 sm:px-10 lg:px-14">
-        <div className="flex items-center justify-between h-[80px] lg:h-[95px]">
-          {/* Logo */}
-          <Link href="/" className="flex items-center flex-shrink-0 group">
-            <div className="relative w-[190px] sm:w-[230px] md:w-[270px] h-[55px] sm:h-[65px] lg:h-[75px]">
+      <div className="max-w-[1800px] mx-auto px-4 sm:px-8 lg:px-12">
+        <div className="flex items-center justify-between h-[95px] lg:h-[125px]">
+          {/* Logo (Shifted a little left, size increased 1.5x) */}
+          <Link href="/" className="flex items-center flex-shrink-0 group -ml-2 sm:-ml-4 lg:-ml-6 xl:-ml-8">
+            <div className="relative w-[285px] sm:w-[345px] md:w-[405px] h-[82px] sm:h-[98px] lg:h-[112px]">
               <Image
                 src={siteConfig.logoUrl}
                 alt={siteConfig.name}
                 fill
                 priority
-                sizes="(max-width: 640px) 190px, (max-width: 1024px) 230px, 270px"
+                sizes="(max-width: 640px) 285px, (max-width: 1024px) 345px, 410px"
                 className="object-contain object-left transition-opacity group-hover:opacity-90"
               />
             </div>

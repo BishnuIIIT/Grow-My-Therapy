@@ -26,8 +26,8 @@ export default function Hero() {
         {/* 2. HERO HEADING + SUPPORTING TEXT + CTA BLOCK (Exact target styling) */}
         <div className="flex flex-col w-full max-w-[680px] xl:max-w-[760px] text-left z-20 px-6 xl:px-10 flex-shrink-0">
           
-          {/* Eyebrow (Image 1): Shifted upper side, 1.5x font size, ACROSS CA on one line */}
-          <p className="-mt-8 lg:-mt-12 xl:-mt-16 text-[15px] xl:text-[17px] font-sans font-medium tracking-[0.14em] uppercase text-[#555] mb-[32px] xl:mb-[40px] max-w-[660px] leading-[1.6]">
+          {/* Eyebrow (Image 1): Shifted further upper side, 1.5x font size, ACROSS CA on one line */}
+          <p className="-mt-14 lg:-mt-20 xl:-mt-24 text-[15px] xl:text-[17px] font-sans font-medium tracking-[0.14em] uppercase text-[#555] mb-[52px] xl:mb-[68px] max-w-[660px] leading-[1.6]">
             <span className="whitespace-nowrap">ONLINE &amp; IN-PERSON COUNSELING IN NEWBURY PARK &amp;</span>
             <br className="hidden sm:inline" />
             <span className="whitespace-nowrap">ACROSS CA</span>
