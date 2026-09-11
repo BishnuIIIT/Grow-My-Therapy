@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function QuoteBanner() {
   return (
-    <section className="relative w-full py-28 md:py-36 lg:py-40 overflow-hidden">
+    <section className="relative w-full min-h-[500px] md:min-h-[650px] lg:min-h-[750px] flex items-center py-20 overflow-hidden">
       
       {/* Background Image Layer */}
       <div className="absolute inset-0 z-0">
@@ -20,7 +20,7 @@ export default function QuoteBanner() {
       </div>
 
       {/* Quote Content Container */}
-      <div className="relative z-10 max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 text-left">
+      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 text-left">
         <h2 className="font-['beaufort-pro',serif] text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] leading-[1.3] text-[#f7f6f2] font-normal tracking-[-0.01em] max-w-[1100px]">
           You deserve a place where your story is<br className="hidden lg:block" />
           heard, valued, and understood. <em className="italic font-normal">Nothing will be<br className="hidden lg:block" />
