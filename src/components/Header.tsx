@@ -88,12 +88,12 @@ export default function Header() {
               );
             })}
 
-            {/* Header CTA Button - Smooth elongated oval, subtle 1px border, light tracked uppercase text */}
+            {/* Header CTA Button - Pure geometric oval / ellipse matching target website */}
             <div className="pl-4 xl:pl-6">
               <Link
                 href="https://www.conejovalleycounseling.com/contact"
-                className="inline-flex items-center justify-center px-8 py-2.5 text-[12px] xl:text-[13px] font-normal tracking-[0.18em] uppercase text-[#4a4a4a] border border-[#2b2b2b]/50 rounded-full hover:border-[#86b3b3] hover:text-[#86b3b3] hover:bg-transparent transition-all duration-200"
-                style={{ height: "44px", minWidth: "135px" }}
+                className="inline-flex items-center justify-center font-body text-[12.5px] font-normal tracking-[0.12em] uppercase text-[#2b2b2b] border border-[#2b2b2b] hover:border-[#86b3b3] hover:text-[#86b3b3] hover:bg-transparent transition-all duration-200"
+                style={{ borderRadius: "100%", width: "110px", height: "47px" }}
               >
                 CONTACT
               </Link>
@@ -171,13 +171,16 @@ export default function Header() {
 
           {/* Mobile Drawer CTA */}
           <div className="pt-6">
-            <Link
-              href="https://www.conejovalleycounseling.com/contact"
-              onClick={() => setMobileMenuOpen(false)}
-              className="block w-full text-center py-3 px-6 bg-[#f7f6f2] text-[#2b2b2b] border border-[#2b2b2b] text-[13px] font-medium tracking-wider uppercase rounded-full hover:bg-black/5 transition-colors"
-            >
-              Contact
-            </Link>
+            <div className="flex justify-center">
+              <Link
+                href="https://www.conejovalleycounseling.com/contact"
+                onClick={() => setMobileMenuOpen(false)}
+                className="inline-flex items-center justify-center font-body text-[12.5px] font-normal tracking-[0.12em] uppercase text-[#2b2b2b] border border-[#2b2b2b] hover:bg-black/5 transition-colors"
+                style={{ borderRadius: "100%", width: "160px", height: "46px" }}
+              >
+                Contact
+              </Link>
+            </div>
             <div className="mt-6 text-center text-[13px] text-[#777] space-y-1">
               <p>925 Broadbeck Dr, Newbury Park, CA</p>
               <p className="font-medium text-[#2b2b2b]">{siteConfig.phone}</p>
