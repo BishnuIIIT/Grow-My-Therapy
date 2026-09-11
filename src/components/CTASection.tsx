@@ -12,12 +12,12 @@ export default function CTASection() {
       <div className="hidden lg:flex w-full items-start relative min-h-[760px] lg:min-h-[820px] xl:min-h-[880px] pt-32 lg:pt-40 xl:pt-48 pb-24 lg:pb-32">
         
         {/* Left Image (Starts aligned with heading, flush to left edge and bottom) */}
-        <div className="absolute left-0 top-[150px] lg:top-[170px] xl:top-[190px] bottom-0 w-[10.5vw] max-w-[195px] min-w-[115px] z-0">
+        <div className="absolute left-0 top-[140px] lg:top-[160px] xl:top-[180px] bottom-0 w-[15vw] max-w-[270px] min-w-[150px] z-0">
           <Image
             src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/1b9495e0-ce39-4826-9df9-e24de99da82f/Jennifer+A+-+Images+%2812%29.jpg"
             alt="Sandy beach with seashells"
             fill
-            sizes="15vw"
+            sizes="20vw"
             priority
             className="object-cover object-center"
           />
