@@ -9,22 +9,24 @@ export default function CTASection() {
       {/* ============================================================ */}
       {/* DESKTOP LAYOUT (>= 1024px)                                   */}
       {/* ============================================================ */}
-      <div className="hidden lg:flex w-full items-start relative min-h-[760px] lg:min-h-[820px] xl:min-h-[880px] pt-32 lg:pt-40 xl:pt-48 pb-24 lg:pb-32">
+      <div className="hidden lg:flex flex-row w-full items-stretch justify-between min-h-[760px] lg:min-h-[820px] xl:min-h-[880px] gap-6 xl:gap-10">
         
-        {/* Left Image (Starts aligned with heading, flush to left edge and bottom) */}
-        <div className="absolute left-0 top-[140px] lg:top-[160px] xl:top-[180px] bottom-0 w-[15vw] max-w-[270px] min-w-[150px] z-0">
-          <Image
-            src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/1b9495e0-ce39-4826-9df9-e24de99da82f/Jennifer+A+-+Images+%2812%29.jpg"
-            alt="Sandy beach with seashells"
-            fill
-            sizes="20vw"
-            priority
-            className="object-cover object-center"
-          />
+        {/* Left Image (Starts lower, flush to left edge) */}
+        <div className="relative w-[15vw] max-w-[270px] min-w-[100px] flex flex-col justify-end flex-shrink">
+          <div className="relative w-full h-[calc(100%-180px)]">
+            <Image
+              src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/1b9495e0-ce39-4826-9df9-e24de99da82f/Jennifer+A+-+Images+%2812%29.jpg"
+              alt="Sandy beach with seashells"
+              fill
+              sizes="20vw"
+              priority
+              className="object-cover object-center"
+            />
+          </div>
         </div>
 
-        {/* Center Content (Shifted to the left, positioned comfortably between images) */}
-        <div className="relative z-10 flex flex-col items-start w-full max-w-[760px] xl:max-w-[800px] ml-[15vw] lg:ml-[16vw] xl:ml-[17vw] 2xl:ml-[18vw] mr-auto px-6 xl:px-8">
+        {/* Center Content (Comfortably between images, text will wrap) */}
+        <div className="relative flex-1 flex flex-col items-start justify-center max-w-[760px] xl:max-w-[800px] py-32 lg:py-40 px-2 sm:px-6 min-w-0">
           
           {/* Eyebrow Label */}
           <p className="font-sans font-medium uppercase text-[#6e7372] tracking-[0.2em] mb-4 text-[13px] sm:text-[13.5px] leading-normal">
@@ -49,7 +51,7 @@ export default function CTASection() {
             Click the button below to schedule an appointment.
           </p>
 
-          {/* Book Now Button - Pure geometric oval / ellipse matching target website */}
+          {/* Book Now Button */}
           <Link
             href="https://www.conejovalleycounseling.com/contact"
             className="inline-flex items-center justify-center font-body font-normal uppercase text-[#2b2b2b] tracking-[0.12em] border border-[#2b2b2b] hover:border-[#86b3b3] hover:text-[#86b3b3] hover:bg-transparent transition-all duration-200 text-[12.5px]"
@@ -59,8 +61,8 @@ export default function CTASection() {
           </Link>
         </div>
 
-        {/* Right Image (Pinned to right corner, full height top to bottom, wider framing) */}
-        <div className="absolute right-0 top-0 bottom-0 w-[34vw] lg:w-[36vw] xl:w-[38vw] max-w-[720px] min-w-[420px] h-full z-0">
+        {/* Right Image (Pinned to right corner, full height) */}
+        <div className="relative w-[34vw] lg:w-[36vw] xl:w-[38vw] max-w-[720px] min-w-[280px] flex-shrink">
           <Image
             src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/7557312a-044d-4489-a9d1-6f43ee9888b1/Jennifer+A+-+Images+%2811%29.jpg"
             alt="A person in a striped dress pointing at shells"
