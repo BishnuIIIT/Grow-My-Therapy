@@ -9,22 +9,22 @@ export default function CTASection() {
       {/* ============================================================ */}
       {/* DESKTOP LAYOUT (>= 1024px)                                   */}
       {/* ============================================================ */}
-      <div className="hidden lg:flex w-full max-w-[985px] mx-auto items-start justify-between px-4">
+      <div className="hidden lg:flex w-full items-center justify-center relative min-h-[378px]">
         
-        {/* Left Image (w=122px, h=378px) */}
-        <div className="relative w-[122px] h-[378px] flex-shrink-0">
+        {/* Left Image (Pinned to left corner) */}
+        <div className="absolute left-0 top-0 w-[12vw] max-w-[200px] min-w-[120px] h-full flex-shrink-0">
           <Image
             src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/1b9495e0-ce39-4826-9df9-e24de99da82f/Jennifer+A+-+Images+%2812%29.jpg"
             alt="Sandy beach with seashells"
             fill
-            sizes="125px"
+            sizes="15vw"
             priority
             className="object-cover object-center"
           />
         </div>
 
         {/* Center Content (w=470px) */}
-        <div className="flex flex-col items-start w-[470px] flex-shrink-0 pt-[14px]">
+        <div className="relative z-10 flex flex-col items-start w-[470px] flex-shrink-0 px-4">
           
           {/* Label */}
           <p 
@@ -68,13 +68,13 @@ export default function CTASection() {
           </Link>
         </div>
 
-        {/* Right Image (w=312px, h=378px) */}
-        <div className="relative w-[312px] h-[378px] flex-shrink-0">
+        {/* Right Image (Pinned to right corner) */}
+        <div className="absolute right-0 top-0 w-[20vw] max-w-[350px] min-w-[280px] h-full flex-shrink-0">
           <Image
             src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/7557312a-044d-4489-a9d1-6f43ee9888b1/Jennifer+A+-+Images+%2811%29.jpg"
             alt="A person in a striped dress pointing at shells"
             fill
-            sizes="315px"
+            sizes="25vw"
             priority
             className="object-cover object-[30%_center]"
           />
