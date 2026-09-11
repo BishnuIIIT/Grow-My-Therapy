@@ -18,7 +18,7 @@ export default function ModalitiesGrid() {
         className="w-full bg-white overflow-hidden pb-16 sm:pb-24 md:pb-32 lg:pb-44"
         style={{ paddingTop: '200px' }}
       >
-        <div className="flex flex-col lg:flex-row w-full items-center justify-between">
+        <div className="flex flex-col lg:flex-row w-full items-end justify-between">
           
           {/* LEFT: Large Horizontal Image Bleeding to Far Left Edge (1.5x width, 1.2x height) */}
           <div className="w-full lg:w-[58vw] xl:w-[62vw] max-w-[1080px] min-w-[550px] h-[520px] sm:h-[560px] lg:h-[580px] xl:h-[640px] relative flex-shrink-0">
@@ -32,12 +32,12 @@ export default function ModalitiesGrid() {
             />
           </div>
 
-          {/* RIGHT: Heading moved a little to the right, lowered position */}
+          {/* RIGHT: Heading aligned to the bottom horizontal line of the image */}
           <div 
-            className="w-full flex-1 px-6 sm:px-10 lg:px-0 pt-10 sm:pt-14 lg:pt-0 flex flex-col justify-center"
+            className="w-full flex-1 px-6 sm:px-10 lg:px-0 pt-10 sm:pt-14 lg:pt-0 flex flex-col justify-end lg:self-end pb-4 lg:pb-6 xl:pb-10"
             style={{ paddingLeft: "clamp(45px, 5.5vw, 120px)", paddingRight: "clamp(24px, 3vw, 60px)" }}
           >
-            <div className="max-w-[700px] w-full lg:translate-y-10 xl:translate-y-12">
+            <div className="max-w-[700px] w-full">
               <h2 className="font-serif text-[42px] sm:text-[50px] lg:text-[58px] xl:text-[66px] leading-[1.14] font-light text-[#2b2b2b] tracking-[-0.01em]">
                 <span className="whitespace-nowrap">Honoring where you’ve been{" "}
                   <span 
