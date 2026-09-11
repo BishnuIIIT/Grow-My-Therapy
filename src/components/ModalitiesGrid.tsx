@@ -13,45 +13,41 @@ export default function ModalitiesGrid() {
 
   return (
     <>
-      {/* SECTION A: Specialties Introduction (Pure white background per reference) */}
-      <section className="w-full bg-white overflow-hidden pt-12 sm:pt-16 md:pt-20 pb-16 sm:pb-24 md:pb-32 lg:pb-44">
-        <div className="flex flex-col lg:flex-row w-full max-w-[1800px] mx-auto items-stretch">
+      {/* SECTION A: Specialties Introduction with 200px top whitespace */}
+      <section 
+        className="w-full bg-white overflow-hidden pb-16 sm:pb-24 md:pb-32 lg:pb-44"
+        style={{ paddingTop: '200px' }}
+      >
+        <div className="flex flex-col lg:flex-row w-full items-center justify-between">
           
-          {/* LEFT: Large Horizontal Image Bleeding to Left Edge */}
-          <div className="w-full lg:w-[52%] xl:w-[50%] flex-shrink-0">
-            <div className="relative w-full aspect-[4/3] sm:aspect-[3/2] lg:aspect-[1.5/1] xl:aspect-[1.55/1]">
-              <Image
-                src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/6f1501bf-74a5-4c57-a957-8ce4c5876848/Jennifer+A+-+Images+%285%29.jpg"
-                alt="Family of four standing on a beach, holding hands, facing the ocean at sunset"
-                fill
-                sizes="(max-width: 1024px) 100vw, 55vw"
-                className="object-cover object-center"
-              />
-            </div>
+          {/* LEFT: Large Horizontal Image Bleeding to Far Left Edge (1.5x width, 1.2x height) */}
+          <div className="w-full lg:w-[58vw] xl:w-[62vw] max-w-[1080px] min-w-[550px] h-[520px] sm:h-[560px] lg:h-[580px] xl:h-[640px] relative flex-shrink-0">
+            <Image
+              src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/6f1501bf-74a5-4c57-a957-8ce4c5876848/Jennifer+A+-+Images+%285%29.jpg"
+              alt="Family of four standing on a beach, holding hands, facing the ocean at sunset"
+              fill
+              priority
+              sizes="(max-width: 1024px) 100vw, 62vw"
+              className="object-cover object-center"
+            />
           </div>
 
-          {/* RIGHT: Heading positioned toward lower-middle of image */}
+          {/* RIGHT: Heading moved a little to the right, size increased 1.5x */}
           <div 
-            className="w-full lg:w-[48%] xl:w-[50%] px-6 sm:px-10 lg:px-0 pt-10 sm:pt-14 lg:pt-0 flex flex-col justify-end lg:pb-4 xl:pb-6"
-            style={{ paddingLeft: "clamp(32px, 5vw, 96px)", paddingRight: "3vw" }}
+            className="w-full flex-1 px-6 sm:px-10 lg:px-0 pt-10 sm:pt-14 lg:pt-0 flex flex-col justify-center"
+            style={{ paddingLeft: "clamp(45px, 5.5vw, 120px)", paddingRight: "clamp(24px, 3vw, 60px)" }}
           >
-            <div className="max-w-[900px] w-full">
-              <h2 className="font-['beaufort-pro',serif] text-[34px] sm:text-[42px] lg:text-[44px] xl:text-[48px] leading-[1.2] font-normal text-[#2b2b2b] tracking-[-0.01em]">
-                <span>Honoring where you’ve been</span>
-                <span 
-                  className="text-[#86b3b3] italic font-medium"
-                  style={{ 
-                    fontFamily: "var(--font-cormorant), Georgia, serif",
-                    fontSize: "1.35em",
-                    verticalAlign: "-0.08em",
-                    marginLeft: "0.2em",
-                    display: "inline-block"
-                  }}
-                >&amp;</span>
+            <div className="max-w-[700px] w-full">
+              <h2 className="font-serif text-[42px] sm:text-[50px] lg:text-[58px] xl:text-[66px] leading-[1.14] font-light text-[#2b2b2b] tracking-[-0.01em]">
+                <span className="whitespace-nowrap">Honoring where you’ve been{" "}
+                  <span 
+                    className="text-[#86b3b3] font-['PrintedMoments'] text-[1.25em] font-normal not-italic inline-block align-baseline ml-1"
+                  >&amp;</span>
+                </span>
                 <br className="hidden lg:block" />
-                <span> helping shape where you’re</span>
+                <span className="whitespace-nowrap">helping shape where you’re</span>
                 <br className="hidden lg:block" />
-                <span> headed.</span>
+                <span>headed.</span>
               </h2>
             </div>
           </div>
@@ -67,8 +63,8 @@ export default function ModalitiesGrid() {
             
             {/* COLUMN 1: Subheading */}
             <div className="flex flex-col">
-              <h3 className="font-['beaufort-pro',serif] text-[28px] sm:text-[32px] md:text-[34px] lg:text-[38px] leading-[1.2] font-normal text-[#2b2b2b]">
-                Our <span className="font-['beaufort-pro',serif] text-[#86b3b3] font-bold italic">specialties</span> include...
+              <h3 className="font-serif text-[28px] sm:text-[32px] md:text-[34px] lg:text-[38px] leading-[1.2] font-normal text-[#2b2b2b]">
+                Our <span className="font-serif text-[#86b3b3] font-bold italic">specialties</span> include...
               </h3>
             </div>
 
@@ -77,7 +73,7 @@ export default function ModalitiesGrid() {
               
               {/* Item 1: Trauma */}
               <div className="flex flex-col items-start group">
-                <h4 className="font-['beaufort-pro',serif] text-[24px] sm:text-[26px] lg:text-[28px] font-normal text-[#2b2b2b] mb-4">
+                <h4 className="font-serif text-[24px] sm:text-[26px] lg:text-[28px] font-normal text-[#2b2b2b] mb-4">
                   {modalitiesData[0].title}
                 </h4>
                 <p className="font-body text-[14.5px] sm:text-[15px] leading-[1.8] text-[#555] font-[300] mb-6">
@@ -85,7 +81,7 @@ export default function ModalitiesGrid() {
                 </p>
                 <Link
                   href={specialtyLinks[modalitiesData[0].id] || "#"}
-                  className="inline-block font-['gravesend-sans',sans-serif] text-[11px] sm:text-[12px] font-[500] tracking-[0.16em] uppercase text-[#2b2b2b] border-b border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
+                  className="inline-block font-sans text-[11px] sm:text-[12px] font-[500] tracking-[0.16em] uppercase text-[#2b2b2b] border-b border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
                 >
                   LEARN MORE
                 </Link>
@@ -93,7 +89,7 @@ export default function ModalitiesGrid() {
 
               {/* Item 2: Dissociation */}
               <div className="flex flex-col items-start group">
-                <h4 className="font-['beaufort-pro',serif] text-[24px] sm:text-[26px] lg:text-[28px] font-normal text-[#2b2b2b] mb-4">
+                <h4 className="font-serif text-[24px] sm:text-[26px] lg:text-[28px] font-normal text-[#2b2b2b] mb-4">
                   {modalitiesData[1].title}
                 </h4>
                 <p className="font-body text-[14.5px] sm:text-[15px] leading-[1.8] text-[#555] font-[300] mb-6">
@@ -101,7 +97,7 @@ export default function ModalitiesGrid() {
                 </p>
                 <Link
                   href={specialtyLinks[modalitiesData[1].id] || "#"}
-                  className="inline-block font-['gravesend-sans',sans-serif] text-[11px] sm:text-[12px] font-[500] tracking-[0.16em] uppercase text-[#2b2b2b] border-b border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
+                  className="inline-block font-sans text-[11px] sm:text-[12px] font-[500] tracking-[0.16em] uppercase text-[#2b2b2b] border-b border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
                 >
                   LEARN MORE
                 </Link>
@@ -114,7 +110,7 @@ export default function ModalitiesGrid() {
               
               {/* Item 3: EMDR */}
               <div className="flex flex-col items-start group">
-                <h4 className="font-['beaufort-pro',serif] text-[24px] sm:text-[26px] lg:text-[28px] font-normal text-[#2b2b2b] mb-4">
+                <h4 className="font-serif text-[24px] sm:text-[26px] lg:text-[28px] font-normal text-[#2b2b2b] mb-4">
                   {modalitiesData[2].title}
                 </h4>
                 <p className="font-body text-[14.5px] sm:text-[15px] leading-[1.8] text-[#555] font-[300] mb-6">
@@ -122,7 +118,7 @@ export default function ModalitiesGrid() {
                 </p>
                 <Link
                   href={specialtyLinks[modalitiesData[2].id] || "#"}
-                  className="inline-block font-['gravesend-sans',sans-serif] text-[11px] sm:text-[12px] font-[500] tracking-[0.16em] uppercase text-[#2b2b2b] border-b border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
+                  className="inline-block font-sans text-[11px] sm:text-[12px] font-[500] tracking-[0.16em] uppercase text-[#2b2b2b] border-b border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
                 >
                   LEARN MORE
                 </Link>
@@ -130,7 +126,7 @@ export default function ModalitiesGrid() {
 
               {/* Item 4: Special Needs Parenting */}
               <div className="flex flex-col items-start group">
-                <h4 className="font-['beaufort-pro',serif] text-[24px] sm:text-[26px] lg:text-[28px] font-normal text-[#2b2b2b] mb-4">
+                <h4 className="font-serif text-[24px] sm:text-[26px] lg:text-[28px] font-normal text-[#2b2b2b] mb-4">
                   {modalitiesData[3].title}
                 </h4>
                 <p className="font-body text-[14.5px] sm:text-[15px] leading-[1.8] text-[#555] font-[300] mb-6">
@@ -138,7 +134,7 @@ export default function ModalitiesGrid() {
                 </p>
                 <Link
                   href={specialtyLinks[modalitiesData[3].id] || "#"}
-                  className="inline-block font-['gravesend-sans',sans-serif] text-[11px] sm:text-[12px] font-[500] tracking-[0.16em] uppercase text-[#2b2b2b] border-b border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
+                  className="inline-block font-sans text-[11px] sm:text-[12px] font-[500] tracking-[0.16em] uppercase text-[#2b2b2b] border-b border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
                 >
                   LEARN MORE
                 </Link>
