@@ -24,10 +24,10 @@ export default function Hero() {
         </div>
 
         {/* 2. HERO HEADING + SUPPORTING TEXT + CTA BLOCK (Exact target styling) */}
-        <div className="flex flex-col w-full max-w-[680px] xl:max-w-[780px] text-left z-20 px-4 xl:px-8 flex-shrink-0">
+        <div className="flex flex-col w-full max-w-[680px] xl:max-w-[780px] text-left z-20 px-4 xl:px-8 flex-shrink-0 self-start pt-[77px] xl:pt-[57px]">
           
-          {/* Eyebrow: Shifted upper side, ACROSS CA on one line */}
-          <p className="-mt-14 lg:-mt-20 xl:-mt-24 text-[15px] xl:text-[17px] font-sans font-medium tracking-[0.14em] uppercase text-[#555] mb-[64px] xl:mb-[80px] max-w-[660px] leading-[1.6]">
+          {/* Eyebrow: Top edge aligns exactly with where the main left image starts */}
+          <p className="mt-0 text-[15px] xl:text-[17px] font-sans font-medium tracking-[0.14em] uppercase text-[#555] mb-[80px] xl:mb-[110px] max-w-[660px] leading-[1.6]">
             <span className="whitespace-nowrap">ONLINE &amp; IN-PERSON COUNSELING IN NEWBURY PARK &amp;</span>
             <br className="hidden sm:inline" />
             <span className="whitespace-nowrap">ACROSS CA</span>
