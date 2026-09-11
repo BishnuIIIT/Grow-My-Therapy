@@ -20,8 +20,8 @@ export default function WhoWeHelp() {
           {whoWeHelpCards.map((card) => (
             <div key={card.id} className="flex flex-col group">
               
-              {/* Image Container - 4:5 Portrait */}
-              <div className="relative w-full aspect-[4/5] overflow-hidden mb-5 lg:mb-6">
+              {/* Image Container - 3:2 Landscape */}
+              <div className="relative w-full aspect-[3/2] overflow-hidden mb-5 lg:mb-6 bg-[#EFECE8]">
                 <Image
                   src={card.image}
                   alt={card.alt}
