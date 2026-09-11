@@ -10,18 +10,18 @@ export default function HowWeWork() {
       {/* DESKTOP LAYOUT (>= 1024px)                                   */}
       {/* ============================================================ */}
       <div 
-        className="hidden lg:flex w-full items-center justify-between relative min-h-[880px] xl:min-h-[940px]"
+        className="hidden lg:flex w-full items-center justify-between relative min-h-[920px] xl:min-h-[980px]"
         style={{
           paddingLeft: "clamp(60px, 8vw, 170px)",
-          paddingTop: "140px",
-          paddingBottom: "140px"
+          paddingTop: "160px",
+          paddingBottom: "160px"
         }}
       >
         {/* Left Content Area (Moved to the right, font size increased 1.5x) */}
         <div className="flex flex-col flex-1 max-w-[1020px] xl:max-w-[1180px] z-10 pr-12 xl:pr-16">
           
-          {/* Label - Shifted a little upper side */}
-          <p className="-mt-3 lg:-mt-5 font-sans text-[14px] xl:text-[16px] font-medium tracking-[0.18em] uppercase text-[#2b2b2b] mb-8 xl:mb-10">
+          {/* Label - Shifted higher up with generous separation */}
+          <p className="-mt-6 lg:-mt-10 font-sans text-[13px] xl:text-[14px] font-medium tracking-[0.2em] uppercase text-[#2b2b2b] mb-12 xl:mb-16">
             HOW WE WORK
           </p>
 
@@ -52,8 +52,8 @@ export default function HowWeWork() {
 
           </div>
 
-          {/* Learn More Link (Shifted a little bottom side) */}
-          <div className="mt-16 xl:mt-20">
+          {/* Learn More Link - Shifted further to bottom side */}
+          <div className="mt-20 xl:mt-24">
             <Link
               href="https://www.conejovalleycounseling.com/therapists-newbury-park"
               className="inline-block font-sans text-[14px] xl:text-[15px] font-medium tracking-[0.16em] uppercase text-[#2b2b2b] border-b-[1.5px] border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
@@ -64,14 +64,14 @@ export default function HowWeWork() {
 
         </div>
 
-        {/* Right Image - Width reduced by 20%, Height increased by ~15% */}
-        <div className="absolute right-0 top-5 lg:top-7 xl:top-8 bottom-5 lg:bottom-7 xl:bottom-8 w-[24vw] lg:w-[25.5vw] xl:w-[26vw] max-w-[465px] min-w-[300px]">
+        {/* Right Image - Width reduced by 20%, framed with top and bottom background color */}
+        <div className="absolute right-0 top-[110px] lg:top-[125px] xl:top-[135px] bottom-[110px] lg:bottom-[125px] xl:bottom-[135px] w-[19vw] lg:w-[20.5vw] xl:w-[21vw] max-w-[380px] min-w-[260px]">
           <Image
             src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/389808ad-7273-4e03-a32b-c172aa735f12/Jennifer+A+-+Images+%286%29.jpg"
             alt="A woman and a child in white dresses dancing on a sandy beach"
             fill
             priority
-            sizes="30vw"
+            sizes="25vw"
             className="object-cover object-center"
           />
         </div>
