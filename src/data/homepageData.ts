@@ -50,7 +50,7 @@ export const whoWeHelpCards: ServiceCardItem[] = [
     title: "Trauma & EMDR Therapy",
     description: "A carefully paced approach to healing from single-incident trauma and complex, long-standing patterns. Utilizing EMDR and body-oriented techniques, we focus on safety, stabilization, and helping you feel more regulated in your daily life.",
     image: "/images/service-trauma.jpg",
-    alt: "A comfortable armchair in a quiet, grounded therapy room.",
+    alt: "A young woman talking with her therapist in a realistic clinical setting, holding a tissue.",
     link: "/#services",
   },
   {
