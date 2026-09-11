@@ -26,14 +26,23 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico", // Or whatever default is good, keeping simple
   },
+  metadataBase: new URL("https://grow-my-therapy-ruby.vercel.app/"),
   openGraph: {
     title: "Dr. Maya Reynolds, PsyD | Clinical Psychologist in Santa Monica, CA",
     description:
       "Dr. Maya Reynolds is a Licensed Clinical Psychologist in Santa Monica, CA, offering in-person and secure telehealth therapy for adults navigating anxiety, trauma, and professional burnout.",
-    url: "https://www.mayareynoldspsyd.com", // Example URL
+    url: "https://grow-my-therapy-ruby.vercel.app/",
     siteName: "Dr. Maya Reynolds, PsyD",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/images/about.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Professional portrait of Dr. Maya Reynolds, PsyD.",
+      },
+    ],
   },
 };
 
