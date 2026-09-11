@@ -14,7 +14,7 @@ export default function Hero() {
         {/* 1. MAIN LEFT IMAGE */}
         <div className="relative w-[48vw] max-w-[840px] min-w-[400px] h-[82%] xl:h-[88%] z-10 flex-shrink-0">
           <Image
-            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80"
+            src="/images/hero.jpg"
             alt="A modern, naturally lit professional office interior with glass walls and warm sunlight."
             fill
             priority
@@ -81,7 +81,7 @@ export default function Hero() {
           {/* Main Left Image */}
           <div className="relative w-full h-full z-10 flex-shrink-0">
             <Image
-              src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80"
+              src="/images/hero.jpg"
               alt="A modern, naturally lit professional office interior with glass walls and warm sunlight."
               fill
               priority

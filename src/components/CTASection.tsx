@@ -15,7 +15,7 @@ export default function CTASection() {
         <div className="relative w-[15vw] max-w-[270px] min-w-[100px] flex flex-col justify-end flex-shrink">
           <div className="relative w-full h-[calc(100%-180px)]">
             <Image
-              src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80"
+              src="/images/cta-left.jpg"
               alt="A warm, sunlit living room with a comfortable reading nook."
               fill
               sizes="20vw"
@@ -61,7 +61,7 @@ export default function CTASection() {
         {/* Right Image (Pinned to right corner, full height) */}
         <div className="relative w-[34vw] lg:w-[36vw] xl:w-[38vw] max-w-[720px] min-w-[280px] flex-shrink">
           <Image
-            src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&q=80"
+            src="/images/cta-right.jpg"
             alt="A minimalist workspace desk with natural light and clean surfaces."
             fill
             sizes="40vw"
@@ -111,7 +111,7 @@ export default function CTASection() {
         <div className="flex flex-col sm:flex-row gap-6">
           <div className="relative w-full sm:w-1/3 h-[320px] sm:h-[420px]">
             <Image
-              src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80"
+              src="/images/cta-left.jpg"
               alt="A warm, sunlit living room with a comfortable reading nook."
               fill
               sizes="100vw"
@@ -120,7 +120,7 @@ export default function CTASection() {
           </div>
           <div className="relative w-full sm:w-2/3 h-[420px] sm:h-[420px]">
             <Image
-              src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&q=80"
+              src="/images/cta-right.jpg"
               alt="A minimalist workspace desk with natural light and clean surfaces."
               fill
               sizes="100vw"

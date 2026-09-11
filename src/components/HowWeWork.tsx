@@ -67,7 +67,7 @@ export default function HowWeWork() {
         {/* Right Image */}
         <div className="absolute right-0 top-[75px] lg:top-[90px] xl:top-[100px] bottom-[75px] lg:bottom-[90px] xl:bottom-[100px] w-[27vw] lg:w-[28.5vw] xl:w-[29vw] max-w-[530px] min-w-[360px]">
           <Image
-            src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80"
+            src="/images/about.jpg"
             alt="An airy, organized minimalist office setting in warm light, representing a calm therapy environment."
             fill
             priority
@@ -92,7 +92,7 @@ export default function HowWeWork() {
 
         <div className="relative w-full aspect-[4/5] sm:aspect-[3/4] overflow-hidden my-4">
           <Image
-            src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80"
+            src="/images/about.jpg"
             alt="An airy, organized minimalist office setting in warm light, representing a calm therapy environment."
             fill
             sizes="100vw"

@@ -50,7 +50,7 @@ export default function HopeSection() {
         {/* RIGHT IMAGE */}
         <div className="relative flex-shrink-0 w-[38vw] max-w-[760px] min-w-[500px] h-[780px] xl:h-[860px]">
           <Image 
-            src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80"
+            src="/images/intro.jpg"
             alt="A comfortable modern chair sitting in a quiet, sunlit room."
             fill
             sizes="(max-width: 1440px) 40vw, 760px"
@@ -77,7 +77,7 @@ export default function HopeSection() {
 
         <div className="relative w-full aspect-square overflow-hidden mt-2">
           <Image
-            src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80"
+            src="/images/intro.jpg"
             alt="A comfortable modern chair sitting in a quiet, sunlit room."
             fill
             sizes="100vw"
