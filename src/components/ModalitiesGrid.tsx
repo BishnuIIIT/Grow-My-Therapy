@@ -32,24 +32,24 @@ export default function ModalitiesGrid() {
 
           {/* RIGHT: Heading positioned toward lower-middle of image */}
           <div 
-            className="w-full lg:w-[48%] xl:w-[50%] px-6 sm:px-10 lg:px-0 pt-10 sm:pt-14 lg:pt-0 flex flex-col justify-end lg:pb-8 xl:pb-12"
+            className="w-full lg:w-[48%] xl:w-[50%] px-6 sm:px-10 lg:px-0 pt-10 sm:pt-14 lg:pt-0 flex flex-col justify-end lg:pb-4 xl:pb-6"
             style={{ paddingLeft: "clamp(32px, 5vw, 96px)", paddingRight: "3vw" }}
           >
             <div className="max-w-[900px] w-full">
-              <h2 className="font-['beaufort-pro',serif] text-[34px] sm:text-[42px] lg:text-[60px] xl:text-[68px] leading-[1.18] font-normal text-[#2b2b2b] tracking-normal">
-                <span>Honoring where you&apos;ve been</span>
+              <h2 className="font-['beaufort-pro',serif] text-[34px] sm:text-[42px] lg:text-[44px] xl:text-[48px] leading-[1.2] font-normal text-[#2b2b2b] tracking-[-0.01em]">
+                <span>Honoring where you’ve been</span>
                 <span 
                   className="text-[#86b3b3] italic font-medium"
                   style={{ 
                     fontFamily: "var(--font-cormorant), Georgia, serif",
                     fontSize: "1.35em",
-                    verticalAlign: "-0.1em",
+                    verticalAlign: "-0.08em",
                     marginLeft: "0.2em",
                     display: "inline-block"
                   }}
                 >&amp;</span>
                 <br className="hidden lg:block" />
-                <span> helping shape where you&apos;re</span>
+                <span> helping shape where you’re</span>
                 <br className="hidden lg:block" />
                 <span> headed.</span>
               </h2>
