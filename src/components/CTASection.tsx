@@ -9,48 +9,48 @@ export default function CTASection() {
       {/* ============================================================ */}
       {/* DESKTOP LAYOUT (>= 1024px)                                   */}
       {/* ============================================================ */}
-      <div className="hidden lg:flex w-full max-w-[1300px] mx-auto px-8 xl:px-12 items-center justify-between gap-10 xl:gap-12">
+      <div className="hidden lg:flex w-full max-w-[1125px] mx-auto px-6 xl:px-8 items-center justify-center gap-[40px]">
         
         {/* Left Image */}
-        <div className="relative w-[150px] h-[460px] flex-shrink-0">
+        <div className="relative w-[135px] h-[417px] flex-shrink-0">
           <Image
             src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/1b9495e0-ce39-4826-9df9-e24de99da82f/Jennifer+A+-+Images+%2812%29.jpg"
             alt="Sandy beach with seashells"
             fill
-            sizes="150px"
+            sizes="135px"
             priority
             className="object-cover object-center"
           />
         </div>
 
         {/* Center Content */}
-        <div className="flex flex-col items-start max-w-[580px] flex-1">
+        <div className="flex flex-col items-start w-[565px] flex-shrink-0">
           {/* Label */}
           <p 
-            className="font-sans font-medium uppercase text-[#739294] tracking-[0.15em] mb-3" 
-            style={{ fontSize: "10.5px" }}
+            className="font-sans font-medium uppercase text-[#739294] tracking-[0.15em] mb-[12px]" 
+            style={{ fontSize: "10px" }}
           >
             SCHEDULE AN APPOINTMENT
           </p>
 
           {/* Heading */}
           <h2 
-            className="font-['beaufort-pro',serif] text-[#2b2b2b] tracking-normal font-normal mb-5"
-            style={{ fontSize: "37px", lineHeight: "1.25" }}
+            className="font-['beaufort-pro',serif] text-[#2b2b2b] tracking-normal font-normal mb-[28px]"
+            style={{ fontSize: "32px", lineHeight: "1.2" }}
           >
-            <span className="whitespace-nowrap">Find a therapist who is the right</span><br className="hidden xl:block" /> fit for <span className="text-[#86b3b3] italic font-medium" style={{ fontFamily: "var(--font-cormorant), Georgia, serif", fontSize: "1.25em", marginLeft: "0.05em", paddingRight: "0.1em" }}>you.</span>
+            <span className="whitespace-nowrap">Find a therapist who is the right</span><br className="hidden lg:block" /> fit for <span className="text-[#86b3b3] italic font-medium" style={{ fontFamily: "var(--font-cormorant), Georgia, serif", fontSize: "1.25em", marginLeft: "0.05em", paddingRight: "0.1em" }}>you.</span>
           </h2>
 
           {/* Body Text */}
           <p 
-            className="font-light text-[#555] mb-5" 
-            style={{ fontSize: "14.5px", lineHeight: "1.8", fontFamily: "var(--font-mulish), system-ui, sans-serif" }}
+            className="font-light text-[#555] mb-[16px]" 
+            style={{ fontSize: "13px", lineHeight: "1.7", fontFamily: "var(--font-mulish), system-ui, sans-serif" }}
           >
             Coming to therapy is a courageous decision, and connecting with the right kind of therapist makes all the difference. We understand that your journey is personal, and we&apos;re here to support you with care and understanding every step of the way. Each member of our team brings dedicated expertise and a commitment to support you in your struggles. We want you to feel prioritized, understood, and empowered.
           </p>
           <p 
-            className="font-light text-[#555] mb-8" 
-            style={{ fontSize: "14.5px", lineHeight: "1.8", fontFamily: "var(--font-mulish), system-ui, sans-serif" }}
+            className="font-light text-[#555] mb-[32px]" 
+            style={{ fontSize: "13px", lineHeight: "1.7", fontFamily: "var(--font-mulish), system-ui, sans-serif" }}
           >
             Click the button below to schedule an appointment.
           </p>
@@ -59,19 +59,19 @@ export default function CTASection() {
           <Link
             href="/contact"
             className="flex items-center justify-center font-sans font-medium uppercase text-[#555] tracking-[0.15em] border border-[#d5d5d5] rounded-full hover:bg-black/5 transition-colors"
-            style={{ width: "100px", height: "36px", fontSize: "9.5px" }}
+            style={{ width: "90px", height: "35px", fontSize: "9px" }}
           >
             BOOK NOW
           </Link>
         </div>
 
         {/* Right Image */}
-        <div className="relative w-[360px] lg:w-[380px] h-[460px] flex-shrink-0">
+        <div className="relative w-[345px] h-[417px] flex-shrink-0">
           <Image
             src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/7557312a-044d-4489-a9d1-6f43ee9888b1/Jennifer+A+-+Images+%2811%29.jpg"
             alt="A person in a striped dress pointing at shells"
             fill
-            sizes="380px"
+            sizes="345px"
             priority
             className="object-cover object-[30%_center]"
           />
