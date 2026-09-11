@@ -24,11 +24,13 @@ export default function Hero() {
         </div>
 
         {/* 2. HERO HEADING + SUPPORTING TEXT + CTA BLOCK (Exact target styling) */}
-        <div className="flex flex-col w-full max-w-[620px] xl:max-w-[660px] text-left z-20 px-8 xl:px-12 mt-[60px] xl:mt-[90px] flex-shrink-0">
+        <div className="flex flex-col w-full max-w-[620px] xl:max-w-[660px] text-left z-20 px-8 xl:px-12 mt-0 lg:mt-[10px] xl:mt-[25px] flex-shrink-0">
           
-          {/* Eyebrow with target 2-line break */}
-          <p className="text-[11px] xl:text-[12px] font-sans font-medium tracking-[0.16em] uppercase text-[#555] mb-[22px] max-w-[440px] leading-[1.5]">
-            ONLINE &amp; IN-PERSON COUNSELING IN NEWBURY PARK &amp; ACROSS<br className="hidden sm:inline" /> CA
+          {/* Eyebrow with target 2-line break: ONLINE & IN-PERSON COUNSELING IN NEWBURY PARK & / ACROSS CA */}
+          <p className="text-[11px] xl:text-[12px] font-sans font-medium tracking-[0.16em] uppercase text-[#555] mb-[22px] max-w-[540px] leading-[1.6]">
+            <span className="whitespace-nowrap">ONLINE &amp; IN-PERSON COUNSELING IN NEWBURY PARK &amp;</span>
+            <br className="hidden sm:inline" />
+            <span className="whitespace-nowrap">ACROSS CA</span>
           </p>
 
           {/* Main Heading with PrintedMoments cursive thrive. */}
@@ -73,7 +75,8 @@ export default function Hero() {
       {/* ========================================================================= */}
       <div className="lg:hidden flex flex-col px-6 sm:px-10">
         <p className="text-[11px] sm:text-[12px] font-sans font-medium tracking-[0.16em] uppercase text-[#555] mb-4">
-          ONLINE &amp; IN-PERSON COUNSELING IN NEWBURY PARK &amp; ACROSS CA
+          <span className="whitespace-nowrap">ONLINE &amp; IN-PERSON COUNSELING IN NEWBURY PARK &amp;</span><br className="hidden sm:inline" />{" "}
+          <span className="whitespace-nowrap">ACROSS CA</span>
         </p>
         
         <h1 className="font-serif text-[38px] sm:text-[46px] leading-[1.1] font-light text-[#2b2b2b] tracking-[-0.01em] mb-6">
