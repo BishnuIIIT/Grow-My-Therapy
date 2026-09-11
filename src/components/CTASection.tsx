@@ -33,7 +33,7 @@ export default function CTASection() {
 
           {/* Heading */}
           <h2 className="font-serif text-[#2b2b2b] tracking-normal font-light mb-7 leading-[1.2] text-[38px] sm:text-[44px] lg:text-[48px] xl:text-[52px]">
-            <span className="whitespace-nowrap">Find a therapist who is the right</span><br className="hidden sm:inline" /> fit for{" "}
+            <span>Find a therapist who is the right</span><br className="hidden sm:inline" /> fit for{" "}
             <span className="font-['PrintedMoments'] text-[#86b3b3] text-[1.25em] font-normal not-italic inline-block ml-1.5 leading-none">
               you.
             </span>
@@ -51,7 +51,7 @@ export default function CTASection() {
 
           {/* Book Now Button - Pure geometric oval / ellipse matching target website */}
           <Link
-            href="/contact"
+            href="https://www.conejovalleycounseling.com/contact"
             className="inline-flex items-center justify-center font-body font-normal uppercase text-[#2b2b2b] tracking-[0.12em] border border-[#2b2b2b] hover:border-[#86b3b3] hover:text-[#86b3b3] hover:bg-transparent transition-all duration-200 text-[12.5px]"
             style={{ borderRadius: "100%", width: "124px", height: "47px" }}
           >

@@ -26,7 +26,7 @@ export default function HowWeWork() {
           </p>
 
           {/* Heading - Single Line */}
-          <h2 className="font-serif text-[46px] lg:text-[54px] xl:text-[62px] leading-[1.15] font-light text-[#2b2b2b] tracking-[-0.01em] mb-10 xl:mb-12 whitespace-nowrap">
+          <h2 className="font-serif text-[46px] lg:text-[54px] xl:text-[62px] leading-[1.15] font-light text-[#2b2b2b] tracking-[-0.01em] mb-10 xl:mb-12">
             We&apos;re here to make a difference.
           </h2>
 

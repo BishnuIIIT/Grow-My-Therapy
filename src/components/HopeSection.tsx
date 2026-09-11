@@ -29,8 +29,8 @@ export default function HopeSection() {
               maxWidth: "1050px"
             }}
           >
-            <span className="whitespace-nowrap">You’re holding onto hope that life can be</span><br />
-            <span className="whitespace-nowrap">better than it is right now.</span>
+            You’re holding onto hope that life can be<br className="hidden sm:inline" />
+            better than it is right now.
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-[40px] xl:gap-[65px] max-w-[1050px]">

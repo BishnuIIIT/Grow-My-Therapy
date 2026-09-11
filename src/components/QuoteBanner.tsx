@@ -22,8 +22,8 @@ export default function QuoteBanner() {
       {/* Quote Content Container - Positioned towards bottom-left */}
       <div className="relative z-10 w-full max-w-[1540px] mx-auto px-6 sm:px-10 lg:px-16 xl:px-20 text-left">
         <h2 className="font-serif text-[28px] sm:text-[36px] md:text-[42px] lg:text-[46px] xl:text-[50px] leading-[1.28] text-[#f7f6f2] font-light tracking-[-0.01em] max-w-[1250px]">
-          <span className="whitespace-nowrap">You deserve a place where your story is heard, valued,</span><br className="hidden lg:inline" />{" "}
-          <span className="whitespace-nowrap">and understood. <em className="italic font-normal">Nothing will be too heavy for us to</em></span><br className="hidden lg:inline" />{" "}
+          You deserve a place where your story is heard, valued,
+          and understood. <em className="italic font-normal">Nothing will be too heavy for us to</em>{" "}
           <em className="italic font-normal">carry together.</em>
         </h2>
       </div>

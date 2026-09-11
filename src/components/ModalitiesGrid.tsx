@@ -38,16 +38,16 @@ export default function ModalitiesGrid() {
             style={{ paddingLeft: "clamp(45px, 5.5vw, 120px)", paddingRight: "clamp(24px, 3vw, 60px)" }}
           >
             <div className="max-w-[700px] w-full">
-              <h2 className="font-serif text-[42px] sm:text-[50px] lg:text-[58px] xl:text-[66px] leading-[1.14] font-light text-[#2b2b2b] tracking-[-0.01em]">
-                <span className="whitespace-nowrap">Honoring where you’ve been{" "}
-                  <span 
-                    className="text-[#86b3b3] font-['PrintedMoments'] text-[1.25em] font-normal not-italic inline-block align-baseline ml-1"
-                  >&amp;</span>
+              <h2 className="font-serif text-[42px] sm:text-[48px] lg:text-[54px] xl:text-[58px] leading-[1.15] font-light text-[#2b2b2b] tracking-[-0.01em] mb-[45px] xl:mb-[55px]">
+                <span className="whitespace-normal sm:whitespace-nowrap">Honoring where you’ve been{" "}
+                  <span className="font-['PrintedMoments'] text-[#86b3b3] text-[1.15em] font-normal not-italic px-1">
+                    &amp;
+                  </span>
                 </span>
-                <br className="hidden lg:block" />
-                <span className="whitespace-nowrap">helping shape where you’re</span>
-                <br className="hidden lg:block" />
-                <span>headed.</span>
+                <br className="hidden lg:inline" />
+                <span className="whitespace-normal sm:whitespace-nowrap">helping shape where you’re</span>
+                <br className="hidden sm:inline lg:hidden" />
+                headed.
               </h2>
             </div>
           </div>
@@ -69,7 +69,7 @@ export default function ModalitiesGrid() {
             
             {/* COLUMN 1: Subheading (Moved a little left, locked to single line) */}
             <div className="flex flex-col pt-1 lg:-ml-2 xl:-ml-6">
-              <h3 className="font-serif text-[32px] sm:text-[38px] lg:text-[42px] xl:text-[46px] leading-[1.2] font-light text-[#2b2b2b] tracking-[-0.01em] whitespace-nowrap">
+              <h3 className="font-serif text-[32px] sm:text-[38px] lg:text-[42px] xl:text-[46px] leading-[1.2] font-light text-[#2b2b2b] tracking-[-0.01em]">
                 Our{" "}
                 <span className="font-['PrintedMoments'] text-[#86b3b3] text-[1.25em] font-normal not-italic inline-block mx-1 leading-none">
                   specialties
