@@ -16,7 +16,7 @@ export default function CTASection() {
           <div className="relative w-full h-[calc(100%-180px)]">
             <Image
               src="/images/cta-left.jpg"
-              alt="A bright, welcoming therapy office with brick walls, a comfortable grey sofa, and natural light."
+              alt="A modern therapy room featuring a grey sofa, curated bookshelves, and a dark leather chair."
               fill
               sizes="20vw"
               priority
@@ -62,7 +62,7 @@ export default function CTASection() {
         <div className="relative w-[34vw] lg:w-[36vw] xl:w-[38vw] max-w-[720px] min-w-[280px] flex-shrink">
           <Image
             src="/images/cta-right.jpg"
-            alt="A modern therapy room featuring a grey sofa, curated bookshelves, and a dark leather chair."
+            alt="A bright, welcoming therapy office with brick walls, a comfortable grey sofa, and natural light."
             fill
             sizes="40vw"
             priority
@@ -112,7 +112,7 @@ export default function CTASection() {
           <div className="relative w-full sm:w-1/3 h-[320px] sm:h-[420px]">
             <Image
               src="/images/cta-left.jpg"
-              alt="A bright, welcoming therapy office with brick walls, a comfortable grey sofa, and natural light."
+              alt="A modern therapy room featuring a grey sofa, curated bookshelves, and a dark leather chair."
               fill
               sizes="100vw"
               className="object-cover object-center"
@@ -121,7 +121,7 @@ export default function CTASection() {
           <div className="relative w-full sm:w-2/3 h-[420px] sm:h-[420px]">
             <Image
               src="/images/cta-right.jpg"
-              alt="A modern therapy room featuring a grey sofa, curated bookshelves, and a dark leather chair."
+              alt="A bright, welcoming therapy office with brick walls, a comfortable grey sofa, and natural light."
               fill
               sizes="100vw"
               className="object-cover object-[48%_center]"
