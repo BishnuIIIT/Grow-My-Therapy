@@ -56,32 +56,42 @@ export default function ModalitiesGrid() {
       </section>
 
       {/* SECTION B: Specialties 3-Column Editorial Grid (Pure white background with generous whitespace) */}
-      <section className="w-full bg-white pt-8 sm:pt-14 md:pt-20 lg:pt-28 pb-28 sm:pb-36 md:pb-44 lg:pb-56">
-        <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16">
+      <section className="w-full bg-white pt-10 sm:pt-16 md:pt-24 pb-28 sm:pb-36 md:pb-44 lg:pb-56">
+        <div 
+          className="w-full max-w-[1680px] mx-auto"
+          style={{
+            paddingLeft: "clamp(35px, 4.5vw, 90px)",
+            paddingRight: "clamp(35px, 4.5vw, 90px)"
+          }}
+        >
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 sm:gap-14 lg:gap-16 xl:gap-20 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14 xl:gap-20 items-start">
             
-            {/* COLUMN 1: Subheading */}
-            <div className="flex flex-col">
-              <h3 className="font-serif text-[28px] sm:text-[32px] md:text-[34px] lg:text-[38px] leading-[1.2] font-normal text-[#2b2b2b]">
-                Our <span className="font-serif text-[#86b3b3] font-bold italic">specialties</span> include...
+            {/* COLUMN 1: Subheading (Larger scale, PrintedMoments script font) */}
+            <div className="flex flex-col pt-1">
+              <h3 className="font-serif text-[36px] sm:text-[42px] lg:text-[46px] xl:text-[50px] leading-[1.15] font-light text-[#2b2b2b] tracking-[-0.01em]">
+                Our{" "}
+                <span className="font-['PrintedMoments'] text-[#86b3b3] text-[1.25em] font-normal not-italic inline-block mx-1 leading-none">
+                  specialties
+                </span>{" "}
+                include…
               </h3>
             </div>
 
             {/* COLUMN 2: Trauma & Dissociation */}
-            <div className="flex flex-col space-y-16 sm:space-y-20 lg:space-y-24">
+            <div className="flex flex-col space-y-20 sm:space-y-24 lg:space-y-28 xl:space-y-32">
               
               {/* Item 1: Trauma */}
               <div className="flex flex-col items-start group">
-                <h4 className="font-serif text-[24px] sm:text-[26px] lg:text-[28px] font-normal text-[#2b2b2b] mb-4">
+                <h4 className="font-serif text-[28px] sm:text-[30px] lg:text-[34px] font-light text-[#2b2b2b] mb-4 leading-[1.2]">
                   {modalitiesData[0].title}
                 </h4>
-                <p className="font-body text-[14.5px] sm:text-[15px] leading-[1.8] text-[#555] font-[300] mb-6">
+                <p className="font-body text-[15px] sm:text-[15.5px] lg:text-[16px] leading-[1.75] text-[#555] font-light mb-6">
                   {modalitiesData[0].description}
                 </p>
                 <Link
                   href={specialtyLinks[modalitiesData[0].id] || "#"}
-                  className="inline-block font-sans text-[11px] sm:text-[12px] font-[500] tracking-[0.16em] uppercase text-[#2b2b2b] border-b border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
+                  className="inline-block font-sans text-[11px] sm:text-[11.5px] font-medium tracking-[0.16em] uppercase text-[#2b2b2b] border-b border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
                 >
                   LEARN MORE
                 </Link>
@@ -89,15 +99,15 @@ export default function ModalitiesGrid() {
 
               {/* Item 2: Dissociation */}
               <div className="flex flex-col items-start group">
-                <h4 className="font-serif text-[24px] sm:text-[26px] lg:text-[28px] font-normal text-[#2b2b2b] mb-4">
+                <h4 className="font-serif text-[28px] sm:text-[30px] lg:text-[34px] font-light text-[#2b2b2b] mb-4 leading-[1.2]">
                   {modalitiesData[1].title}
                 </h4>
-                <p className="font-body text-[14.5px] sm:text-[15px] leading-[1.8] text-[#555] font-[300] mb-6">
+                <p className="font-body text-[15px] sm:text-[15.5px] lg:text-[16px] leading-[1.75] text-[#555] font-light mb-6">
                   {modalitiesData[1].description}
                 </p>
                 <Link
                   href={specialtyLinks[modalitiesData[1].id] || "#"}
-                  className="inline-block font-sans text-[11px] sm:text-[12px] font-[500] tracking-[0.16em] uppercase text-[#2b2b2b] border-b border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
+                  className="inline-block font-sans text-[11px] sm:text-[11.5px] font-medium tracking-[0.16em] uppercase text-[#2b2b2b] border-b border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
                 >
                   LEARN MORE
                 </Link>
@@ -106,19 +116,19 @@ export default function ModalitiesGrid() {
             </div>
 
             {/* COLUMN 3: EMDR & Special Needs Parenting */}
-            <div className="flex flex-col space-y-16 sm:space-y-20 lg:space-y-24">
+            <div className="flex flex-col space-y-20 sm:space-y-24 lg:space-y-28 xl:space-y-32">
               
               {/* Item 3: EMDR */}
               <div className="flex flex-col items-start group">
-                <h4 className="font-serif text-[24px] sm:text-[26px] lg:text-[28px] font-normal text-[#2b2b2b] mb-4">
+                <h4 className="font-serif text-[28px] sm:text-[30px] lg:text-[34px] font-light text-[#2b2b2b] mb-4 leading-[1.2]">
                   {modalitiesData[2].title}
                 </h4>
-                <p className="font-body text-[14.5px] sm:text-[15px] leading-[1.8] text-[#555] font-[300] mb-6">
+                <p className="font-body text-[15px] sm:text-[15.5px] lg:text-[16px] leading-[1.75] text-[#555] font-light mb-6">
                   {modalitiesData[2].description}
                 </p>
                 <Link
                   href={specialtyLinks[modalitiesData[2].id] || "#"}
-                  className="inline-block font-sans text-[11px] sm:text-[12px] font-[500] tracking-[0.16em] uppercase text-[#2b2b2b] border-b border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
+                  className="inline-block font-sans text-[11px] sm:text-[11.5px] font-medium tracking-[0.16em] uppercase text-[#2b2b2b] border-b border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
                 >
                   LEARN MORE
                 </Link>
@@ -126,15 +136,15 @@ export default function ModalitiesGrid() {
 
               {/* Item 4: Special Needs Parenting */}
               <div className="flex flex-col items-start group">
-                <h4 className="font-serif text-[24px] sm:text-[26px] lg:text-[28px] font-normal text-[#2b2b2b] mb-4">
+                <h4 className="font-serif text-[28px] sm:text-[30px] lg:text-[34px] font-light text-[#2b2b2b] mb-4 leading-[1.2]">
                   {modalitiesData[3].title}
                 </h4>
-                <p className="font-body text-[14.5px] sm:text-[15px] leading-[1.8] text-[#555] font-[300] mb-6">
+                <p className="font-body text-[15px] sm:text-[15.5px] lg:text-[16px] leading-[1.75] text-[#555] font-light mb-6">
                   {modalitiesData[3].description}
                 </p>
                 <Link
                   href={specialtyLinks[modalitiesData[3].id] || "#"}
-                  className="inline-block font-sans text-[11px] sm:text-[12px] font-[500] tracking-[0.16em] uppercase text-[#2b2b2b] border-b border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
+                  className="inline-block font-sans text-[11px] sm:text-[11.5px] font-medium tracking-[0.16em] uppercase text-[#2b2b2b] border-b border-[#2b2b2b] pb-0.5 hover:text-[#86b3b3] hover:border-[#86b3b3] transition-colors"
                 >
                   LEARN MORE
                 </Link>
