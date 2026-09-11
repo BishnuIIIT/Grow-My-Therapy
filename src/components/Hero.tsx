@@ -13,7 +13,7 @@ export default function Hero() {
         
         {/* 1. MAIN LEFT IMAGE */}
         <div className="relative w-[48vw] max-w-[840px] min-w-[400px] h-[82%] xl:h-[88%] z-10 flex-shrink-0">
-          <Image
+          <Image quality={100}
             src="/images/hero.jpg"
             alt="Abstract, calming slate-blue water ripples representing peace and forward movement."
             fill
@@ -80,7 +80,7 @@ export default function Hero() {
         <div className="relative w-full h-[500px] sm:h-[600px] flex">
           {/* Main Left Image */}
           <div className="relative w-full h-full z-10 flex-shrink-0">
-            <Image
+            <Image quality={100}
               src="/images/hero.jpg"
               alt="Abstract, calming slate-blue water ripples representing peace and forward movement."
               fill

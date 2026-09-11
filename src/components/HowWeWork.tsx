@@ -66,7 +66,7 @@ export default function HowWeWork() {
 
         {/* Right Image */}
         <div className="absolute right-0 top-[75px] lg:top-[90px] xl:top-[100px] bottom-[75px] lg:bottom-[90px] xl:bottom-[100px] w-[27vw] lg:w-[28.5vw] xl:w-[29vw] max-w-[530px] min-w-[360px]">
-          <Image
+          <Image quality={100}
             src="/images/about.jpg"
             alt="Professional portrait of Dr. Maya Reynolds, PsyD."
             fill
@@ -91,7 +91,7 @@ export default function HowWeWork() {
         </h2>
 
         <div className="relative w-full aspect-[4/5] sm:aspect-[3/4] overflow-hidden my-4">
-          <Image
+          <Image quality={100}
             src="/images/about.jpg"
             alt="Professional portrait of Dr. Maya Reynolds, PsyD."
             fill

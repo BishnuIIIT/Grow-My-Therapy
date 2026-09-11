@@ -23,7 +23,7 @@ export default function OfficeSection() {
             {/* Mobile Only: Images (stacked naturally between copy and details) */}
             <div className="block lg:hidden w-full mb-10 space-y-6">
               <div className="relative w-full aspect-[4/3] overflow-hidden bg-secondary-bg">
-                <Image
+                <Image quality={100}
                   src="/images/office-2.jpg"
                   alt="A bright, welcoming therapy office with exposed brick walls, a comfortable grey sofa, a white chair, and abundant natural light."
                   fill
@@ -32,7 +32,7 @@ export default function OfficeSection() {
                 />
               </div>
               <div className="relative w-full aspect-[4/3] overflow-hidden bg-secondary-bg">
-                <Image
+                <Image quality={100}
                   src="/images/office-1.jpg"
                   alt="A warm, modern therapy room featuring curated bookshelves, a grey sofa, and a dark leather chair."
                   fill
@@ -68,7 +68,7 @@ export default function OfficeSection() {
             <div className="relative w-full pt-[95%] xl:pt-[90%]">
               {/* Primary Image */}
               <div className="absolute top-0 left-0 w-[80%] aspect-[4/3] bg-secondary-bg overflow-hidden z-10">
-                <Image
+                <Image quality={100}
                   src="/images/office-2.jpg"
                   alt="A bright, welcoming therapy office with exposed brick walls, a comfortable grey sofa, a white chair, and abundant natural light."
                   fill
@@ -78,7 +78,7 @@ export default function OfficeSection() {
               </div>
               {/* Secondary Image - Overlapping Bottom Right */}
               <div className="absolute bottom-0 right-0 w-[50%] aspect-[4/5] bg-secondary-bg overflow-hidden z-20 border-[12px] border-main-bg">
-                <Image
+                <Image quality={100}
                   src="/images/office-1.jpg"
                   alt="A warm, modern therapy room featuring curated bookshelves, a grey sofa, and a dark leather chair."
                   fill
