@@ -58,16 +58,16 @@ export default function CTASection() {
           </Link>
         </div>
 
-        {/* Right Image (Increased scale by 20%, uncropped 3:2 aspect ratio, positioned in original right place) */}
-        <div className="relative w-[35vw] xl:w-[41vw] max-w-[760px] min-w-[320px] flex-shrink-0">
-          <div className="relative w-full aspect-[3/2]">
+        {/* Right Image (Width reduced 20%, height increased via aspect-square, object-fill keeps full image but distorts) */}
+        <div className="relative w-[28vw] xl:w-[33vw] max-w-[600px] min-w-[260px] flex-shrink-0">
+          <div className="relative w-full aspect-square">
             <Image
               src="/images/cta-right.jpg"
               alt="A therapy session in progress, showing a therapist taking notes while listening attentively to a client."
               fill
-              sizes="(max-width: 1024px) 100vw, 80vw" quality={100} unoptimized={true}
+              sizes="(max-width: 1024px) 100vw, 50vw" quality={100} unoptimized={true}
               priority
-              className="object-cover object-center"
+              className="object-fill"
             />
           </div>
         </div>
