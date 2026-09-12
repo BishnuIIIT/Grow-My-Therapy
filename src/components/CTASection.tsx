@@ -51,8 +51,8 @@ export default function CTASection() {
           {/* Book Now Button */}
           <Link
             href="/#contact"
-            className="inline-flex items-center justify-center font-body font-normal uppercase text-primary-text tracking-[0.12em] border border-primary-text hover:border-primary hover:text-primary hover:bg-transparent transition-all duration-200 text-[12.5px]"
-            style={{ borderRadius: "100%", width: "230px", height: "56px" }}
+            className="inline-flex items-center justify-center font-body font-normal uppercase text-primary-text tracking-[0.12em] border border-primary-text hover:border-primary hover:text-primary hover:bg-transparent transition-all duration-200 text-[11.5px] sm:text-[12px] lg:text-[12.5px] w-[200px] sm:w-[210px] lg:w-[215px] h-[48px] sm:h-[50px] lg:h-[52px]"
+            style={{ borderRadius: "100%" }}
           >
             BOOK CONSULTATION
           </Link>
@@ -102,8 +102,8 @@ export default function CTASection() {
         <div className="mt-2 mb-2">
           <Link
             href="/#contact"
-            className="inline-flex items-center justify-center font-body font-normal uppercase text-primary-text tracking-[0.12em] border border-primary-text hover:border-primary hover:text-primary hover:bg-transparent transition-all duration-200 text-[12.5px]"
-            style={{ borderRadius: "100%", width: "230px", height: "56px" }}
+            className="inline-flex items-center justify-center font-body font-normal uppercase text-primary-text tracking-[0.12em] border border-primary-text hover:border-primary hover:text-primary hover:bg-transparent transition-all duration-200 text-[11.5px] sm:text-[12px] lg:text-[12.5px] w-[200px] sm:w-[210px] lg:w-[215px] h-[48px] sm:h-[50px] lg:h-[52px]"
+            style={{ borderRadius: "100%" }}
           >
             BOOK CONSULTATION
           </Link>

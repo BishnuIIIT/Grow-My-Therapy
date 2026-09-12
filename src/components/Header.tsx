@@ -63,8 +63,8 @@ export default function Header() {
             <div className="pl-4 xl:pl-6">
               <Link
                 href="/#contact"
-                className="inline-flex items-center justify-center font-body text-[11px] xl:text-[12px] font-normal tracking-[0.12em] uppercase text-primary-text border border-primary-text hover:border-primary hover:text-primary hover:bg-transparent transition-all duration-200"
-                style={{ borderRadius: "100%", width: "210px", height: "52px" }}
+                className="inline-flex items-center justify-center font-body text-[11px] xl:text-[12px] font-normal tracking-[0.12em] uppercase text-primary-text border border-primary-text hover:border-primary hover:text-primary hover:bg-transparent transition-all duration-200 w-[190px] xl:w-[200px] h-[46px] xl:h-[48px]"
+                style={{ borderRadius: "100%" }}
               >
                 BOOK CONSULTATION
               </Link>
@@ -113,8 +113,8 @@ export default function Header() {
               <Link
                 href="/#contact"
                 onClick={() => setMobileMenuOpen(false)}
-                className="inline-flex items-center justify-center font-body text-[12.5px] font-normal tracking-[0.12em] uppercase text-primary-text border border-primary-text hover:bg-black/5 transition-colors"
-                style={{ borderRadius: "100%", width: "230px", height: "56px" }}
+                className="inline-flex items-center justify-center font-body font-normal tracking-[0.12em] uppercase text-primary-text border border-primary-text hover:bg-black/5 transition-colors text-[11.5px] sm:text-[12px] w-[200px] sm:w-[210px] h-[48px] sm:h-[50px]"
+                style={{ borderRadius: "100%" }}
               >
                 BOOK CONSULTATION
               </Link>
