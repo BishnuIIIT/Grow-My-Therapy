@@ -64,7 +64,7 @@ export default function Header() {
               <Link
                 href="/#contact"
                 className="inline-flex items-center justify-center font-body text-[11px] xl:text-[12px] font-normal tracking-[0.12em] uppercase text-primary-text border border-primary-text hover:border-primary hover:text-primary hover:bg-transparent transition-all duration-200"
-                style={{ borderRadius: "100%", width: "160px", height: "47px" }}
+                style={{ borderRadius: "100%", width: "210px", height: "52px" }}
               >
                 BOOK CONSULTATION
               </Link>
@@ -114,7 +114,7 @@ export default function Header() {
                 href="/#contact"
                 onClick={() => setMobileMenuOpen(false)}
                 className="inline-flex items-center justify-center font-body text-[12.5px] font-normal tracking-[0.12em] uppercase text-primary-text border border-primary-text hover:bg-black/5 transition-colors"
-                style={{ borderRadius: "100%", width: "200px", height: "46px" }}
+                style={{ borderRadius: "100%", width: "230px", height: "56px" }}
               >
                 BOOK CONSULTATION
               </Link>

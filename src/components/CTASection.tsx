@@ -52,7 +52,7 @@ export default function CTASection() {
           <Link
             href="/#contact"
             className="inline-flex items-center justify-center font-body font-normal uppercase text-primary-text tracking-[0.12em] border border-primary-text hover:border-primary hover:text-primary hover:bg-transparent transition-all duration-200 text-[12.5px]"
-            style={{ borderRadius: "100%", width: "190px", height: "47px" }}
+            style={{ borderRadius: "100%", width: "230px", height: "56px" }}
           >
             BOOK CONSULTATION
           </Link>
@@ -103,7 +103,7 @@ export default function CTASection() {
           <Link
             href="/#contact"
             className="inline-flex items-center justify-center font-body font-normal uppercase text-primary-text tracking-[0.12em] border border-primary-text hover:border-primary hover:text-primary hover:bg-transparent transition-all duration-200 text-[12.5px]"
-            style={{ borderRadius: "100%", width: "190px", height: "48px" }}
+            style={{ borderRadius: "100%", width: "230px", height: "56px" }}
           >
             BOOK CONSULTATION
           </Link>
