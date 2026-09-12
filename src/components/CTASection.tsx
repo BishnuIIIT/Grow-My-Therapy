@@ -11,16 +11,16 @@ export default function CTASection() {
       {/* ============================================================ */}
       <div className="hidden lg:flex flex-row w-full items-center justify-between min-h-[600px] lg:min-h-[700px] xl:min-h-[760px] gap-6 xl:gap-12 py-16">
         
-        {/* Left Image (Restored to square aspect ratio to fit full uncropped image) */}
-        <div className="relative w-[20vw] max-w-[300px] min-w-[150px] flex-shrink-0">
-          <div className="relative w-full aspect-square">
+        {/* Left Image (Width -10%, height +10%, using object-fill to keep full image intact) */}
+        <div className="relative w-[18vw] max-w-[270px] min-w-[150px] flex-shrink-0">
+          <div className="relative w-full aspect-[9/11]">
             <Image
               src="/images/cta-left.jpg"
               alt="A cozy, sunlit therapy space with a light beige sofa, a grey chair, and large indoor plants."
               fill
               sizes="(max-width: 1024px) 100vw, 50vw" quality={100} unoptimized={true}
               priority
-              className="object-cover object-center"
+              className="object-fill"
             />
           </div>
         </div>
