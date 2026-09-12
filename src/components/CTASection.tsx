@@ -11,9 +11,9 @@ export default function CTASection() {
       {/* ============================================================ */}
       <div className="hidden lg:flex flex-row w-full items-center justify-between min-h-[600px] lg:min-h-[700px] xl:min-h-[760px] gap-6 xl:gap-12 py-16">
         
-        {/* Left Image (Width decreased by 20%, height increased by 20%) */}
-        <div className="relative w-[18vw] max-w-[280px] min-w-[120px] flex-shrink-0">
-          <div className="relative w-full aspect-[2/3]">
+        {/* Left Image (Width decreased by 5%, height increased by 5%) */}
+        <div className="relative w-[17vw] max-w-[266px] min-w-[120px] flex-shrink-0">
+          <div className="relative w-full aspect-[3/5]">
             <Image
               src="/images/cta-left.jpg"
               alt="A cozy, sunlit therapy space with a light beige sofa, a grey chair, and large indoor plants."
@@ -58,9 +58,9 @@ export default function CTASection() {
           </Link>
         </div>
 
-        {/* Right Image (Width increased 10%, stretched horizontally to fix some distortion, height remains identical) */}
-        <div className="relative w-[31vw] xl:w-[36vw] max-w-[600px] min-w-[260px] flex-shrink-0">
-          <div className="relative w-full aspect-[11/10]">
+        {/* Right Image (Width increased 5%) */}
+        <div className="relative w-[33vw] xl:w-[38vw] max-w-[600px] min-w-[260px] flex-shrink-0">
+          <div className="relative w-full aspect-[7/6]">
             <Image
               src="/images/cta-right.jpg"
               alt="A therapy session in progress, showing a therapist taking notes while listening attentively to a client."
