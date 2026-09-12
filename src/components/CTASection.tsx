@@ -60,7 +60,7 @@ export default function CTASection() {
 
         {/* Right Image (Width reduced by ~20%, height increased via taller aspect ratio, with 10% top/bottom bg color framing) */}
         <div className="relative w-[29vw] xl:w-[34vw] max-w-[600px] min-w-[260px] flex-shrink-0 py-[5%] xl:py-[8%]">
-          <div className="relative w-full aspect-[5/4]">
+          <div className="relative w-full aspect-square">
             <Image
               src="/images/cta-right.jpg"
               alt="A therapy session in progress, showing a therapist taking notes while listening attentively to a client."
