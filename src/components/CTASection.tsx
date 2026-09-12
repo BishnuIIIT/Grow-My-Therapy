@@ -58,9 +58,9 @@ export default function CTASection() {
           </Link>
         </div>
 
-        {/* Right Image (Width increased 5%) */}
+        {/* Right Image (Height increased by ~15%) */}
         <div className="relative w-[33vw] xl:w-[38vw] max-w-[600px] min-w-[260px] flex-shrink-0">
-          <div className="relative w-full aspect-[7/6]">
+          <div className="relative w-full aspect-square">
             <Image
               src="/images/cta-right.jpg"
               alt="A therapy session in progress, showing a therapist taking notes while listening attentively to a client."
