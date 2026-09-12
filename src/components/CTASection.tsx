@@ -58,14 +58,14 @@ export default function CTASection() {
           </Link>
         </div>
 
-        {/* Right Image (Landscape aspect ratio to preserve full image) */}
-        <div className="relative w-[36vw] xl:w-[42vw] max-w-[760px] min-w-[300px] flex-shrink-0">
-          <div className="relative w-full aspect-[3/2]">
+        {/* Right Image (Width reduced by ~20%, height increased via taller aspect ratio, with 10% top/bottom bg color framing) */}
+        <div className="relative w-[29vw] xl:w-[34vw] max-w-[600px] min-w-[260px] flex-shrink-0 py-[5%] xl:py-[8%]">
+          <div className="relative w-full aspect-[5/4]">
             <Image
               src="/images/cta-right.jpg"
               alt="A therapy session in progress, showing a therapist taking notes while listening attentively to a client."
               fill
-              sizes="(max-width: 1024px) 100vw, 80vw" quality={100} unoptimized={true}
+              sizes="(max-width: 1024px) 100vw, 50vw" quality={100} unoptimized={true}
               priority
               className="object-cover object-center"
             />
