@@ -18,7 +18,7 @@ export default function CTASection() {
               src="/images/cta-left.jpg"
               alt="A cozy, sunlit therapy space with a light beige sofa, a grey chair, and large indoor plants."
               fill
-              sizes="(max-width: 1024px) 100vw, 50vw" quality={100}
+              sizes="(max-width: 1024px) 100vw, 50vw" quality={100} unoptimized={true}
               priority
               className="object-cover object-center"
             />
@@ -65,7 +65,7 @@ export default function CTASection() {
               src="/images/cta-right.jpg"
               alt="A therapy session in progress, showing a therapist taking notes while listening attentively to a client."
               fill
-              sizes="(max-width: 1024px) 100vw, 80vw" quality={100}
+              sizes="(max-width: 1024px) 100vw, 80vw" quality={100} unoptimized={true}
               priority
               className="object-cover object-center"
             />
@@ -116,7 +116,7 @@ export default function CTASection() {
               src="/images/cta-left.jpg"
               alt="A cozy, sunlit therapy space with a light beige sofa, a grey chair, and large indoor plants."
               fill
-              sizes="100vw" quality={100}
+              sizes="100vw" quality={100} unoptimized={true}
               className="object-cover object-center"
             />
           </div>
@@ -125,7 +125,7 @@ export default function CTASection() {
               src="/images/cta-right.jpg"
               alt="A therapy session in progress, showing a therapist taking notes while listening attentively to a client."
               fill
-              sizes="100vw" quality={100}
+              sizes="100vw" quality={100} unoptimized={true}
               className="object-cover object-center"
             />
           </div>
