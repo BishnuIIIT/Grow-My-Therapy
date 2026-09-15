@@ -17,8 +17,8 @@ export default function HowWeWork() {
           paddingBottom: "170px"
         }}
       >
-        {/* Left Content Area */}
-        <div className="flex flex-col flex-1 max-w-[980px] xl:max-w-[1120px] z-10 pr-10 xl:pr-14">
+        {/* Left Content Area (Added substantial right padding to prevent text from overlapping the absolutely positioned image) */}
+        <div className="flex flex-col flex-1 max-w-[1200px] z-10 pr-[380px] lg:pr-[32vw] xl:pr-[34vw]">
           
           {/* Label */}
           <p className="-mt-10 lg:-mt-14 xl:-mt-18 font-sans text-[13px] xl:text-[14px] font-medium tracking-[0.2em] uppercase text-primary-text mb-14 xl:mb-20">
