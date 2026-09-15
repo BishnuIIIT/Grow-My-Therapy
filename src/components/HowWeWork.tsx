@@ -26,7 +26,7 @@ export default function HowWeWork() {
           </p>
 
           {/* Heading */}
-          <h2 className="font-serif text-[46px] lg:text-[54px] xl:text-[62px] leading-[1.15] font-light text-primary-text tracking-[-0.01em] mb-10 xl:mb-12">
+          <h2 className="font-serif text-[46px] lg:text-[54px] xl:text-[62px] leading-[1.15] font-light text-primary-text tracking-[-0.01em] mb-10 xl:mb-12 whitespace-nowrap">
             Meet Dr. Maya Reynolds.
           </h2>
 
