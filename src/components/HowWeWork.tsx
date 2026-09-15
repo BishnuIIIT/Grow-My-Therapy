@@ -18,7 +18,7 @@ export default function HowWeWork() {
         }}
       >
         {/* Left Content Area (Added substantial right padding to prevent text from overlapping the absolutely positioned image) */}
-        <div className="flex flex-col flex-1 max-w-[1200px] z-10 pr-[380px] lg:pr-[32vw] xl:pr-[34vw]">
+        <div className="flex flex-col flex-1 max-w-[1200px] z-10 pr-[440px] lg:pr-[36vw] xl:pr-[38vw]">
           
           {/* Label */}
           <p className="-mt-10 lg:-mt-14 xl:-mt-18 font-sans text-[13px] xl:text-[14px] font-medium tracking-[0.2em] uppercase text-primary-text mb-14 xl:mb-20">
@@ -64,15 +64,14 @@ export default function HowWeWork() {
 
         </div>
 
-        {/* Right Image */}
-        <div className="absolute right-0 top-[75px] lg:top-[90px] xl:top-[100px] bottom-[75px] lg:bottom-[90px] xl:bottom-[100px] w-[27vw] lg:w-[28.5vw] xl:w-[29vw] max-w-[530px] min-w-[360px]">
+        {/* Right Image (Width increased by 15%) */}
+        <div className="absolute right-0 top-[75px] lg:top-[90px] xl:top-[100px] bottom-[75px] lg:bottom-[90px] xl:bottom-[100px] w-[31vw] lg:w-[33vw] xl:w-[34vw] max-w-[610px] min-w-[415px]">
           <Image quality={100}
             src="/images/about.jpg"
-            alt="Professional portrait of Dr. Maya Reynolds, PsyD."
+            alt="Portrait of Dr. Maya Reynolds"
             fill
-            priority
-            sizes="35vw"
-            className="object-cover object-center"
+            sizes="(max-width: 1024px) 100vw, 34vw"
+            className="object-cover object-center shadow-lg"
           />
         </div>
 
